@@ -5,13 +5,15 @@ import Card from "./Card";
 import { SERVICE_OBJ } from "../Utils/Mock_Data";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import dotenv from "dotenv";
+import Loader from "./Loader";
 
 dotenv.config();
 const Body = () => {
+  console.log(screen.width,screen.height);
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Index />,
+      element: <Loader />,
       errorElement: <Error />,
     },
     {
@@ -22,6 +24,10 @@ const Body = () => {
       path: "/card",
       element: <Card service={SERVICE_OBJ} />,
     },
+    {
+      path:"/loader",
+      element:<Loader />
+    }
   ]);
 
   return <RouterProvider router={appRouter} />;
