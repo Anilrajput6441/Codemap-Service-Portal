@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import dotenv from "dotenv";
 import Loader from "./Loader";
 import Error from "./Error";
+import CMSRegsiter from "./CMS/CMSRegsiter";
 
 dotenv.config();
 const Body = () => {
@@ -28,6 +29,10 @@ const Body = () => {
     {
       path: "/loader",
       element: <Loader />,
+    },
+    {
+      path: "/cmsRegister",
+      element: <CMSRegsiter />,
     },
   ]);
 
