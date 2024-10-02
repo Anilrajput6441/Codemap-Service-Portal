@@ -1,0 +1,24 @@
+GET request:
+
+/api/v1/technologies/ - Get List of all technologies
+/api/v1/services/ - Get a list of all services
+/api/v1/queries/ - Get a list of all queries
+/api/v1/qoutes/ - Get a list of all  qoutes
+
+
+POST request:
+/api/v1/technologies/ -Post a specific technology
+/api/v1/services/ -Post a specific service
+/api/v1/queries/ -Post a specific query
+/api/v1/qoutes/ -Post a specific qoutes
+
+
+
+PATCH request:
+/api/v1/technologies/ - Update a specific technology
+/api/v1/services/ -Update a specific service
+
+
+DELETE request:
+/api/v1/technologies/ -Delete a specific technology
+/api/v1/services/ -Delete a specific service
