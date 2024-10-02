@@ -2,8 +2,8 @@ import teamsObj from "../../Models/teams.js";
 
 const teamsPOST = () => {
   return (req, res) => {
-    const image = req.file.filename;
-    const { name, designation, description, linkedin } = req.body;
+    // const image = req.file.filename;
+    const { name, image, designation, description, linkedin } = req.body;
     const teamsModelObjNew = new teamsObj({
       image: image,
       name: name,

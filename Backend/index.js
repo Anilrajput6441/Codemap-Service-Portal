@@ -6,6 +6,7 @@ import { DBConnectFunction } from "./Connection/DBConnectFunction.js";
 import generalRouter from "./Routes/generalRouter.js";
 import servicesRouter from "./Routes/servicesRouter.js";
 import queryRouter from "./Routes/queryRouter.js";
+import teamsRouter from "./Routes/teamsRouter.js";
 
 dotenv.config();
 
@@ -26,7 +27,7 @@ app.use("/api/v1/", generalRouter);
 app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/queries", queryRouter);
 // app.use("/api/v1/qoutes");
-app.use("/api/v1/teams");
+app.use("/api/v1/teams", teamsRouter);
 
 //App Listen
 app.listen(PORT, () => {
