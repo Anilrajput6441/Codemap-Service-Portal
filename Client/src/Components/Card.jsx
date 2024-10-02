@@ -1,7 +1,7 @@
 const Card = (props) => {
   return (
     <>
-      <div className="card flex  flex-col justify-center pl-3 pr-1 md:pl-4 w-[88vw] h-[75vmin]  md:w-[50vmin]  border-[#d0cfcf] border-[1px] md:h-[62vmin] gap-y-2  pr-1">
+      <div className="card flex  flex-col justify-center pl-3 pr-1 md:pl-4 w-[88vw] h-[77vmin]  md:w-[50vmin]  border-[#d0cfcf] border-[1px] md:h-[62vmin] gap-y-2  pr-1">
         <div className="imageHolder">
           <img
             src={require("../../assets/android.png")}

@@ -16,10 +16,10 @@ const Header = () => {
           </div>
           {screen.width > 1000 && (
             <>
-              <div className="iconsArea flex gap-x-7  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
+              <div className="iconsArea flex gap-x-8  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
                 <p
                   id="about-us"
-                  className="underline-offset-4 "
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("about-us").style.textDecoration =
                       "underline";
@@ -34,7 +34,7 @@ const Header = () => {
 
                 <p
                   id="projects"
-                  className="underline-offset-4"
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("projects").style.textDecoration =
                       "underline";
@@ -49,7 +49,7 @@ const Header = () => {
 
                 <p
                   id="team"
-                  className="underline-offset-4"
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("team").style.textDecoration =
                       "underline";
@@ -63,7 +63,7 @@ const Header = () => {
 
                 <p
                   id="Services"
-                  className="underline-offset-4"
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("Services").style.textDecoration =
                       "underline";
@@ -78,7 +78,7 @@ const Header = () => {
 
                 <p
                   id="Career"
-                  className="underline-offset-4 "
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("Career").style.textDecoration =
                       "underline";
@@ -92,7 +92,7 @@ const Header = () => {
 
                 <p
                   id="Blogs"
-                  className="underline-offset-4 "
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("Blogs").style.textDecoration =
                       "underline";
@@ -105,7 +105,7 @@ const Header = () => {
                 </p>
                 <p
                   id="Contact"
-                  className="underline-offset-4 "
+                  className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
                     document.getElementById("Contact").style.textDecoration =
                       "underline";
@@ -120,7 +120,7 @@ const Header = () => {
               </div>
 
               <div className="buttonArea ml-[5vmin] mt-[-0.65vmin]">
-                <button className="p-3 bg-mainText text-white rounded-[5px] pl-5 pr-5 text-[2.15vmin]">
+                <button className="p-3 bg-mainText text-white rounded-[5px] pl-5 pr-5 text-[2.45vmin] mt-[-0.1vmin]">
                   Get Quote
                 </button>
               </div>
@@ -146,7 +146,7 @@ const Header = () => {
             <div className="navIconsMobile gap-y-3 p-2 pl-3 flex flex-col">
               <p
                 id="about-us1"
-                className="underline-offset-4 "
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -163,7 +163,7 @@ const Header = () => {
               </p>
               <p
                 id="technologies1"
-                className="underline-offset-4 "
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -182,7 +182,7 @@ const Header = () => {
               </p>
               <p
                 id="projects1"
-                className="underline-offset-4"
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -199,7 +199,7 @@ const Header = () => {
               </p>
               <p
                 id="testinomials1"
-                className="underline-offset-4"
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -218,7 +218,7 @@ const Header = () => {
               </p>
               <p
                 id="team1"
-                className="underline-offset-4"
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -235,7 +235,7 @@ const Header = () => {
 
               <p
                 id="Services1"
-                className="underline-offset-4"
+                className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
@@ -255,7 +255,7 @@ const Header = () => {
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
-                className="underline-offset-4"
+                className="underline-offset-[1.35vmin] "
                 onMouseOver={() => {
                   document.getElementById(
                     "Our Strategy1"
@@ -271,7 +271,7 @@ const Header = () => {
               </p>
               <p
                 id="Blogs"
-                className="underline-offset-4 "
+                className="underline-offset-[1.35vmin] "
                 onMouseOver={() => {
                   document.getElementById("Blogs").style.textDecoration =
                     "underline";
@@ -287,7 +287,7 @@ const Header = () => {
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
-                className="underline-offset-4 "
+                className="underline-offset-[1.35vmin] "
                 onMouseOver={() => {
                   document.getElementById("Contact1").style.textDecoration =
                     "underline";

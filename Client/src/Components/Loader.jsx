@@ -15,9 +15,15 @@ const Loader = () => {
     <div>
       {!body && (
         <div className="holder w-[100vw] h-[100vh] flex justify-center items-center bg-backgroundMain">
-          <Box sx={{ display: "flex" }}>
-            <CircularProgress size="90px" />
-          </Box>
+          {screen.width < 1000 ? (
+            <Box sx={{ display: "flex" }}>
+              <CircularProgress size="35px" />
+            </Box>
+          ) : (
+            <Box sx={{ display: "flex" }}>
+              <CircularProgress size="90px" />
+            </Box>
+          )}
         </div>
       )}
 

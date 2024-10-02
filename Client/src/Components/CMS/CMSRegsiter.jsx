@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import Header from "../Header";
+import dotenv from "dotenv";
 
+dotenv.config();
 const CMSRegsiter = () => {
+  console.log(process.env.API_TEST_URL);
   const secretKey = useRef(null);
   const username = useRef(null);
   const email = useRef(null);

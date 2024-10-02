@@ -7,7 +7,7 @@ const About = () => {
         {screen.width < 900 && (
           <>
             <div className="aboutHeader">
-              <p className="font-extrabold mt-[-7vmin] text-[10vmin] md:text-[10vmin]">
+              <p className="font-extrabold mt-[-12vmin] text-[10vmin] md:text-[10vmin]">
                 About-
                 <span className="text-mainText">Us</span>
               </p>

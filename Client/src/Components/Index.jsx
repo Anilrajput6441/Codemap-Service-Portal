@@ -10,12 +10,22 @@ const Index = () => {
     <>
       <Header />
       <Hero />
-      <Slide left>
-        <About />
-      </Slide>
-      <Slide direction="right">
-        <Services />
-      </Slide>
+
+      {screen.width < 1000 ? (
+        <>
+          <About />
+          <Services />
+        </>
+      ) : (
+        <>
+          <Slide left>
+            <About />
+          </Slide>
+          <Slide direction="right">
+            <Services />
+          </Slide>
+        </>
+      )}
     </>
   );
 };

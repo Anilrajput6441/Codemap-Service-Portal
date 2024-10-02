@@ -28,29 +28,31 @@ const Datacomponent = () => {
         <div className="boxHolder flex w-[87vw] h-[18vmin] mt-5 font-poppins">
           <div className="box1 border-black border-[0.5px] w-[29vw] h-[19vmin] pb-4">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4vmin] p-1 ml-1 mt-1">
+              <p className="font-medium text-[4.35vmin] p-1 ml-1 mt-1">
                 Projects:
               </p>
             </div>
-            <p className="font-extrabold text-[5vmin] p-1 ml-2  ml-4 text-mainText">
+            <p className="font-extrabold text-[5.15vmin] p-1 ml-2  ml-4 text-mainText">
               {projects}+
             </p>
           </div>
           <div className="box2 border-black border-[0.5px] h-[19vmin] w-[29vw] pb-6">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4vmin] p-1 ml-1  mt-1">
+              <p className="font-medium text-[4.35vmin] p-1 ml-1  mt-1">
                 Clients:
               </p>
             </div>
-            <p className="font-extrabold text-[5vmin] p-1 ml-2 ml-4 text-mainText">
+            <p className="font-extrabold text-[5.15vmin] p-1 ml-2 ml-4 text-mainText">
               {clients}+
             </p>
           </div>
           <div className="box3 border-black border-[0.5px] h-[19vmin] w-[29vw] pb-6">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4vmin] p-1 ml-1 mt-1">Members:</p>
+              <p className="font-medium text-[4.35vmin] p-1 ml-1 mt-1">
+                Members:
+              </p>
             </div>
-            <p className="font-extrabold text-[5vmin] p-1 ml-2  ml-4 text-mainText">
+            <p className="font-extrabold text-[5.15vmin] p-1 ml-2  ml-4 text-mainText">
               {members}+
             </p>
           </div>
