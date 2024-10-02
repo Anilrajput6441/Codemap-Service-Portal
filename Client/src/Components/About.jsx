@@ -1,5 +1,5 @@
 import Datacomponent from "./Datacomponent";
-import { Slide, Zoom } from "react-awesome-reveal";
+
 const About = () => {
   return (
     <>
