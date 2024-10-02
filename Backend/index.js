@@ -26,7 +26,7 @@ app.use("/api/v1/", generalRouter);
 app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/queries", queryRouter);
 // app.use("/api/v1/qoutes");
-// app.use("/api/v1/teams");
+app.use("/api/v1/teams");
 
 //App Listen
 app.listen(PORT, () => {
