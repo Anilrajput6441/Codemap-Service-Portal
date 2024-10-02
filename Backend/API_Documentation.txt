@@ -13,14 +13,20 @@ POST request:
 /api/v1/services/ -Post a specific service -Done
 /api/v1/queries/ -Post a specific query -Done
 /api/v1/qoutes/ -Post a specific qoutes
-
+/api/v1/projects/ -Post a specific project
+/api/v1/teams/ -  Post a specific team member
 
 
 PATCH request:
 /api/v1/technologies/ - Update a specific technology
 /api/v1/services/ -Update a specific service - Done
-
+/api/v1/projects/ - Update a list of all projects
+/api/v1/teams/ - Update a list teams
+/api/v1/projects/ - Update a specific projects
 
 DELETE request:
 /api/v1/technologies/ -Delete a specific technology
 /api/v1/services/ -Delete a specific service - Done
+/api/v1/projects/ - Delete a specific project
+/api/v1/teams/  - Delete a specific team member
+/api/v1/projects/ - Delete a specific project
