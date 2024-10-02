@@ -25,7 +25,7 @@ app.use(express.static("uploads"));
 DBConnectFunction(process.env.MONGODB_URI);
 
 //Routes
-app.use("/api/v1/", generalRouter);
+app.use("/", generalRouter);
 app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/queries", queryRouter);
 app.use("/api/v1/teams", teamsRouter);

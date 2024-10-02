@@ -1,9 +1,8 @@
 const generalGet = (req, res) => {
-  const myObj = {
-    name: "John Doe",
-    age: 30,
-    city: "New York",
+  const statusObj = {
+    status: 200,
+    message: "OK",
   };
-  res.send(myObj);
+  res.status(statusObj.status).json(statusObj);
 };
 export default generalGet;
