@@ -18,11 +18,11 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="mt-6 md:mt-[7vmin] pb-5 ml-2 md:ml-6">
+      <div className="mt-6 md:mt-[8vmin] pb-5 ml-2 md:ml-6">
         <p className="text-[8vmin] font-extrabold">
           <span className="text-mainText">Our</span> Services
         </p>
-        <div className="mt-10 flex flex-wrap justify-center items-center gap-x-20 gap-y-6">
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-20 gap-y-6">
           {servicesObj.map((val, index) => (
             <Card data={servicesObj[index]} />
           ))}

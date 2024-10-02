@@ -1,8 +1,7 @@
+import React from "react";
+
 const MainPage = () => {
-  return (
-    <>
-      <p>This is Main Blog Page</p>
-    </>
-  );
+  return <div>MainPage</div>;
 };
+
 export default MainPage;
