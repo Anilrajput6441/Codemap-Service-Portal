@@ -1,7 +1,8 @@
 import servicesModelObj from "../Models/services.js";
 const servicesPOST = () => {
   return (req, res) => {
-    const { title, image, description } = req.body;
+    const { title, description } = req.body;
+    const image = req.file.filename;
 
     const servicesModelObjNew = new servicesModelObj({
       title: title,
