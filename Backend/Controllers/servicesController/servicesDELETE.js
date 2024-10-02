@@ -1,4 +1,4 @@
-import servicesModelObj from "../Models/services.js";
+import servicesModelObj from "../../Models/services.js";
 const servicesDELETE = (req, res) => {
   const title = req.query.title;
   servicesModelObj

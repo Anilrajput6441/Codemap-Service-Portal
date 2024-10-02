@@ -1,4 +1,4 @@
-import servicesModelObj from "../Models/services.js";
+import servicesModelObj from "../../Models/services.js";
 const servicesPOST = () => {
   return (req, res) => {
     const { title, description } = req.body;

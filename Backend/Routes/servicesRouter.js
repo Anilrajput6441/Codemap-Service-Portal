@@ -1,8 +1,8 @@
 import express from "express";
-import servicesGET from "../Controllers/servicesGET.js";
-import servicesPOST from "../Controllers/servicesPOST.js";
-import servicesDELETE from "../Controllers/servicesDELETE.js";
-import servicesPATCH from "../Controllers/servicesPATCH.js";
+import servicesGET from "../Controllers/servicesController/servicesGET.js";
+import servicesPOST from "../Controllers/servicesController/servicesPOST.js";
+import servicesDELETE from "../Controllers/servicesController/servicesDELETE.js";
+import servicesPATCH from "../Controllers/servicesController/servicesPATCH.js";
 import multer from "multer";
 import fs from "fs";
 

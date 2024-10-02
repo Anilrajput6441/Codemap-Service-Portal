@@ -1,5 +1,5 @@
 import express from "express";
-import generalGet from "../Controllers/generalGet.js";
+import generalGet from "../Controllers/generalController/generalGet.js";
 
 const generalRouter = express.Router();
 

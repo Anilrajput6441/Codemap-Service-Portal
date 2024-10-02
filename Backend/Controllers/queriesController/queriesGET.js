@@ -1,4 +1,4 @@
-import queryModelObj from "../Models/queries.js";
+import queryModelObj from "../../Models/queries.js";
 
 const queriesGET = (req, res) => {
   queryModelObj
