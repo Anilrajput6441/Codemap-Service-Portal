@@ -89,6 +89,20 @@ const Header = () => {
                 >
                   Career
                 </p>
+
+                <p
+                  id="Blogs"
+                  className="underline-offset-4 "
+                  onMouseOver={() => {
+                    document.getElementById("Blogs").style.textDecoration =
+                      "underline";
+                  }}
+                  onMouseOut={() => {
+                    document.getElementById("Blogs").style.textDecoration = "";
+                  }}
+                >
+                  Blogs
+                </p>
                 <p
                   id="Contact"
                   className="underline-offset-4 "
