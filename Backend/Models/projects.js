@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const projectsSchema = mongoose.schema(
+const projectsSchema = mongoose.Schema(
   {
     title: {
       type: String,
@@ -21,17 +21,9 @@ const projectsSchema = mongoose.schema(
     },
 
     segment: {
-      type: Array,
+      type: String,
       required: true,
     },
-    //   client: {
-    //     type: String,
-    //     required: true,
-    //   },
-    //   date: {
-    //     type: Date,
-    //     default: Date.now,
-    //   },
   },
   {
     Collection: "projects",

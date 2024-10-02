@@ -7,6 +7,7 @@ import generalRouter from "./Routes/generalRouter.js";
 import servicesRouter from "./Routes/servicesRouter.js";
 import queryRouter from "./Routes/queryRouter.js";
 import teamsRouter from "./Routes/teamsRouter.js";
+import projectsRouter from "./Routes/projectsRouter.js";
 
 dotenv.config();
 
@@ -26,8 +27,8 @@ DBConnectFunction(process.env.MONGODB_URI);
 app.use("/api/v1/", generalRouter);
 app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/queries", queryRouter);
-// app.use("/api/v1/qoutes");
 app.use("/api/v1/teams", teamsRouter);
+app.use("/api/v1/projects", projectsRouter);
 
 //App Listen
 app.listen(PORT, () => {
