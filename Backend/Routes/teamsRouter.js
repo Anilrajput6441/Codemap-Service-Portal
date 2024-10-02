@@ -24,7 +24,7 @@ const teamsRouter = express.Router();
 
 teamsRouter.get("/", teamsGET);
 teamsRouter.post("/", upload.single("file"), teamsPOST());
-teamsRouter.patch("/", upload.single("file"), teamsPATCH());
+teamsRouter.patch("/", teamsPATCH());
 teamsRouter.delete("/:id", teamsDELETE);
 
 export default teamsRouter;

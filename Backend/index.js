@@ -8,6 +8,7 @@ import servicesRouter from "./Routes/servicesRouter.js";
 import queryRouter from "./Routes/queryRouter.js";
 import teamsRouter from "./Routes/teamsRouter.js";
 import projectsRouter from "./Routes/projectsRouter.js";
+import technologiesRouter from "./Routes/technologiesRouter.js";
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use("/api/v1/services", servicesRouter);
 app.use("/api/v1/queries", queryRouter);
 app.use("/api/v1/teams", teamsRouter);
 app.use("/api/v1/projects", projectsRouter);
+app.use("/api/v1/technologies", technologiesRouter);
 
 //App Listen
 app.listen(PORT, () => {
