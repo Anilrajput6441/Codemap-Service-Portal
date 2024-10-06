@@ -4,6 +4,7 @@ const postAuth = () => {
   return async (req, res) => {
     try {
       const token = req.headers?.authorization.split(" ")[1];
+
       if (!token) {
         return res
           .status(401)
@@ -12,9 +13,7 @@ const postAuth = () => {
       jwt.verify(token, process.env.JWT_SECRET_KEY, async (err, value) => {
         const user = await adminModelObj.findById(value?.id);
         if (!user) {
-          return res
-            .status(403)
-            .json({ status: false, message: "Unauthorized" });
+          return res.json({ status: false, message: "Unauthorized" });
         }
         const userData = {
           id: user?.id,

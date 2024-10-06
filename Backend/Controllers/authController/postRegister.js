@@ -1,6 +1,6 @@
 import adminModelObj from "../../Models/admin.js";
 import bcrypt from "bcrypt";
-
+import { SALT_ROUNDS } from "../../Constants/backendConstants.js";
 const postRegister = () => {
   return async (req, res) => {
     const { username, email, password, secretKey } = req.body;
@@ -20,10 +20,7 @@ const postRegister = () => {
             .json({ status: false, message: "Email already exists" });
         }
 
-        const hashedPassword = await bcrypt.hash(
-          password,
-          process.env.SALT_ROUNDS
-        );
+        const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
 
         const newAdmin = new adminModelObj({
           username,

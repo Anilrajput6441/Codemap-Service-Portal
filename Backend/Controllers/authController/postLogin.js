@@ -17,6 +17,7 @@ const postLogin = () => {
       const user = await adminModelObj.findOne({ email: email });
 
       if (!user || !(await bcrypt.compare(password, user.password))) {
+        console.log("In thie block");
         return res
           .status(404)
           .json({ status: false, message: "User not found" });
