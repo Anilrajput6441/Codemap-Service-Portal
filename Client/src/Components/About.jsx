@@ -245,24 +245,23 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
-              <div className="imageHolder w-[88vmin] h-[60vmin]">
+              <div className="imageHolder w-[70vmin] h-[100vmin]">
                 <img
-                  src={require("../../assets/teamicon.avif")}
+                  src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[84vmin] text-[2.95vmin]">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-                <Datacomponent />{" "}
+              <div className="textHolder w-[110vmin] text-[2.95vmin]">
+               <div className="minaTextHolder flex flex-col w-[110vmin]">
+                <div className="who border-black border-[1px] h-[35vmin]"></div>
+                <div className="vision border-black border-[1px] h-[35vmin]">
+            
+                </div>
+                <div className="dataHolder border-[1px] h-[25vmin]">
+                  <Datacomponent />
+                </div>
+               </div>
               </div>
             </div>
           </>

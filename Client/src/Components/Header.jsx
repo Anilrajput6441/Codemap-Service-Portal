@@ -29,7 +29,7 @@ const Header = () => {
                       "";
                   }}
                 >
-                  About-us
+                  About
                 </p>
 
                 <p
@@ -44,7 +44,7 @@ const Header = () => {
                       "";
                   }}
                 >
-                  Projects
+                  Team
                 </p>
 
                 <p
@@ -58,23 +58,10 @@ const Header = () => {
                     document.getElementById("team").style.textDecoration = "";
                   }}
                 >
-                  Team
+                  Projects
                 </p>
 
-                <p
-                  id="Services"
-                  className="underline-offset-[1.35vmin] "
-                  onMouseOver={() => {
-                    document.getElementById("Services").style.textDecoration =
-                      "underline";
-                  }}
-                  onMouseOut={() => {
-                    document.getElementById("Services").style.textDecoration =
-                      "";
-                  }}
-                >
-                  Services
-                </p>
+                
 
                 <p
                   id="Career"
@@ -104,24 +91,24 @@ const Header = () => {
                   Blogs
                 </p>
                 <p
-                  id="Contact"
+                  id="Partner"
                   className="underline-offset-[1.35vmin] "
                   onMouseOver={() => {
-                    document.getElementById("Contact").style.textDecoration =
+                    document.getElementById("Partner").style.textDecoration =
                       "underline";
                   }}
                   onMouseOut={() => {
-                    document.getElementById("Contact").style.textDecoration =
+                    document.getElementById("Partner").style.textDecoration =
                       "";
                   }}
                 >
-                  Contact
+                  Partner
                 </p>
               </div>
 
-              <div className="buttonArea ml-[5vmin] mt-[-0.65vmin]">
-                <button className="p-3 bg-mainText text-white rounded-[5px] pl-5 pr-5 text-[2.45vmin] mt-[-0.1vmin]">
-                  Get Quote
+              <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
+                <button className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
+                  Login
                 </button>
               </div>
             </>
@@ -159,7 +146,7 @@ const Header = () => {
                     "";
                 }}
               >
-                About-us
+                About
               </p>
               <p
                 id="technologies1"
@@ -178,7 +165,7 @@ const Header = () => {
                   ).style.textDecoration = "";
                 }}
               >
-                Technologies
+                Team
               </p>
               <p
                 id="projects1"
@@ -214,7 +201,7 @@ const Header = () => {
                   ).style.textDecoration = "";
                 }}
               >
-                Testimoinials
+                Careers
               </p>
               <p
                 id="team1"
@@ -230,7 +217,7 @@ const Header = () => {
                   document.getElementById("team1").style.textDecoration = "";
                 }}
               >
-                Team
+               Blogs
               </p>
 
               <p
@@ -248,59 +235,12 @@ const Header = () => {
                     "";
                 }}
               >
-                Services
+               Partner
               </p>
-              <p
-                id="Our Strategy1"
-                onClick={() => {
-                  setShowNav(!showNav);
-                }}
-                className="underline-offset-[1.35vmin] "
-                onMouseOver={() => {
-                  document.getElementById(
-                    "Our Strategy1"
-                  ).style.textDecoration = "underline";
-                }}
-                onMouseOut={() => {
-                  document.getElementById(
-                    "Our Strategy1"
-                  ).style.textDecoration = "";
-                }}
-              >
-                Our Strategy
-              </p>
-              <p
-                id="Blogs"
-                className="underline-offset-[1.35vmin] "
-                onMouseOver={() => {
-                  document.getElementById("Blogs").style.textDecoration =
-                    "underline";
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Blogs").style.textDecoration = "";
-                }}
-              >
-                Blogs
-              </p>
-              <p
-                id="Contact1"
-                onClick={() => {
-                  setShowNav(!showNav);
-                }}
-                className="underline-offset-[1.35vmin] "
-                onMouseOver={() => {
-                  document.getElementById("Contact1").style.textDecoration =
-                    "underline";
-                }}
-                onMouseOut={() => {
-                  document.getElementById("Contact1").style.textDecoration = "";
-                }}
-              >
-                Contact
-              </p>
+            
               <div className="buttonArea">
                 <button className="p-3 ml-[-0.35vmin] bg-mainText text-white rounded-[5px] pl-8 pr-8 text-[3.45vmin]">
-                  Get Quote
+                  Login
                 </button>
               </div>
               <div className="ml-2 underline h-[2px] w-[96vw] border-headerUnderline border-t-[2px]"></div>
