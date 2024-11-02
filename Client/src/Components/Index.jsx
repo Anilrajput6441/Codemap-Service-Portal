@@ -3,10 +3,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import About from "./About";
+import TechStack from "./TechStack";
 import { Slide, Zoom } from "react-awesome-reveal";
 import Services from "./Services";
 import Contactus from "./Contactus";
 import RevolvingHeader from "./RevolvingHeader";
+import BlogHome from "./Blogs/BlogHome";
 const Index = () => {
   // console.log(screen.height);
   return (
@@ -15,6 +17,7 @@ const Index = () => {
 
       <Header />
       <Hero />
+      
 
       {screen.width < 1000 ? (
         <>
@@ -29,6 +32,10 @@ const Index = () => {
             <About />
        
             <Services />
+
+          
+            <BlogHome />
+            <TechStack />
 
             <Contactus />
         

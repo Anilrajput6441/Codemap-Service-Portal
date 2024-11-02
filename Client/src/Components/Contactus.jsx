@@ -2,7 +2,7 @@ const Contactus=()=>{
 
     return (
         <>
-        <div className="h-[80vmin]">
+        <div className="h-[70vmin]">
         <p>Hi</p>
         </div>
         </>
