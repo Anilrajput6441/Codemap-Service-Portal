@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import About from "./About";
 import { Slide, Zoom } from "react-awesome-reveal";
 import Services from "./Services";
+import Contactus from "./Contactus";
 import RevolvingHeader from "./RevolvingHeader";
 const Index = () => {
   // console.log(screen.height);
@@ -19,6 +20,7 @@ const Index = () => {
         <>
           <About />
           <Services />
+          <Contactus />
           <Footer />
         </>
       ) : (
@@ -26,9 +28,10 @@ const Index = () => {
          
             <About />
        
-          <Slide direction="right">
             <Services />
-          </Slide>
+
+            <Contactus />
+        
           <Footer />
         </>
       )}

@@ -3,7 +3,7 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-4 mt-12 pb-6 pt-4 ">
+      <div className="aboutSection ml-4 mt-12 pb-2 pt-4 ">
       {screen.width < 760 && (
           <>
             <div className="aboutHeader">
@@ -194,7 +194,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-7 ">
               <div className="imageHolder w-[60vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -281,12 +281,12 @@ const About = () => {
         {screen.width > 1500 && screen.width <= 1700 && (
           <>
             <div className="aboutHeader mt-[-1vmin]">
-              <p className="font-extrabold text-[8vmin]">
+              <p className="font-extrabold text-[8vmin] ml-8">
                 About-
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 justify-center items-center">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-6 justify-center items-center">
               <div className="imageHolder w-[70vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -308,7 +308,7 @@ const About = () => {
                 <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
                 
               
-                <ul className="mt-2 mainText flex flex-col gap-y-2">
+                <ul className="mt-3 mainText flex flex-col gap-y-2">
                      <li>Delivering top notch  solutions to our clients</li>
                      <li>Providing top quality services at the most affordable cost</li>
                      <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
@@ -384,7 +384,7 @@ const About = () => {
                ></img>
              </div>
   
-             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-10">
+             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-12">
               <div className="mainTextHolder flex flex-col w-[110vmin]">
                <div className="who border-black h-[35vmin]">
                  <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -415,7 +415,7 @@ const About = () => {
         {screen.width > 2047 && (
            <>
            <div className="aboutHeader mt-[-1vmin] ml-4">
-             <p className="font-extrabold text-[8vmin]">
+             <p className="font-extrabold text-[8vmin] ml-5">
                About-
                <span className="text-mainText">Us</span>
              </p>

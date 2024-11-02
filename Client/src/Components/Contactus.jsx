@@ -2,8 +2,11 @@ const Contactus=()=>{
 
     return (
         <>
-        
+        <div className="h-[80vmin]">
+        <p>Hi</p>
+        </div>
         </>
     )
 }
-return Contactus;
+
+export default Contactus;

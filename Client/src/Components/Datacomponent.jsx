@@ -217,7 +217,7 @@ const Datacomponent = () => {
       )}
 
       {screen.width >= 1280 && screen.width < 1500 && screen.height >= 800 && (
-       <div className="boxHolder flex w-[76vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin]">
+       <div className="boxHolder flex w-[76vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin] ml-4">
        <div className="textHolder flex justify-center items-center p-4 w-[33%]">
         <div className="box1 ml-4">
           <p className="text-[3.75vmin] font-bold ">Team</p>

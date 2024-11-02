@@ -1,27 +1,63 @@
 const Card = (props) => {
   return (
     <>
-      <div className="card flex  flex-col justify-center pl-3 pr-1 md:pl-4 w-[88vw] h-[77vmin]  md:w-[50vmin]  border-[#d0cfcf] border-[1px] md:h-[62vmin] gap-y-2  pr-1">
+      <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[45vmin] 2xl:w-[50vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
         <div className="imageHolder">
+      
+          {props.data.title==="Website Development" && screen.width>1000 &&
           <img
-            src={require("../../assets/android.png")}
-            height={110}
-            width={110}
+            src={require("../../assets/web-development.png")}
+            height={84}
+            width={84}
           />
+          || (props.data.title==="Android Development" && screen.width>1000 &&
+            <img
+            src={require("../../assets/app-development.png")}
+            height={84}
+            width={84}
+          />
+          ) || (
+            props.data.title==="Custom  Development" && screen.width>1000 &&
+            <img
+            src={require("../../assets/software-development.png")}
+            height={84}
+            width={84}
+          />
+          ) }
+          {props.data.title==="Website Development" && screen.width<1000 &&
+            <img
+            src={require("../../assets/web-development.png")}
+            height={70}
+            width={70}
+          />
+          || (props.data.title==="Android Development" && screen.width<1000 &&
+            <img
+            src={require("../../assets/app-development.png")}
+            height={70}
+            width={70}
+          />
+          ) || (
+            props.data.title==="Custom  Development" && screen.width<1000 &&
+            <img
+            src={require("../../assets/software-development.png")}
+            height={70}
+            width={70}
+          />
+          )}
+     
+        
         </div>
+        <div className="flex flex-col justify-center items-center"> 
         <div className="titleHolder">
-          <p className="font-bold text-[5vmin] text-mainText ">
+          <p className="font-bold text-[4.65vmin] md:text-[3.25vmin]  ">
             {props.data.title}
           </p>
         </div>
-        <div className="captionBody">
-          <p className="mt-2">{props.data.descr}</p>
+        <div className="captionBody w-[100%] lg:w-[76%] text-center text-textGrey text-[3vmin] md:text-[2.15vmin]">
+          <p className="mt-2 text-[3.45vmin] md:text-[2.15vmin]" >{props.data.descr}</p>
         </div>
-        <div className="buttonHolder">
-          <button className="bg-mainText text-white p-2 rounded-md mt-2">
-            Explore
-          </button>
         </div>
+       
       </div>
     </>
   );

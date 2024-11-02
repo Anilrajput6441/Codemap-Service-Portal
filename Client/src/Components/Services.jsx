@@ -3,26 +3,29 @@ import Card from "./Card";
 const Services = () => {
   const servicesObj = [
     {
-      image: "../../assets/android.png",
-      title: "Android Development",
-      descr:
-        "We provide top-notch android development services to our clients.",
-    },
-    {
-      image: "../../assets/webd.png",
+     
       title: "Website Development",
       descr:
-        "We provide top-notch android development services to our clients.",
+        "Top notch web development services give us a chance to make your business come online",
     },
-    {},
+    {
+ 
+      title: "Android Development",
+      descr:
+        "Have an app idea then no wait give us a chance to make your app idea into reality with our services",
+    },
+    {   title: "Custom  Development",
+      descr:
+        "Custom software development solutions from  Hostel Management systems to custom ERP solutions",},
   ];
   return (
     <>
-      <div className="mt-3 pb-5 ml-2 md:ml-6">
-        <p className="text-[8vmin] font-extrabold">
-          <span className="text-mainText">Our</span> Services
+      <div className="bg-backgroundMain mt-[4vmin]  pb-20 pt-12">
+        <p className="text-[8vmin] font-extrabold text-center font-poppins">
+         Our <span className="text-mainText"> Services</span>
         </p>
-        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-20 gap-y-8 md:gap-y-6">
+        <p className="text-center text-textGrey text-[3.5vmin] md:text-[2.45vmin] w-[100%] text-center p-3">We have a mission to provide top quality and affordable services to our clients</p>
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-20 gap-y-8 md:gap-y-6 mt-10">
           {servicesObj.map((val, index) => (
             <Card data={servicesObj[index]} />
           ))}
