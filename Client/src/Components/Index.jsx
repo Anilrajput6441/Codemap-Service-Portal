@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import About from "./About";
 import { Slide, Zoom } from "react-awesome-reveal";
@@ -18,6 +19,7 @@ const Index = () => {
         <>
           <About />
           <Services />
+          <Footer />
         </>
       ) : (
         <>
@@ -27,6 +29,7 @@ const Index = () => {
           <Slide direction="right">
             <Services />
           </Slide>
+          <Footer />
         </>
       )}
     </>

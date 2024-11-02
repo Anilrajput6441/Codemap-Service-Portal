@@ -38,213 +38,153 @@ const About = () => {
         )}
 
         {screen.width > 900 && screen.width <= 1280 && screen.height >= 800 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
+         <>
+         <div className="aboutHeader mt-[-1vmin]">
+           <p className="font-extrabold text-[8vmin]">
+             About-
+             <span className="text-mainText">Us</span>
+           </p>
+         </div>
+         <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[0.5vmin] ">
+           <div className="imageHolder w-[60vmin] h-[100vmin]">
+             <img
+               src={require("../../assets/aboutus.jpg")}
+               className="max-w-full max-h-full object-contain"
+             ></img>
+           </div>
+
+           <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[-1vmin]">
+            <div className="mainTextHolder flex flex-col w-[110vmin]">
+             <div className="who border-black h-[35vmin]">
+               <p className="font-bold text-[5vmin]">Who we are?</p>
+                 <ul className="mt-2 mainText">
+                  <li>We are a software development firm aimed to develop cost effective <br></br>solutions for our clients</li>
+                  <li>Our team has a rich experience in the software development <br></br>industry to meet your needs.</li>
+                  <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                 </ul>
+               </div>
+             <div className="vision  h-[32vmin]">
+             <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+             
+           
+             <ul className="mt-2 mainText flex flex-col gap-y-2">
+                  <li>Delivering top notch  solutions to our clients</li>
+                  <li>Providing top quality services at the most affordable cost</li>
+                  <li>Quality customer service is our motto which help us to make strong <br></br> long term relationship with our clients </li>
+                 </ul>
+             </div>
+             <div className="dataHolder h-[25vmin]">
+               <Datacomponent />
+             </div>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-2">
-              <div className="imageHolder w-[67vmin] h-[55vmin]">
-                <img
-                  src={require("../../assets/teamicon.avif")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
-              </div>
-
-              <div className="textHolder w-[75vmin]">
-                <p className="leading-loose text-[2.55vmin]">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-
-                <Datacomponent />
-              </div>
-            </div>
-          </>
-        )}
-
-        {screen.width > 900 && screen.width <= 1115 && screen.height < 800 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-10 mt-6 ml-6">
-              <div className="imageHolder w-[67vmin] h-[60vmin]">
-                <img
-                  src={require("../../assets/teamicon.avif")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
-              </div>
-
-              <div className="textHolder w-[77vmin] font-poppins">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-
-                <Datacomponent />
-              </div>
-            </div>
-          </>
-        )}
-
-        {screen.width > 1115 && screen.width <= 1280 && screen.height < 800 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-10 mt-6 ml-6">
-              <div className="imageHolder w-[94vmin] h-[60vmin]">
-                <img
-                  src={require("../../assets/teamicon.avif")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
-              </div>
-
-              <div className="textHolder w-[88vmin] font-poppins">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-
-                <Datacomponent />
-              </div>
-            </div>
-          </>
+           </div>
+         </div>
+       </>
         )}
 
         {screen.width > 1280 && screen.width < 1440 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
-              <div className="imageHolder w-[88vmin] h-[60vmin]">
-                <img
-                  src={require("../../assets/teamicon.avif")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
-              </div>
+           <>
+           <div className="aboutHeader mt-[-1vmin]">
+             <p className="font-extrabold text-[8vmin]">
+               About-
+               <span className="text-mainText">Us</span>
+             </p>
+           </div>
+           <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
+             <div className="imageHolder w-[60vmin] h-[100vmin]">
+               <img
+                 src={require("../../assets/aboutus.jpg")}
+                 className="max-w-full max-h-full object-contain"
+               ></img>
+             </div>
 
-              <div className="textHolder w-[80vmin] text-[2.75vmin]">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-                <Datacomponent />{" "}
+             <div className="textHolder w-[95vmin] text-[2.95vmin]">
+              <div className="mainTextHolder flex flex-col w-[110vmin]">
+               <div className="who border-black h-[35vmin]">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText">
+                    <li>We are a software development firm aimed to develop cost effective solutions for our clients</li>
+                    <li>Our team has a rich experience in the software development industry to meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision  h-[32vmin]">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+             
+               <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable cost</li>
+                    <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
+                   </ul>
+               </div>
+               <div className="dataHolder h-[25vmin]">
+                 <Datacomponent />
+               </div>
               </div>
-            </div>
-          </>
+             </div>
+           </div>
+         </>
         )}
 
         {screen.width >= 1400 &&
           screen.height <= 810 &&
           screen.width <= 1500 && (
             <>
-              <div className="aboutHeader">
-                <p className="font-extrabold text-[8vmin]">
-                  About-
-                  <span className="text-mainText">Us</span>
-                </p>
+            <div className="aboutHeader mt-[-1vmin]">
+              <p className="font-extrabold text-[8vmin]">
+                About-
+                <span className="text-mainText">Us</span>
+              </p>
+            </div>
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
+              <div className="imageHolder w-[60vmin] h-[100vmin]">
+                <img
+                  src={require("../../assets/aboutus.jpg")}
+                  className="max-w-full max-h-full object-contain"
+                ></img>
               </div>
-              <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
-                <div className="imageHolder w-[88vmin] h-[60vmin]">
-                  <img
-                    src={require("../../assets/teamicon.avif")}
-                    className="max-w-full max-h-full object-contain"
-                  ></img>
-                </div>
 
-                <div className="textHolder w-[80vmin] text-[2.75vmin]">
-                  <p className="leading-loose">
-                    We at Codemap family try to deliver the best software
-                    products to our client keeping in mind all the needs and
-                    requirements of the project. Our team deeply focus on
-                    excellence over the apps developed for clients under the
-                    domains of web, android app & custom desktop application
-                    development.We also thrive as one of the most reliable
-                    brands in website and app development service industry
-                  </p>
-                  <Datacomponent />{" "}
+              <div className="textHolder w-[95vmin] text-[2.95vmin]">
+               <div className="mainTextHolder flex flex-col w-[110vmin]">
+                <div className="who border-black h-[35vmin]">
+                  <p className="font-bold text-[5vmin]">Who we are?</p>
+                    <ul className="mt-2 mainText">
+                     <li>We are a software development firm aimed to develop cost effective solutions for our clients</li>
+                     <li>Our team has a rich experience in the software development industry to meet your needs.</li>
+                     <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                    </ul>
+                  </div>
+                <div className="vision  h-[32vmin]">
+                <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+                
+              
+                <ul className="mt-2 mainText flex flex-col gap-y-2">
+                     <li>Delivering top notch  solutions to our clients</li>
+                     <li>Providing top quality services at the most affordable cost</li>
+                     <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
+                    </ul>
                 </div>
+                <div className="dataHolder h-[25vmin]">
+                  <Datacomponent />
+                </div>
+               </div>
               </div>
-            </>
+            </div>
+          </>
           )}
 
         {screen.width >= 1400 &&
           screen.height > 810 &&
           screen.width <= 1500 && (
             <>
-              <div className="aboutHeader">
-                <p className="font-extrabold text-[8vmin]">
-                  About-
-                  <span className="text-mainText">Us</span>
-                </p>
-              </div>
-              <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
-                <div className="imageHolder w-[78vmin] h-[60vmin]">
-                  <img
-                    src={require("../../assets/teamicon.avif")}
-                    className="max-w-full max-h-full object-contain"
-                  ></img>
-                </div>
-
-                <div className="textHolder w-[79vmin] text-[2.75vmin]">
-                  <p className="leading-loose">
-                    We at Codemap family try to deliver the best software
-                    products to our client keeping in mind all the needs and
-                    requirements of the project. Our team deeply focus on
-                    excellence over the apps developed for clients under the
-                    domains of web, android app & custom desktop application
-                    development.We also thrive as one of the most reliable
-                    brands in website and app development service industry
-                  </p>
-                  <Datacomponent />{" "}
-                </div>
-              </div>
-            </>
-          )}
-
-        {screen.width > 1500 && screen.width <= 1700 && (
-          <>
-            <div className="aboutHeader">
+            <div className="aboutHeader mt-[-1vmin]">
               <p className="font-extrabold text-[8vmin]">
                 About-
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 justify-center items-center">
               <div className="imageHolder w-[70vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -253,12 +193,71 @@ const About = () => {
               </div>
 
               <div className="textHolder w-[110vmin] text-[2.95vmin]">
-               <div className="minaTextHolder flex flex-col w-[110vmin]">
-                <div className="who border-black border-[1px] h-[35vmin]"></div>
-                <div className="vision border-black border-[1px] h-[35vmin]">
-            
+               <div className="mainTextHolder flex flex-col w-[110vmin]">
+                <div className="who border-black h-[35vmin]">
+                  <p className="font-bold text-[5vmin]">Who we are?</p>
+                    <ul className="mt-2 mainText">
+                     <li>We are a software development firm aimed to develop cost effective solutions for our clients</li>
+                     <li>Our team has a rich experience in the software development industry to meet your needs.</li>
+                     <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                    </ul>
+                  </div>
+                <div className="vision  h-[32vmin]">
+                <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+                
+              
+                <ul className="mt-2 mainText flex flex-col gap-y-2">
+                     <li>Delivering top notch  solutions to our clients</li>
+                     <li>Providing top quality services at the most affordable cost</li>
+                     <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
+                    </ul>
                 </div>
-                <div className="dataHolder border-[1px] h-[25vmin]">
+                <div className="dataHolder h-[25vmin]">
+                  <Datacomponent />
+                </div>
+               </div>
+              </div>
+            </div>
+          </>
+          )}
+
+        {screen.width > 1500 && screen.width <= 1700 && (
+          <>
+            <div className="aboutHeader mt-[-1vmin]">
+              <p className="font-extrabold text-[8vmin]">
+                About-
+                <span className="text-mainText">Us</span>
+              </p>
+            </div>
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 justify-center items-center">
+              <div className="imageHolder w-[70vmin] h-[100vmin]">
+                <img
+                  src={require("../../assets/aboutus.jpg")}
+                  className="max-w-full max-h-full object-contain"
+                ></img>
+              </div>
+
+              <div className="textHolder w-[110vmin] text-[2.95vmin]">
+               <div className="mainTextHolder flex flex-col w-[110vmin]">
+                <div className="who border-black h-[35vmin]">
+                  <p className="font-bold text-[5vmin]">Who we are?</p>
+                    <ul className="mt-2 mainText">
+                     <li>We are a software development firm aimed to develop cost effective solutions for our clients</li>
+                     <li>Our team has a rich experience in the software development industry to meet your needs.</li>
+                     <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                    </ul>
+                  </div>
+                <div className="vision  h-[32vmin]">
+                <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+                
+              
+                <ul className="mt-2 mainText flex flex-col gap-y-2">
+                     <li>Delivering top notch  solutions to our clients</li>
+                     <li>Providing top quality services at the most affordable cost</li>
+                     <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
+                    </ul>
+                </div>
+                <div className="dataHolder h-[25vmin]">
                   <Datacomponent />
                 </div>
                </div>
@@ -268,99 +267,93 @@ const About = () => {
         )}
 
         {screen.width > 1700 && screen.width <= 1900 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-4 mt-6 ml-4">
-              <div className="imageHolder w-[70vmin] h-[55vmin]">
-                <img
-                  src={require("../../assets/teamicon.avif")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
+           <>
+           <div className="aboutHeader mt-[-1vmin]">
+             <p className="font-extrabold text-[8vmin]">
+               About-
+               <span className="text-mainText">Us</span>
+             </p>
+           </div>
+           <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[0.5vmin] ">
+             <div className="imageHolder w-[60vmin] h-[100vmin]">
+               <img
+                 src={require("../../assets/aboutus.jpg")}
+                 className="max-w-full max-h-full object-contain"
+               ></img>
+             </div>
+  
+             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin]">
+              <div className="mainTextHolder flex flex-col w-[110vmin]">
+               <div className="who border-black h-[35vmin]">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText">
+                    <li>We are a software development firm aimed to develop cost <br></br> effective solutions for our clients</li>
+                    <li>Our team has a rich experience in the software development <br></br>industry to meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision  h-[32vmin]">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+             
+               <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable cost</li>
+                    <li>Quality customer service is our motto which help us to make  <br></br> strong long term relationship with our clients </li>
+                   </ul>
+               </div>
+               <div className="dataHolder h-[25vmin]">
+                 <Datacomponent />
+               </div>
               </div>
-
-              <div className="textHolder w-[76vmin] text-[2.65vmin] ml-3">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-                <Datacomponent />{" "}
-              </div>
-            </div>
-          </>
+             </div>
+           </div>
+         </>
         )}
 
         {screen.width > 1900 && screen.width <= 2047 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-4 mt-6 ml-4">
-              <div className="imageHolder w-[88vmin] h-[55vmin]">
-                <img
-                  src={require("../../assets/team.jpg")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
+           <>
+           <div className="aboutHeader mt-[-1vmin]">
+             <p className="font-extrabold text-[8vmin]">
+               About-
+               <span className="text-mainText">Us</span>
+             </p>
+           </div>
+           <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[7vmin]">
+             <div className="imageHolder w-[70vmin] h-[100vmin] mt-4">
+               <img
+                 src={require("../../assets/aboutus.jpg")}
+                 className="max-w-full max-h-full object-contain"
+               ></img>
+             </div>
+  
+             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4">
+              <div className="mainTextHolder flex flex-col w-[110vmin]">
+               <div className="who border-black h-[35vmin]">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText">
+                    <li>We are a software development firm aimed to develop cost <br></br> effective solutions for our clients</li>
+                    <li>Our team has a rich experience in the software development <br></br>industry to meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision  h-[32vmin]">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+             
+               <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable cost</li>
+                    <li>Quality customer service is our motto which help us to make  <br></br> strong long term relationship with our clients </li>
+                   </ul>
+               </div>
+               <div className="dataHolder h-[25vmin]">
+                 <Datacomponent />
+               </div>
               </div>
-
-              <div className="textHolder w-[80vmin] text-[2.65vmin] ml-3">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-                <Datacomponent />{" "}
-              </div>
-            </div>
-          </>
-        )}
-
-        {screen.width > 2047 && (
-          <>
-            <div className="aboutHeader">
-              <p className="font-extrabold text-[8vmin]">
-                About-
-                <span className="text-mainText">Us</span>
-              </p>
-            </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4">
-              <div className="imageHolder w-[88vmin] h-[60vmin]">
-                <img
-                  src={require("../../assets/team.jpg")}
-                  className="max-w-full max-h-full object-contain"
-                ></img>
-              </div>
-
-              <div className="textHolder w-[80vmin] text-[2.95vmin]">
-                <p className="leading-loose">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-                <Datacomponent />{" "}
-              </div>
-            </div>
-          </>
+             </div>
+           </div>
+         </>
         )}
       </div>
     </>
