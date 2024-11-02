@@ -3,8 +3,8 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-6 mt-24 pb-24 pt-4 h">
-        {screen.width < 900 && (
+      <div className="aboutSection ml-4 mt-12 pb-6 pt-4 ">
+      {screen.width < 760 && (
           <>
             <div className="aboutHeader">
               <p className="font-extrabold mt-[-12vmin] text-[10vmin] md:text-[10vmin]">
@@ -12,27 +12,84 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ">
-              <div className="imageHolder w-[95vw] h-[60vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
+              <div className="imageHolder w-[85vw] h-[60vmin]">
                 <img
                   src={require("../../assets/teamicon.avif")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[95vw] mt-3">
-                <p className="leading-loose md:text-[3.25vmin]">
-                  We at Codemap family try to deliver the best software products
-                  to our client keeping in mind all the needs and requirements
-                  of the project. Our team deeply focus on excellence over the
-                  apps developed for clients under the domains of web, android
-                  app & custom desktop application development.We also thrive as
-                  one of the most reliable brands in website and app development
-                  service industry
-                </p>
-
-                <Datacomponent />
+              <div className="textHolder w-[99vw] mt-3 ml-[-1.45vmin]">
+              <div className="mainTextHolder flex flex-col w-[100vmin]">
+               <div className="who border-black ">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin]">
+                    <li>We are a software development firm aimed to <br></br> develop  cost effective solutions  for  our  clients</li>
+                    <li>Our team has a rich experience in the software development industry to  meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into <br></br> Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision mt-4">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+               <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin]">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable <br></br>cost</li>
+                    <li>Quality customer service is our motto which  help us <br></br> to make strong long term relationship with our <br></br> clients </li>
+                   </ul>
+               
+               </div>
+               <div className="dataHolder h-[25vmin] mt-6 ml-2 ">
+                 <Datacomponent />
+               </div>
               </div>
+            </div>
+            </div>
+          </>
+        )}
+        
+        {screen.width < 900 &&  screen.width>=760 && (
+          <>
+            <div className="aboutHeader mt-2">
+              <p className="font-extrabold  text-[10vmin] md:text-[10vmin]">
+                About-
+                <span className="text-mainText">Us</span>
+              </p>
+            </div>
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
+              <div className="imageHolder w-[95vw] h-[50vmin]">
+                <img
+                  src={require("../../assets/teamicon.avif")}
+                  className="max-w-full max-h-full object-contain"
+                ></img>
+              </div>
+
+              <div className="textHolder w-[99vw] mt-3">
+              <div className="mainTextHolder flex flex-col w-[100vmin]">
+               <div className="who border-black ">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText flex flex-col gap-y-4 text-[2.65vmin]">
+                    <li>We are a software development firm aimed to develop cost  effective solutions <br></br> for  our clients</li>
+                    <li>Our team has a rich experience in the software development industry to <br></br>meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision mt-4">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+             
+               <ul className="mt-2 mainText flex flex-col gap-y-4 text-[2.65vmin]">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable cost</li>
+                    <li>Quality customer service is our motto which  help us to make strong long term <br></br>relationship with our clients </li>
+                   </ul>
+               </div>
+               <div className="dataHolder h-[25vmin] mt-4 ml-[-0.15vmin]">
+                 <Datacomponent />
+               </div>
+              </div>
+            </div>
             </div>
           </>
         )}
@@ -319,15 +376,15 @@ const About = () => {
                <span className="text-mainText">Us</span>
              </p>
            </div>
-           <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[7vmin]">
-             <div className="imageHolder w-[70jvmin] h-[100vmin] mt-4">
+           <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[10vmin]">
+             <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
                <img
                  src={require("../../assets/aboutus.jpg")}
                  className="max-w-full max-h-full object-contain"
                ></img>
              </div>
   
-             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4">
+             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-10">
               <div className="mainTextHolder flex flex-col w-[110vmin]">
                <div className="who border-black h-[35vmin]">
                  <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -342,6 +399,50 @@ const About = () => {
                
              
                <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <li>Delivering top notch  solutions to our clients</li>
+                    <li>Providing top quality services at the most affordable cost</li>
+                    <li>Quality customer service is our motto which help us to make  <br></br> strong long term relationship with our clients </li>
+                   </ul>
+               </div>
+               <div className="dataHolder h-[25vmin]">
+                 <Datacomponent />
+               </div>
+              </div>
+             </div>
+           </div>
+         </>
+        )}
+        {screen.width > 2047 && (
+           <>
+           <div className="aboutHeader mt-[-1vmin] ml-4">
+             <p className="font-extrabold text-[8vmin]">
+               About-
+               <span className="text-mainText">Us</span>
+             </p>
+           </div>
+           <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[10vmin]">
+             <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
+               <img
+                 src={require("../../assets/aboutus.jpg")}
+                 className="max-w-full max-h-full object-contain"
+               ></img>
+             </div>
+  
+             <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-10">
+              <div className="mainTextHolder flex flex-col w-[110vmin]">
+               <div className="who border-black h-[35vmin]">
+                 <p className="font-bold text-[5vmin]">Who we are?</p>
+                   <ul className="mt-2 mainText ml-2">
+                    <li>We are a software development firm aimed to develop cost <br></br> effective solutions for our clients</li>
+                    <li>Our team has a rich experience in the software development <br></br>industry to meet your needs.</li>
+                    <li>We ham a motto Where Ideas Transform Into Innovation.</li>
+                   </ul>
+                 </div>
+               <div className="vision  h-[32vmin]">
+               <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
+               
+             
+               <ul className="mt-2 mainText flex flex-col gap-y-2 ml-2">
                     <li>Delivering top notch  solutions to our clients</li>
                     <li>Providing top quality services at the most affordable cost</li>
                     <li>Quality customer service is our motto which help us to make  <br></br> strong long term relationship with our clients </li>

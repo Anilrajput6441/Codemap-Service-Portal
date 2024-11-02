@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const navigate=useNavigate();
   return (
     <>
       <div className="headerFrame bg-backgroundMain pt-6 pb-2 ">
         <div className="Header h-[15vmin] md:h-[10vmin] 2xl:h-[8vmin]  bg-backgroundMain pt-2 pb-3 flex p-2">
           <div className="brandLogo flex mt-[-0.65vmin]">
             <div className="ml-1 logo-area w-[27vmin] md:w-[18vmin] h-[25vmin] md:h-[10vmin] 2xl:h-[6vmin]">
+              <Link to="/">
               <img
                 src={require("../../assets/CodemapIconHorizontal.png")}
                 className="max-w-full max-h-full object-contain"
               />
+              </Link>
             </div>
           </div>
           {screen.width > 1000 && (
@@ -107,8 +110,8 @@ const Header = () => {
               </div>
 
               <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
-                <button className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
-                  Login
+                <button onClick={()=>navigate("/clientlogin")} className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
+                  Login 
                 </button>
               </div>
             </>
@@ -239,8 +242,8 @@ const Header = () => {
               </p>
             
               <div className="buttonArea">
-                <button className="p-3 ml-[-0.35vmin] bg-mainText text-white rounded-[5px] pl-8 pr-8 text-[3.45vmin]">
-                  Login
+                <button onClick={()=>navigate("/clientlogin")} className="p-3 ml-[-0.35vmin] bg-mainText text-white rounded-[5px] pl-8 pr-8 text-[3.45vmin] md:text-[2.15vmin]">
+                  Login Now
                 </button>
               </div>
               <div className="ml-2 underline h-[2px] w-[96vw] border-headerUnderline border-t-[2px]"></div>

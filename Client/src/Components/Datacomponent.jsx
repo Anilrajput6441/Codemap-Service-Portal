@@ -25,71 +25,90 @@ const Datacomponent = () => {
   return (
     <div>
       {screen.width < 760 && (
-        <div className="boxHolder flex w-[87vw] h-[18vmin] mt-5 font-poppins">
-          <div className="box1 border-black border-[0.5px] w-[29vw] h-[19vmin] pb-4">
+        <div className="boxHolder flex w-[87vw] h-[18vmin] mt-5 font-poppins pb-5 bg-deepViolet text-white">
+          <div className="box1   w-[29vw] h-[20vmin]  pb-5 text-white">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4.35vmin] p-1 ml-1 mt-1">
+              <p className="font-medium text-[4.15vmin] p-1 ml-3 mt-1">
                 Projects:
               </p>
             </div>
-            <p className="font-extrabold text-[5.15vmin] p-1 ml-2  ml-4 text-mainText">
-              {projects}+
+            <p className="font-bold text-[4.1vmin] p-1 ml-7">
+              50+
             </p>
           </div>
-          <div className="box2 border-black border-[0.5px] h-[19vmin] w-[29vw] pb-6">
+          <div className="vertcalLine h-12 w-1 mt-3 rounded-[4px] bg-white ml-[-2.45vmin]">
+        
+        </div>
+          <div className="box2 w-[29vw]  h-[20vmin] pb-5 text-white">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4.35vmin] p-1 ml-1  mt-1">
+              <p className="font-medium text-[4.15vmin] p-1 ml-4  mt-1">
                 Clients:
               </p>
             </div>
-            <p className="font-extrabold text-[5.15vmin] p-1 ml-2 ml-4 text-mainText">
-              {clients}+
+            <p className="font-bold text-[4.1vmin] p-1 ml-8 ">
+              40+
             </p>
+           
           </div>
-          <div className="box3 border-black border-[0.5px] h-[19vmin] w-[29vw] pb-6">
+           <div className="vertcalLine h-12 w-1 mt-3 rounded-[4px] bg-white ml-[-2.45vmin]">
+        
+        </div>
+          <div className="box3  h-[20vmin] pb-5 text-white">
             <div className="flex gap-x-1">
-              <p className="font-medium text-[4.35vmin] p-1 ml-1 mt-1">
+              <p className="font-medium text-[4.15vmin] p-1 ml-2 mt-1">
                 Members:
               </p>
             </div>
-            <p className="font-extrabold text-[5.15vmin] p-1 ml-2  ml-4 text-mainText">
-              {members}+
+            <p className="font-bold text-[4.1vmin] p-1 ml-2  ml-8 ">
+             100+
             </p>
           </div>
         </div>
       )}
 
       {screen.width > 760 && screen.width < 1000 && (
-        <div className="boxHolder flex w-[87vw] h-[16vmin] mt-5 font-poppins ml-4">
-          <div className="box1 border-black border-[1px] w-[29vw] h-[16vmin] pb-4">
-            <div className="flex gap-x-1">
-              <p className="font-medium text-[3vmin] p-1 ml-1 mt-1">
-                Projects:
-              </p>
-            </div>
-            <p className="font-extrabold text-[4.45vmin] p-1 ml-2 mt-1 ml-4 text-mainText">
-              {projects}+
-            </p>
-          </div>
-          <div className="box2 border-black border-[1px] h-[16vmin] w-[29vw] pb-6">
-            <div className="flex gap-x-1">
-              <p className="font-medium text-[3vmin] p-1 ml-1  mt-1">
-                Clients:
-              </p>
-            </div>
-            <p className="font-extrabold text-[4.45vmin] p-1 ml-2 mt-1 ml-4 text-mainText">
-              {clients}+
-            </p>
-          </div>
-          <div className="box3 border-black border-[1px] h-[16vmin] w-[29vw] pb-6">
-            <div className="flex gap-x-1">
-              <p className="font-medium text-[3vmin] p-1 ml-1 mt-1">Members:</p>
-            </div>
-            <p className="font-extrabold text-[4.45vmin] p-1 ml-2 mt-1 ml-4 text-mainText">
-              {members}+
-            </p>
-          </div>
+        <div className="boxHolder flex w-[84vw] h-[16vmin] mt-5 font-poppins ml-8  bg-mainText text-white">
+          <div className="textHolder flex justify-center items-center p-4 w-[33%]">
+        <div className="box1 ml-8">
+          <p className="text-[3.75vmin] font-bold ">Team</p>
+          <p className="mt-1 ml-4 text-[3.45vmin]">50+</p>
         </div>
+        <div className="vertcalLine h-20 w-[0.5px] rounded-[4px] bg-white ml-10">
+        
+        </div>
+
+      
+        
+       </div>
+
+        <div className="textHolder flex justify-center items-center p-2 w-[33%]">
+        <div className="box1 ">
+          <p className="text-[3.75vmin] font-bold  mr-4">Clients</p>
+          <p className="mt-1 ml-8 text-[3.45vmin] ">40+</p>
+        </div>
+        <div className="vertcalLine h-20 w-[0.5px] rounded-[4px] bg-white ml-10">
+        
+        </div>
+
+      
+        
+       </div>
+
+       <div className="textHolder flex justify-center items-center  w-[33%]">
+        <div className="box1 mr-12">
+          <p className="text-[3.75vmin] font-bold ">Projects</p>
+          <p className="mt-1 ml-6 text-[3.45vmin]">100+</p>
+        </div>
+    
+
+      
+        
+       </div>
+
+       
+      
+      </div>
+        
       )}
       {screen.width >= 1000 && screen.width < 1280 && (
         <div className="boxHolder flex w-[84vmin] h-[18vmin] mt-5 font-poppins">
@@ -241,8 +260,8 @@ const Datacomponent = () => {
       </div>
       )}
 
-      {screen.width >= 1500 && screen.width < 2047 && (
-        <div className="boxHolder flex w-[76vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin]">
+      {screen.width >= 1500 && screen.width < 1919 && (
+        <div className="boxHolder flex w-[80vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin]">
            <div className="textHolder flex justify-center items-center p-4 w-[33%]">
             <div className="box1 ml-4">
               <p className="text-[3.75vmin] font-bold ">Team</p>
@@ -258,8 +277,8 @@ const Datacomponent = () => {
 
             <div className="textHolder flex justify-center items-center p-2 w-[33%]">
             <div className="box1 ">
-              <p className="text-[3.75vmin] font-bold  mr-2 ">Clients</p>
-              <p className="mt-1 ml-4 text-[3.45vmin] ">40+</p>
+              <p className="text-[3.75vmin] font-bold  mr-3  ">Clients</p>
+              <p className="mt-1 mr-2 ml-4 text-[3.45vmin] ">40+</p>
             </div>
             <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10">
             
@@ -272,7 +291,7 @@ const Datacomponent = () => {
            <div className="textHolder flex justify-center items-center  w-[33%]">
             <div className="box1 mr-10">
               <p className="text-[3.75vmin] font-bold ">Projects</p>
-              <p className="mt-1 ml-4 text-[3.45vmin]">100+</p>
+              <p className="mt-1 ml-5 text-[3.45vmin]">100+</p>
             </div>
         
 
@@ -285,57 +304,93 @@ const Datacomponent = () => {
           </div>
       )}
 
+{screen.width >= 1919 && screen.width < 2047 && (
+        <div className="boxHolder flex w-[80vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin]">
+           <div className="textHolder flex justify-center items-center p-4 w-[33%]">
+            <div className="box1 ml-4">
+              <p className="text-[3.75vmin] font-bold ml-5 ">Team</p>
+              <p className="mt-1 ml-10 text-[3.45vmin]">50+</p>
+            </div>
+            <div className="vertcalLine h-28 w-2 rounded-[4px] bg-white ml-16">
+            
+            </div>
+
+          
+            
+           </div>
+
+            <div className="textHolder flex justify-center items-center p-2 w-[33%]">
+            <div className="box1 ">
+              <p className="text-[3.75vmin] font-bold  mr-9 ml-2  ">Clients</p>
+              <p className="mt-1 mr-6 ml-8 text-[3.45vmin] ">40+</p>
+            </div>
+            <div className="vertcalLine h-28 w-2 rounded-[4px] bg-white ml-12 mr-4">
+            
+            </div>
+
+          
+            
+           </div>
+
+           <div className="textHolder flex justify-center items-center  w-[33%]">
+            <div className="box1 mr-10">
+              <p className="text-[3.75vmin] font-bold mr-6">Projects</p>
+              <p className="mt-1 ml-5 text-[3.45vmin] mr-4">100+</p>
+            </div>
+        
+
+          
+            
+           </div>
+
+           
+          
+          </div>
+      )}
+
+
       {screen.width >= 2047 && (
-        <div className="boxHolder flex w-[72vmin] h-[18vmin] mt-5 font-poppins">
-          <div className="box1 border-black border-[0.5px] w-[24vmin] h-[14vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/projects.png")}
-                height={10}
-                width={36}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[2.45vmin] p-1 ml-2 mt-1">
-                Projects:
-              </p>
+           <div className="boxHolder flex w-[80vmin] h-[18vmin] mt-5 border-[1px] bg-deepViolet text-white rounded-[1.5vmin]">
+           <div className="textHolder flex justify-center items-center p-4 w-[33%]">
+            <div className="box1 ml-4">
+              <p className="text-[3.75vmin] font-bold ml-5 ">Team</p>
+              <p className="mt-1 ml-10 text-[3.45vmin]">50+</p>
             </div>
-            <p className="font-extrabold text-[4vmin] p-1 ml-2 mt-3 ml-4 text-mainText">
-              {projects}+
-            </p>
-          </div>
-          <div className="box2 border-black border-[0.5px] h-[14vmin] w-[24vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/clients.png")}
-                height={10}
-                width={36}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[2.45vmin] p-1 ml-2  mt-1">
-                Clients:
-              </p>
+            <div className="vertcalLine h-32 w-2 rounded-[4px] bg-white ml-16">
+            
             </div>
-            <p className="font-extrabold text-[4vmin] p-1 ml-2 mt-3 ml-4 text-mainText">
-              {clients}+
-            </p>
-          </div>
-          <div className="box3 border-black border-[0.5px] h-[14vmin] w-[24vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/engineers.png")}
-                height={20}
-                width={36}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[2.45vmin] p-1 ml-2 mt-1">
-                Members:
-              </p>
+
+          
+            
+           </div>
+
+            <div className="textHolder flex justify-center items-center p-2 w-[33%]">
+            <div className="box1 ">
+              <p className="text-[3.75vmin] font-bold  mr-9 ml-2  ">Clients</p>
+              <p className="mt-1 mr-6 ml-10 text-[3.45vmin] ">40+</p>
             </div>
-            <p className="font-extrabold text-[4vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {members}+
-            </p>
+            <div className="vertcalLine h-32 w-2 rounded-[4px] bg-white ml-12 mr-4">
+            
+            </div>
+
+          
+            
+           </div>
+
+           <div className="textHolder flex justify-center items-center  w-[33%]">
+            <div className="box1 mr-10">
+              <p className="text-[3.75vmin] font-bold mr-6">Projects</p>
+              <p className="mt-1 ml-8 text-[3.45vmin] mr-4">100+</p>
+            </div>
+        
+
+          
+            
+           </div>
+
+           
+          
           </div>
-        </div>
       )}
     </div>
   );

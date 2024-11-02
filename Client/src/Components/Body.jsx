@@ -2,6 +2,7 @@ import React from "react";
 import Index from "./Index";
 import Datacomponent from "./Datacomponent";
 import Card from "./Card";
+import Login from "./Login";
 import { SERVICE_OBJ } from "../Utils/Mock_Data";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import dotenv from "dotenv";
@@ -44,6 +45,14 @@ const Body = () => {
       path: "/cmsDashboard",
       element: <CMSDashboard />,
     },
+    {
+      path: "/clientlogin",
+      element: <Login category="Client" />
+    }
+    ,{
+      path:"/cms",
+      element: <Login category="CMS" />
+    }
   ]);
 
   return <RouterProvider router={appRouter} />;

@@ -18,7 +18,7 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="mt-3 md:mt-[8vmin] pb-5 ml-2 md:ml-6">
+      <div className="mt-3 pb-5 ml-2 md:ml-6">
         <p className="text-[8vmin] font-extrabold">
           <span className="text-mainText">Our</span> Services
         </p>

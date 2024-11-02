@@ -34,7 +34,7 @@ const RevolvingHeader=()=>{
 
        }
            {screen.width>= 2048 &&
-           <div className="offerHeader flex justify-center text-center text-[2vmin] p-1">
+           <div className="offerHeader flex justify-center text-center text-[2.35vmin] p-1">
            <p>Your trusted technology partner</p>
      
         &nbsp;&nbsp;|  &nbsp;&nbsp;

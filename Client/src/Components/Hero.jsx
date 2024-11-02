@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="font-poppins HeroArea w-[100vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] pb-8  bg-backgroundMain pb-10">
       <div className="textHolder flex flex-col items-center h-[100%]">
         <div className="textContainer flex flex-col  mt-[15vmin] md:mt-[11vmin] items-center h-[100%] p-2">
-          <p className="font-poppins text-[3.65vmin] md:text-[3.45vmin] font-medium text-center">
+          <p className="font-poppins text-[3.65vmin] md:text-[3.15vmin]  text-center">
             We transform ideas into powerful digital solutions with innovation,
             precision, and passion
           </p>
@@ -169,9 +169,9 @@ const Hero = () => {
               <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[19vmin]">
               <div className="flex">
               <div className="w-[85vmin] border-mainText  rounded-[4px] ml-36 flex">
-                <div className="verticalLine h-[8vmin]  w-3 bg-mainText mt-4 rounded-[4px]"></div>
+                <div className="verticalLine h-[8vmin]  w-3 bg-mainText mt-4 rounded-[4px] ml-1"></div>
                 <div className="ml-1"> 
-                <p className="HeroheaderText font-bold text-[6.85vmin] ml-2">Codemap <span className="text-mainText">Services</span></p>
+                <p className="HeroheaderText font-bold text-[6.85vmin] ml-3">Codemap <span className="text-mainText">Services</span></p>
                 <p className="ml-1 text-mainText font-medium mt-2 text-[2.25vmin]">( where ideas transform into innovation )</p>
                 </div>
                </div>
@@ -182,11 +182,11 @@ const Hero = () => {
                </div>
          
               </div>
-              <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[13vmin]">
+              <div className="w-[50vw] flex flex-col gap-y-14   ml-[12vmin] mt-[13vmin]">
                <div className="formHolder w-[30vw] bg-white p-6">
                 <p className="text-[4vmin] font-bold">Contact us</p>
                 <p className="text-mainText mt-[0.75px]"> ( Get Flat 20% discount on your first order )</p>
-                <form className="flex flex-col gap-y-10 p-3 mt-5 text-[2vmin]">
+                <form className="flex flex-col gap-y-12 p-3 mt-5 text-[2.05vmin]">
                   <input type="text"  className="text border-gray border-b-[1px] p-2" placeholder="Enter your name..."/>
                   <input type="text"  className="text border-gray border-b-[1px] p-2" placeholder="Enter your email..." />
                   <input type="text"  className="text border-gray border-b-[1px] p-2" placeholder="Enter your phone..." />
