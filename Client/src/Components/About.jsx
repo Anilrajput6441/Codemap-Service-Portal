@@ -320,7 +320,7 @@ const About = () => {
              </p>
            </div>
            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[7vmin]">
-             <div className="imageHolder w-[70vmin] h-[100vmin] mt-4">
+             <div className="imageHolder w-[70jvmin] h-[100vmin] mt-4">
                <img
                  src={require("../../assets/aboutus.jpg")}
                  className="max-w-full max-h-full object-contain"
