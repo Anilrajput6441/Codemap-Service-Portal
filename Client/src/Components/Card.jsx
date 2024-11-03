@@ -158,6 +158,13 @@ const Card = (props) => {
           <p className="text-[1.87vmin] pr-1 font-poppins mt-1">{props.data.description}</p>
         </div>
         }
+        { screen.width>=2048 &&
+
+<div className="descriptionHolder pl-1 mt-2">
+<p className="text-[2.1vmin] pr-1 font-poppins">{props.data.description}</p>
+</div>
+}
+
             </div>
         </div>
     
@@ -219,6 +226,12 @@ const Card = (props) => {
           <p className="text-[1.87vmin] pr-1 font-poppins">{props.data.description}</p>
         </div>
         }
+        {screen.width>=2048 &&
+
+<div className="descriptionHolder pl-1 mt-2">
+<p className="text-[2.1vmin] pr-1 font-poppins">{props.data.description}</p>
+</div>
+}
 
        
       </div>

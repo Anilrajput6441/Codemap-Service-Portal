@@ -3,6 +3,7 @@ import Footer from './Footer'
 import TitleComponent from './TitleComponent'
 import Header from './Header'
 import Card from './Card'
+import RevolvingHeader from './RevolvingHeader'
 
 const TeamPage = () => {
 
@@ -35,6 +36,7 @@ const TeamPage = () => {
 
   return (
     <>
+    <RevolvingHeader />
     <Header />
      <TitleComponent title="Our Team" slogan="Meet the pillars of Codemap scaling and making it as trusted brand" />
      <div className="TeamCardHolder flex flex-col flex-wrap justify-center  items-center mt-12 md:mt-9  gap-y-[10vmin] md:gap-y-[10vmin] lg:gap-y-[6vmin] pb-16 pl-2 pr-1">
