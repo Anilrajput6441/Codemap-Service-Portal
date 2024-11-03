@@ -287,14 +287,14 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-6 justify-center items-center">
-              <div className="imageHolder w-[70vmin] h-[100vmin]">
+              <div className="imageHolder w-[65vmin] h-[90vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[110vmin] text-[2.95vmin]">
+              <div className="textHolder w-[110vmin] text-[2.95vmin] mt-5 ml-[-2vmin]">
                <div className="mainTextHolder flex flex-col w-[110vmin]">
                 <div className="who border-black h-[35vmin]">
                   <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -314,7 +314,7 @@ const About = () => {
                      <li>Quality customer service is our motto which help us to make strong long term relationship with our clients </li>
                     </ul>
                 </div>
-                <div className="dataHolder h-[25vmin]">
+                <div className="dataHolder h-[25vmin] mt-[-1.45vmin]">
                   <Datacomponent />
                 </div>
                </div>

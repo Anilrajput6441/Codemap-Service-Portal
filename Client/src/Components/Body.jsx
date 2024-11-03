@@ -11,6 +11,7 @@ import Error from "./Error";
 import CMSRegister from "./CMS/CMSRegister";
 import CMSLogin from "./CMS/CMSLogin";
 import CMSDashboard from "./CMS/CMSDashboard";
+import CareerPage from "./CareerPage";
 
 dotenv.config();
 const Body = () => {
@@ -52,6 +53,10 @@ const Body = () => {
     ,{
       path:"/cms",
       element: <Login category="CMS" />
+    },
+    {
+        path:"/career",
+        element:<CareerPage />
     }
   ]);
 
