@@ -19,7 +19,7 @@ const Header = () => {
           </div>
           {screen.width > 1000 && (
             <>
-              <div className="iconsArea flex gap-x-12  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
+              <div className="iconsArea flex gap-x-9  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
                 <p
                   id="about-us"
                   className="underline-offset-[1.35vmin] "
@@ -47,7 +47,7 @@ const Header = () => {
                       "";
                   }}
                 >
-                  Team
+                <Link to="/team">Team</Link>
                 </p>
 
                 <p

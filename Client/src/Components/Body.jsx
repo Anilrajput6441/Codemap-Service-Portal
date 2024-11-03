@@ -12,6 +12,8 @@ import CMSRegister from "./CMS/CMSRegister";
 import CMSLogin from "./CMS/CMSLogin";
 import CMSDashboard from "./CMS/CMSDashboard";
 import CareerPage from "./CareerPage";
+import ApplyPortal from "./ApplyPortal";
+import TeamPage from "./TeamPage";
 
 dotenv.config();
 const Body = () => {
@@ -57,6 +59,13 @@ const Body = () => {
     {
         path:"/career",
         element:<CareerPage />
+    },{
+      path:"/apply",
+      element:<ApplyPortal />
+    }
+    ,{
+      path:"/team",
+      element:<TeamPage />
     }
   ]);
 

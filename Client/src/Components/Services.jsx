@@ -25,7 +25,7 @@ const Services = () => {
          Our <span className="text-mainText"> Services</span>
         </p>
         <p className="text-center text-textGrey text-[3.5vmin] md:text-[2.45vmin] w-[100%] text-center p-3">We have a mission to provide top quality and affordable services to our clients</p>
-        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-20 gap-y-8 md:gap-y-6 mt-10">
+        <div className="mt-8 flex flex-wrap justify-center items-center gap-x-20 gap-y-8 md:gap-y-5 mt-10 pl-5 pr-5">
           {servicesObj.map((val, index) => (
             <Card data={servicesObj[index]} type="Service"/>
           ))}
