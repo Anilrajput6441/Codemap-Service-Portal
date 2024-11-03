@@ -26,7 +26,7 @@ const TeamPage = () => {
       title: 'Founder and Partner',
       image: "https://i.ibb.co/5xKh9Bh/Anish-Pic-modified.jpg",
       Link:'https://www.linkedin.com/in/anish-gupta-5471a129a/',
-      description:'With expertise in digital ads and web development, Anish Gupta brings in expertise over the marketing and development domain for the firm. He also plays a pivotal role in managing the employee relations for the firm.',
+      description:'With expertise in digital ads and web development, Anish Gupta brings in expertise over the marketing and development domain for the firm. He also has a pivotal role in managing the employee relations for the firm.',
     }
   ]
 
