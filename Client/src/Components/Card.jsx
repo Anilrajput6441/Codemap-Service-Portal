@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 const Card = (props) => {
   let orientation="";
-  if(props.type==="Team") {
+  if(props.type==="Team" || props.type==="Projects") {
     if(props.value%2!=0){
      orientation = "reverse";
     }
@@ -241,10 +241,144 @@ const Card = (props) => {
       </div>
   </div>
  )
+ || (
+  props.type==="Projects" && orientation!="reverse" &&
+
+    <div className="teamcard w-[90vw]   lg:w-[130vmin] flex flex-wrap md:gap-x-3 bg-lightGrey p-5 pb-9 rounded-lg mr-[1vmin]  border-gray border-[1px]">
+        <div className="imageHolder h-[50vmin] w-[90vw] md:h-[40vmin] md:w-[80vw] md:ml-[-1.15vmin] lg:h-[30vmin] lg:w-[45vmin] flex lg:justify-center items-center">
+          <img src={props.data.image} className="max-w-full max-h-full object-contain"></img>
+        </div>
+
+        <div className="textHolder w-[96vw] md:w-[70vmin] flex flex-col justify-center mt-3 lg:mt-0 lg:ml-5 ">
+          <div className="personalInfo flex gap-x-3">
+
+          <p className="font-poppins font-bold text-[5vmin] md:text-[3.45vmin]">Project: <span className="font-normal  text-[4vmin] md:text-[2.75vmin]">&nbsp;{props.data.title}</span></p>
+          
+          </div>
+
+     
+
+       
+         {screen.width<1000 && 
+
+            <div className="descriptionHolder ">
+              <p className="font-poppins mt-2 text-[3.45vmin] md:text-[2vmin]"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span><span className="text-[3.85vmin] md:text-[2.55vmin]">&nbsp;{props.data.description}</span></p>
+            </div>
+            }
+         {screen.width<1700 && screen.width>=1000 &&
+
+              <div className="descriptionHolder pl-1">
+                <p className="text-[2.1vmin] pr-3 font-poppins mt-2"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span>&nbsp;{props.data.description}</p>
+              </div>
+         }
+  {screen.width>=1700 && screen.width<=1900 &&
+
+    <div className="descriptionHolder pl-1">
+      <p className="text-[2.1vmin] pr-3 font-poppins mt-2"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span>&nbsp;{props.data.description}</p>
+    </div>
+            }
+      {
+      screen.width>=1900 && screen.width<=2047 &&
+
+      <div className="descriptionHolder pl-1">
+      <p className="text-[1.87vmin] pr-1 font-poppins mt-1"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span>&nbsp;{props.data.description}</p>
+    </div>
+    }
+    { screen.width>=2048 &&
+
+<div className="descriptionHolder pl-1 mt-2">
+<p className="text-[2.1vmin] pr-1 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span>&nbsp;{props.data.description}</p>
+</div>
+}
+<div className="buttonHolder flex gap-x-6 mt-6">
+          <button className="bg-[#628600] text-white p-3 md:text-[2.45vmin]">See Screenshots</button>
+          {props.data.live===true &&
+          <button className="bg-deepViolet text-white p-3 md:text-[2.45vmin]">Live Link</button>
+          }
+        </div>
+
+        </div>
+
+        
+    </div>
+
+    
+
+
+ )||(props.type==="Projects" && orientation==="reverse" &&        
+ 
+ 
+
+ <div className="teamcard w-[90vw]   lg:w-[130vmin] flex flex-wrap-reverse md:gap-x-3 mt-4 bg-lightGrey p-5 pb-9 rounded-lg mr-[1vmin] border-gray border-[1px]">
+
+
+  <div className="textHolder w-[95vw] md:w-[65vmin] flex flex-col justify-center  mt-3 lg:mt-0 lg:ml-5">
+    <div className="personalInfo flex gap-x-3">
+    <p className="font-poppins font-bold text-[5vmin] md:text-[3.45vmin] md:ml-2">Project:<span className="font-normal text-[4vmin] md:text-[2.75vmin]">&nbsp;{props.data.title}</span></p>
+   
+
+
+ 
+
+    </div>
+
+
+ 
+
+        {screen.width<1000 && 
+
+  <div className="descriptionHolder md:w-[65vmin] md:ml-2">
+    <p className="font-poppins mt-2 text-[3.45vmin] md:text-[2vmin]"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span><span className="text-[3.85vmin] md:text-[2.55vmin]">&nbsp;{props.data.description}</span></p>
+  </div>
+  }
+  {screen.width<1700 && screen.width>=1000 &&
+
+    <div className="descriptionHolder pl-1">
+      <p className="text-[2.15vmin] pr-3 font-poppins mt-2  "><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span><span className="text-[2.25vmin]">&nbsp;{props.data.description}</span></p>
+    </div>
+  }
+        
+
+  {screen.width>=1700 && screen.width<=1900 &&
+
+    <div className="descriptionHolder pl-1 mt-2">
+      <p className="text-[2.15vmin] pr-3 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span><span className="text-[2.35vmin]">&nbsp;{props.data.description}</span></p>
+    </div>
+  }
+     {screen.width>=1900 && screen.width<=2047 &&
+
+      <div className="descriptionHolder pl-1 mt-2">
+      <p className="text-[2.15vmin] pr-1 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span><span className="text-[2.35vmin]">&nbsp;{props.data.description}</span></p>
+    </div>
+    }
+    {screen.width>=2048 &&
+
+<div className="descriptionHolder pl-1 mt-2">
+<p className="text-[2.45vmin] pr-1 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin]">Description:</span><span className="text-[2.35vmin]">&nbsp;{props.data.description}</span></p>
+</div>
+}
+<div className="buttonHolder flex gap-x-6 mt-6">
+          <button className="bg-[#628600] text-white p-3 md:text-[2.45vmin]">See Screenshots</button>
+          {props.data.live===true &&
+          <button className="bg-deepViolet text-white p-3 md:text-[2.45vmin]">Live Link</button>
+          }
+        </div>
+
+   
+  </div>
+
+  <div className="imageHolderh-[50vmin] w-[90vw] md:h-[40vmin] md:w-[80vw] md:ml-[-1.15vmin] lg:h-[30vmin] lg:w-[45vmin]  mt-3">
+    <img src={props.data.image} className="max-w-full max-h-full object-contain"></img>
+  </div>
+
+
+</div>
+)
      }
 
 
       </div>
+     
     </>
   );
 };

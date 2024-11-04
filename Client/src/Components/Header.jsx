@@ -61,7 +61,7 @@ const Header = () => {
                     document.getElementById("team").style.textDecoration = "";
                   }}
                 >
-                  Projects
+                 <Link to="/projects">Projects</Link>
                 </p>
 
                 

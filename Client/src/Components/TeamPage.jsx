@@ -48,7 +48,7 @@ const TeamPage = () => {
 
      </div>
     <Footer />     
-    </>
+    </> 
   )
 }
 

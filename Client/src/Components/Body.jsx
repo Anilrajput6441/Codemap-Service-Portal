@@ -14,6 +14,7 @@ import CMSDashboard from "./CMS/CMSDashboard";
 import CareerPage from "./CareerPage";
 import ApplyPortal from "./ApplyPortal";
 import TeamPage from "./TeamPage";
+import Projects from "./Projects";
 
 dotenv.config();
 const Body = () => {
@@ -66,6 +67,9 @@ const Body = () => {
     ,{
       path:"/team",
       element:<TeamPage />
+    },{
+      path:"/projects",
+      element:<Projects />
     }
   ]);
 

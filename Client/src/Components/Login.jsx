@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import RevolvingHeader from "./RevolvingHeader";
 const Login =(props)=>{
@@ -53,6 +54,8 @@ const Login =(props)=>{
             </div>
         </div>
         </div>
+
+  
     </>
  )
 }

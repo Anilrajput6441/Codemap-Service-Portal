@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Card from './Card'
 import RevolvingHeader from './RevolvingHeader'
+import Footer from './Footer'
 
 const CareerPage = () => {
  
@@ -78,6 +79,7 @@ const CareerPage = () => {
         ))}
      </div>
      </div>
+
 
     </>
   )
