@@ -290,7 +290,7 @@ const Card = (props) => {
 <p className="text-[2.1vmin] pr-1 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin] ">Description:</span>&nbsp;{props.data.description}</p>
 </div>
 }
-<div className="buttonHolder flex gap-x-6 mt-6">
+<div className="buttonHolder flex gap-x-6 mt-8">
           <button className="bg-[#628600] text-white p-3 md:text-[2.45vmin]">See Screenshots</button>
           {props.data.live===true &&
           <button className="bg-deepViolet text-white p-3 md:text-[2.45vmin]">Live Link</button>
@@ -357,7 +357,7 @@ const Card = (props) => {
 <p className="text-[2.45vmin] pr-1 font-poppins"><span  className="font-poppins font-bold text-[5vmin] md:text-[3vmin]">Description:</span><span className="text-[2.35vmin]">&nbsp;{props.data.description}</span></p>
 </div>
 }
-<div className="buttonHolder flex gap-x-6 mt-6">
+<div className="buttonHolder flex gap-x-6 mt-8">
           <button className="bg-[#628600] text-white p-3 md:text-[2.45vmin]">See Screenshots</button>
           {props.data.live===true &&
           <button className="bg-deepViolet text-white p-3 md:text-[2.45vmin]">Live Link</button>
