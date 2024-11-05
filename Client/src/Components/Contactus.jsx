@@ -73,7 +73,7 @@ const Contactus=()=>{
                 } alt="" className="src max-w-full max-h-full object-contain" />
             </div>
         </div>
-        <div className="contactFormHolder w-[53vw] mt-10 flex justify-center items-center ">
+        <div className="contactFormHolder w-[53vw] mt-10 flex justify-center items-center p-5">
             <div className="contactForm w-[45vw]  pb-4  border-headerUnderline border-2 rounded-md pl-3 pr-3">
                 <form className="flex flex-col gap-y-7 p-5">
                     <p className="text-deepViolet mt-7 ml-3 text-[3.35vmin] font-poppins">Write to us...</p>
@@ -82,7 +82,7 @@ const Contactus=()=>{
                         <input type="text" className="text bg-lightGrey p-3 2xl:text-[2.12vmin]" placeholder="Enter your phone..." />
                         <textarea rows="6" className="text bg-lightGrey p-3 2xl:text-[2.12vmin]"  placeholder="Enter your message..."/>
                         <div className="btnHolder flex justify-center items-center mt-3">
-                       <button type="submit" className="submit bg-deepViolet text-white p-2 w-24">submit</button>
+                       <button type="submit" className="submit bg-deepViolet text-white p-2  text-[2.5vmin] p-3">submit</button>
                        </div>
                 </form>
             </div>

@@ -18,8 +18,8 @@ const TechStack=()=>{
             </div>
         </div>
 
-        <div className="iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12">
-          <div className="w-[60vw]  h-[50vmin]  flex flex-wrap gap-x-14 justify-center items-center">
+        <div className="iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
+          <div className="w-[60vw]  h-[38vmin]  flex flex-wrap gap-x-14 justify-center items-center">
           <img src={require("../../assets/html.png")} height={80} width={80}></img>
             
             <img src={require("../../assets/css.png")} height={95} width={95}  className="mt-[-1vmin]"></img>

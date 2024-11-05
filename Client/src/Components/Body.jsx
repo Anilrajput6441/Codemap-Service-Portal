@@ -16,6 +16,7 @@ import ApplyPortal from "./ApplyPortal";
 import TeamPage from "./TeamPage";
 import Projects from "./Projects";
 import ContactPage from "./ContactPage";
+import SideBlogCard from "./Blogs/SideBlogCard";
 
 dotenv.config();
 const Body = () => {
@@ -75,6 +76,10 @@ const Body = () => {
     {
       path: "/contact",
       element: <ContactPage />,
+    }
+    ,{
+      path:"/sideblog",
+      element:<SideBlogCard />
     }
   ]);
 

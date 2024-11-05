@@ -277,7 +277,7 @@ const Datacomponent = () => {
 
             <div className="textHolder flex justify-center items-center p-2 w-[33%]">
             <div className="box1 ">
-              <p className="text-[3.75vmin] font-bold  mr-5 ">Clients</p>
+              <p className="text-[3.75vmin] font-bold  mr-6 ">Clients</p>
               <p className="mt-1 mr-2 ml-6 text-[3.45vmin] ">40+</p>
             </div>
             <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10">
