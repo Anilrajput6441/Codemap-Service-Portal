@@ -15,6 +15,7 @@ import CareerPage from "./CareerPage";
 import ApplyPortal from "./ApplyPortal";
 import TeamPage from "./TeamPage";
 import Projects from "./Projects";
+import ContactPage from "./ContactPage";
 
 dotenv.config();
 const Body = () => {
@@ -70,6 +71,10 @@ const Body = () => {
     },{
       path:"/projects",
       element:<Projects />
+    },
+    {
+      path: "/contact",
+      element: <ContactPage />,
     }
   ]);
 

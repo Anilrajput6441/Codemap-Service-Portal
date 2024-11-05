@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
             Plan - Prepare - Develop - Test - Deploy
           </p>
           <button className="bg-mainText text-white p-2 pr-10 pl-10 mt-12 text-[4vmin] md:text-[3.15vmin]">
-            Contact Us
+          <Link to="/contact">Contact us</Link>
           </button>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                </div>
                <div className="w-[90vmin] text-[2.35vmin] pl-5 pr-5 font-roboto">  
                 <p className="ml-10 mt-1">We at codemap aim to deliver quality technical solutions to our clients at the most affordable cost. Give us a chance to make your digital dream come true!!!</p>
-                <button className="bg-mainText text-white pr-4 pl-4 mt-9 ml-9 p-2">Contact Us</button>
+                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-8 p-2">  <Link to="/contact">Contact us</Link></button>
                </div>
          
               </div>
@@ -91,7 +91,7 @@ const Hero = () => {
                </div>
                <div className="w-[80vmin] text-[2.15vmin] pl-5 pr-5 font-roboto ml-5">  
                 <p className="ml-6 mt-1">We at codemap aim to deliver quality technical solutions to our clients at the most affordable cost. Give us a chance to make your digital dream come true!!!</p>
-                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-6 p-2">Contact Us</button>
+                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-6 p-2">  <Link to="/contact">Contact us</Link></button>
                </div>
          
               </div>
@@ -135,7 +135,7 @@ const Hero = () => {
                </div>
                <div className="w-[80vmin] text-[2.15vmin] pl-5 pr-5 font-roboto ml-5">  
                 <p className="ml-4 mt-1">We at codemap aim to deliver quality technical solutions to our clients at the most affordable cost. Give us a chance to make your digital dream come true!!!</p>
-                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-4 p-2">Contact Us</button>
+                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-6 p-2">  <Link to="/contact">Contact us</Link></button>
                </div>
          
               </div>
@@ -178,7 +178,7 @@ const Hero = () => {
                </div>
                <div className="w-[80vmin] text-[2.15vmin] pl-5 pr-5 font-roboto ml-5">  
                 <p className="ml-4 mt-1">We at codemap aim to deliver quality technical solutions to our clients at the most affordable cost. Give us a chance to make your digital dream come true!!!</p>
-                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-4 p-2">Contact Us</button>
+                <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-6 p-2">  <Link to="/contact">Contact us</Link></button>
                </div>
          
               </div>

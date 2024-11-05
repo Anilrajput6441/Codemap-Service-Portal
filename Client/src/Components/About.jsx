@@ -24,7 +24,7 @@ const About = () => {
               <div className="mainTextHolder flex flex-col w-[100vmin]">
                <div className="who border-black ">
                  <p className="font-bold text-[5vmin]">Who we are?</p>
-                   <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin]">
+                   <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin] ml-3">
                     <li>We are a software development firm aimed to <br></br> develop  cost effective solutions  for  our  clients</li>
                     <li>Our team has a rich experience in the software development industry to  meet your needs.</li>
                     <li>We ham a motto Where Ideas Transform Into <br></br> Innovation.</li>
@@ -33,14 +33,14 @@ const About = () => {
                <div className="vision mt-4">
                <p className="font-bold text-[4.75vmin]">Our Vision and mission</p>
                
-               <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin]">
+               <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin] ml-3">
                     <li>Delivering top notch  solutions to our clients</li>
                     <li>Providing top quality services at the most affordable <br></br>cost</li>
                     <li>Quality customer service is our motto which  help us <br></br> to make strong long term relationship with our <br></br> clients </li>
                    </ul>
                
                </div>
-               <div className="dataHolder h-[25vmin] mt-6 ml-2 ">
+               <div className="dataHolder h-[25vmin] mt-2 ml-2 ">
                  <Datacomponent />
                </div>
               </div>
@@ -371,7 +371,7 @@ const About = () => {
         {screen.width > 1900 && screen.width <= 2047 && (
            <>
            <div className="aboutHeader mt-[-1vmin]">
-             <p className="font-extrabold text-[8vmin]">
+             <p className="font-extrabold text-[8vmin] ml-2">
                About-
                <span className="text-mainText">Us</span>
              </p>
