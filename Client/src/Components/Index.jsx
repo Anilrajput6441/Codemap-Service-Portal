@@ -10,14 +10,12 @@ import Contactus from "./Contactus";
 import RevolvingHeader from "./RevolvingHeader";
 import BlogHome from "./Blogs/BlogHome";
 const Index = () => {
-  // console.log(screen.height);
   return (
     <>
-     {screen.width>1000 &&       <RevolvingHeader /> }
+      {screen.width > 1000 && <RevolvingHeader />}
 
       <Header />
       <Hero />
-      
 
       {screen.width < 1000 ? (
         <>
@@ -28,17 +26,15 @@ const Index = () => {
         </>
       ) : (
         <>
-         
-            <About />
-       
-            <Services />
+          <About />
 
-          
-            <BlogHome />
-            <TechStack />
+          <Services />
 
-            <Contactus />
-        
+          <BlogHome />
+          <TechStack />
+
+          <Contactus />
+
           <Footer />
         </>
       )}
