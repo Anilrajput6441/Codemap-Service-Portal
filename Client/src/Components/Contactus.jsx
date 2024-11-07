@@ -3,7 +3,7 @@ const Contactus = () => {
     <>
       {screen.width < 700 && (
         <div className="w-[100vw] p-5 pb-10 pt-8 ">
-          <p className="text-center text-[8vmin] font-extrabold">
+          <p className="text-center text-[8vmin] font-extrabold mt-3">
             Contact <span className="text-mainText">Us</span>
           </p>
           <div className="holder flex flex-wrap gap-y-6">
@@ -28,7 +28,7 @@ const Contactus = () => {
                     className="text bg-lightGrey p-3"
                     placeholder="Enter your name..."
                   />
-                  <input
+                  1<input
                     type="text"
                     className="text bg-lightGrey p-3"
                     placeholder="Enter your email..."
@@ -116,13 +116,13 @@ const Contactus = () => {
       )}
 
       {screen.width >= 1000 && (
-        <div className="w-[100vw] p-5 pb-16">
+        <div className="w-[100vw] p-5 pb-16 mt-5">
           <p className="text-center text-[7.8vmin]  font-extrabold">
             Contact <span className="text-mainText">Us</span>
           </p>
-          <div className="holder flex flex-wrap gap-y-6">
+          <div className="holder flex flex-wrap gap-y-6 mt-6">
             <div className="imageHolderContainer w-[40vw] flex justify-end items-center">
-              <div className="imageHolder w-[25vw]  mr-[10vmin] mt-7">
+              <div className="imageHolder w-[25vw]  mr-[10vmin] mt-9">
                 <img
                   src={require("../../assets/phone.jpg")}
                   alt=""
@@ -130,7 +130,7 @@ const Contactus = () => {
                 />
               </div>
             </div>
-            <div className="contactFormHolder w-[53vw] mt-10 flex justify-center items-center p-5">
+            <div className="contactFormHolder w-[53vw] mt-10 flex justify-center items-center p-5 mt-[-0.35vmin]">
               <div className="contactForm w-[48vw]  pb-4  border-headerUnderline border-2 rounded-md pl-3 pr-3">
                 <form className="flex flex-col gap-y-7 p-5">
                   <p className="text-deepViolet mt-7 ml-3 text-[3.35vmin] font-poppins">

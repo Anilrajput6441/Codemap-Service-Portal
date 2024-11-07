@@ -190,22 +190,22 @@ const About = () => {
 
         {screen.width > 900 && screen.width <= 1280 && screen.height >= 800 && (
           <>
-            <div className="aboutHeader mt-[-1vmin]">
+            <div className="aboutHeader mt-[-1vmin] ">
               <p className="font-extrabold text-[8vmin]">
                 About-
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[0.5vmin] ">
-              <div className="imageHolder w-[70vmin] h-[120vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[4vmin] ">
+              <div className="imageHolder w-[70vmin] h-[85vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[-1vmin]">
-                <div className="mainTextHolder flex flex-col w-[110vmin]">
+              <div className="textHolder w-[86min] text-[2.95vmin] ml-[-10vmin]">
+                <div className="mainTextHolder flex flex-col w-[86vmin]">
                   <div className="who border-black h-[35vmin]">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
                     <ul className="mt-2 mainText">
@@ -501,7 +501,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[0.5vmin] ">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[4vmin] ">
               <div className="imageHolder w-[60vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}

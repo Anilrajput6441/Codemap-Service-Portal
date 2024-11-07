@@ -23,7 +23,7 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col pl-6 2xl:pl-8 pr-4 pt-8 pb-8">
+    <div className="w-[100vw]  flex flex-col  pl-6 2xl:pl-8 pr-4 pt-8 pb-3 mt-7">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
@@ -33,7 +33,7 @@ const BlogHome = () => {
         </p>
       </div>
       <div className="flex w-[100vw]   pl-4 pr-4 pt-8 pb-8 mt-6">
-        <div className="mainArea  w-[55vw]">
+        <div className="mainArea  w-[55vw] ml-4">
           <div className="mainBlogCardHolder flex flex-col justify-center items-center w-[55vw]  p-4 pb-7 2xl:gap-y-9">
             <div className="mainBlogCard flex flex-col justify-center">
               {screen.width <= 1000 && (
@@ -79,8 +79,24 @@ const BlogHome = () => {
                   </div>
                 )}
 
-              {screen.width > 1280 && screen.width <= 1900 && (
-                <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[45vmin] pl-4">
+              {screen.width > 1280 && screen.width <= 1400 && (
+                <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
+                  <img
+                    src={require("../../../assets/PM5.webp")}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              )}
+               {screen.width > 1400 && screen.width <= 1700 && (
+                <div className="imageArea  w-[55vw] h-[59vmin]  pl-4">
+                  <img
+                    src={require("../../../assets/PM5.webp")}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              )}
+               {screen.width > 1700 && screen.width <= 1900 && (
+                <div className="imageArea  w-[55vw] h-[45vmin] pl-4">
                   <img
                     src={require("../../../assets/PM5.webp")}
                     className="max-w-full max-h-full object-contain"
@@ -101,7 +117,7 @@ const BlogHome = () => {
                 </p>
               </div>
               <div className="blogTitleArea">
-                <p className="font-bold text-[4.35vmin] pl-3 font-poppins">
+                <p className="font-bold text-[4.25vmin] pl-3 font-poppins">
                   What is Project Management in our software industry ?
                 </p>
               </div>
@@ -112,7 +128,7 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-3 2xl:pl-4">
+        <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-6 2xl:pl-4">
           <ul>
             {apiResponse.map((val, index) => (
               <SideBlogCard data={val} />

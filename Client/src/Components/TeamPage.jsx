@@ -36,7 +36,11 @@ const TeamPage = () => {
 
   return (
     <>
-    <RevolvingHeader />
+    {
+      screen.width>1000 &&
+      <RevolvingHeader />
+    }
+  
     <Header />
      <TitleComponent title="Our Team" slogan="Meet the pillars of Codemap scaling and making it as trusted brand" />
      <div className="TeamCardHolder flex flex-col flex-wrap justify-center  items-center mt-12 md:mt-9  gap-y-[10vmin] md:gap-y-[10vmin] lg:gap-y-[6vmin] pb-16 pl-2 pr-1">

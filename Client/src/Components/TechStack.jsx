@@ -19,7 +19,7 @@ const TechStack = () => {
       </div>
 
       <div className="mt-5 iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
-        <div className="w-[60vw]  h-[49vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
+        <div className="w-[60vw]  h-[44vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
           <img
             src={require("../../assets/html.png")}
             height={80}
