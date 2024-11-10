@@ -59,7 +59,7 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[1vmin] 2xl:mt-[3vmin]">
+                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin]">
                   <div className="formHolder w-[35vw] bg-white p-5">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
