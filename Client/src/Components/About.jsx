@@ -3,7 +3,7 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-4 mt-12 pb-2 pt-4 ">
+      <div className="aboutSection ml-4 mt-10 pb-5 pt-4 ">
         {screen.width < 760 && (
           <>
             <div className="aboutHeader">
@@ -375,7 +375,7 @@ const About = () => {
           screen.height > 810 &&
           screen.width <= 1500 && (
             <>
-              <div className="aboutHeader mt-[-1vmin] ml-5">
+              <div className="aboutHeader mt-[-1vmin] ml-5 ">
                 <p className="font-extrabold text-[8vmin]">
                   About-
                   <span className="text-mainText">Us</span>

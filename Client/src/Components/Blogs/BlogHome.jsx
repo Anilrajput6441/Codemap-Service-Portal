@@ -28,7 +28,7 @@ const BlogHome = () => {
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
         </p>
-        <p className="text-center pl-3 text-textGrey m text-[2.75vmin]">
+        <p className="text-center pl-3 text-textGrey m text-[2.25vmin]">
           Get the latest tech and business blogs by Codemap’s team
         </p>
       </div>
