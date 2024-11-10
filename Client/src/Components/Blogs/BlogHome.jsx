@@ -79,15 +79,30 @@ const BlogHome = () => {
                   </div>
                 )}
 
-              {screen.width > 1280 && screen.width <= 1400 && (
-                <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
-                  <img
-                    src={require("../../../assets/PM5.webp")}
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              )}
-               {screen.width > 1400 && screen.width <= 1700 && (
+              {screen.width > 1280 &&
+                screen.width <= 1400 &&
+                screen.height <= 810 && (
+                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
+                    <img
+                      src={require("../../../assets/PM5.webp")}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                )}
+
+              {screen.width >= 1400 &&
+                screen.width <= 1500 &&
+                screen.height > 810 && (
+                  <>
+                    <div className="imageArea  w-[55vw] h-[50vmin] pl-4">
+                      <img
+                        src={require("../../../assets/PM5.webp")}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  </>
+                )}
+              {screen.width > 1500 && screen.width <= 1700 && (
                 <div className="imageArea  w-[55vw] h-[59vmin]  pl-4">
                   <img
                     src={require("../../../assets/PM5.webp")}
@@ -95,7 +110,7 @@ const BlogHome = () => {
                   />
                 </div>
               )}
-               {screen.width > 1700 && screen.width <= 1900 && (
+              {screen.width > 1700 && screen.width <= 1900 && (
                 <div className="imageArea  w-[55vw] h-[45vmin] pl-4">
                   <img
                     src={require("../../../assets/PM5.webp")}
@@ -128,7 +143,7 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-6 2xl:pl-4">
+        <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-6 2xl:pl-4 mt-[-1.75vmin]">
           <ul>
             {apiResponse.map((val, index) => (
               <SideBlogCard data={val} />

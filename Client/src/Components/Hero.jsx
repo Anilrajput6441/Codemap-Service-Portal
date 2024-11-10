@@ -53,7 +53,7 @@ const Hero = () => {
                       to our clients at the most affordable cost. Give us a
                       chance to make your digital dream come true!!!
                     </p>
-                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-8 p-2">
+                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-10 p-2">
                       {" "}
                       <Link to="/contact">Contact us</Link>
                     </button>
