@@ -7,6 +7,7 @@ import { SERVICE_OBJ } from "../Utils/Mock_Data";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import dotenv from "dotenv";
 import Loader from "./Loader";
+import SearchBar from "./Blogs/SearchBar";
 import Error from "./Error";
 import CMSRegister from "./CMS/CMSRegister";
 import CMSLogin from "./CMS/CMSLogin";
@@ -17,6 +18,7 @@ import TeamPage from "./TeamPage";
 import Projects from "./Projects";
 import ContactPage from "./ContactPage";
 import SideBlogCard from "./Blogs/SideBlogCard";
+import MainPage from "./Blogs/MainPage";
 
 dotenv.config();
 const Body = () => {
@@ -80,6 +82,14 @@ const Body = () => {
     ,{
       path:"/sideblog",
       element:<SideBlogCard />
+    }
+    ,{
+      path:"/searchBar",
+      element:<SearchBar />
+    },
+    {
+      path:"/blogsArea",
+      element:<MainPage />
     }
   ]);
 

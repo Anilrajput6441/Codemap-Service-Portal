@@ -4,6 +4,7 @@ const TechStack = () => {
       <p className="text-extrabold text-center text-[7.25vmin] p-2 font-extrabold">
         Tech <span className="text-mainText">Stack</span>
       </p>
+
       <div className="iconHolder flex justify-center items-center text-textGrey gap-x-[10vmin] mt-10 text-[3.1vmin] font-poppins">
         <div>
           <p>Frontend</p>
@@ -19,7 +20,7 @@ const TechStack = () => {
       </div>
 
       <div className="mt-5 iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
-        <div className="w-[60vw]  h-[49vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
+        <div className="w-[60vw]  h-[44vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
           <img
             src={require("../../assets/html.png")}
             height={80}

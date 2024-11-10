@@ -91,7 +91,7 @@ const Header = () => {
                     document.getElementById("Blogs").style.textDecoration = "";
                   }}
                 >
-                  Blogs
+                     <Link to="/blogsarea">Blogs</Link>
                 </p>
                 <p
                   id="Partner"
