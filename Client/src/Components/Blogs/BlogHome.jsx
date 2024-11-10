@@ -112,7 +112,7 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-3 2xl:pl-4">
+        <div className="sideArea flex gap-y-10 w-[40vw]  pl-3 ml-4 2xl:ml-3 2xl:pl-4">
           <ul>
             {apiResponse.map((val, index) => (
               <SideBlogCard data={val} />

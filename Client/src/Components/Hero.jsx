@@ -60,13 +60,15 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin]">
-                  <div className="formHolder w-[35vw] bg-white p-5">
-                    <p className="text-[4vmin] font-bold">Contact us</p>
-                    <p className="text-mainText mt-[0.75px]">
+                  <div className="formHolder w-[37vw] bg-white p-3 2xl:p-5">
+                    <p className="text-[4vmin] font-bold ml-1 2xl:ml-0">
+                      Contact us
+                    </p>
+                    <p className="text-mainText mt-[0.75px] ml-1 2xl:ml-0">
                       {" "}
                       ( Get Flat 20% discount on your first order )
                     </p>
-                    <form className="flex flex-col gap-y-8 p-3 mt-5">
+                    <form className="flex flex-col gap-y-8 p-3 mt-5 text-[2.25vmin]">
                       <input
                         type="text"
                         className="text border-gray border-b-[1px] p-2"
