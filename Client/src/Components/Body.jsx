@@ -19,6 +19,7 @@ import Projects from "./Projects";
 import ContactPage from "./ContactPage";
 import SideBlogCard from "./Blogs/SideBlogCard";
 import MainPage from "./Blogs/MainPage";
+import PartnerPage from "./PartnerPage";
 
 dotenv.config();
 const Body = () => {
@@ -90,6 +91,10 @@ const Body = () => {
     {
       path:"/blogsArea",
       element:<MainPage />
+    },
+    {
+      path: "/partner",
+      element: <PartnerPage />,
     }
   ]);
 

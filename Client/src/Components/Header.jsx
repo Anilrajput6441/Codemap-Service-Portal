@@ -20,21 +20,7 @@ const Header = () => {
           {screen.width > 1000 && (
             <>
               <div className="iconsArea flex gap-x-9  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
-                <p
-                  id="about-us"
-                  className="underline-offset-[1.35vmin] "
-                  onMouseOver={() => {
-                    document.getElementById("about-us").style.textDecoration =
-                      "underline";
-                  }}
-                  onMouseOut={() => {
-                    document.getElementById("about-us").style.textDecoration =
-                      "";
-                  }}
-                >
-                  About
-                </p>
-
+                
                 <p
                   id="projects"
                   className="underline-offset-[1.35vmin] "
@@ -105,7 +91,7 @@ const Header = () => {
                       "";
                   }}
                 >
-                  Partner
+                  <Link to="/partner">Partner</Link>
                 </p>
               </div>
 
@@ -134,23 +120,7 @@ const Header = () => {
         {screen.width < 1000 && showNav && (
           <>
             <div className="navIconsMobile gap-y-3 p-2 pl-3 flex flex-col">
-              <p
-                id="about-us1"
-                className="underline-offset-[1.35vmin] "
-                onClick={() => {
-                  setShowNav(!showNav);
-                }}
-                onMouseOver={() => {
-                  document.getElementById("about-us1").style.textDecoration =
-                    "underline";
-                }}
-                onMouseOut={() => {
-                  document.getElementById("about-us1").style.textDecoration =
-                    "";
-                }}
-              >
-                About
-              </p>
+      
               <p
                 id="technologies1"
                 className="underline-offset-[1.35vmin] "
@@ -168,8 +138,9 @@ const Header = () => {
                   ).style.textDecoration = "";
                 }}
               >
-                Team
+                <Link to="/team">Team</Link>
               </p>
+
               <p
                 id="projects1"
                 className="underline-offset-[1.35vmin] "
@@ -185,26 +156,26 @@ const Header = () => {
                     "";
                 }}
               >
-                Projects
+                <Link to="/projects">Projects</Link>
               </p>
               <p
-                id="testinomials1"
+                id="career"
                 className="underline-offset-[1.35vmin] "
                 onClick={() => {
                   setShowNav(!showNav);
                 }}
                 onMouseOver={() => {
                   document.getElementById(
-                    "testinomials1"
+                    "career"
                   ).style.textDecoration = "underline";
                 }}
                 onMouseOut={() => {
                   document.getElementById(
-                    "testinomials1"
+                    "career"
                   ).style.textDecoration = "";
                 }}
               >
-                Careers
+               <Link to="/career">Career</Link>
               </p>
               <p
                 id="team1"
@@ -220,7 +191,7 @@ const Header = () => {
                   document.getElementById("team1").style.textDecoration = "";
                 }}
               >
-               Blogs
+              <Link to="/blogs">Blogs</Link>
               </p>
 
               <p
@@ -238,7 +209,7 @@ const Header = () => {
                     "";
                 }}
               >
-               Partner
+               <Link to="/partner">Partner</Link>
               </p>
             
               <div className="buttonArea">

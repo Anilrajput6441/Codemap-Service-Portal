@@ -3,8 +3,19 @@ import Header from './Header'
 import Card from './Card'
 import RevolvingHeader from './RevolvingHeader'
 import Footer from './Footer'
+import {useState,useEffect} from "react"
 
 const CareerPage = () => {
+  const [count, setCount] = useState("0");
+  const [state,setState] = useState("Frontend");
+  const changeColor = () => {
+    console.log(state);
+    document.getElementById(count).style.backgroundColor = "#6e41c6";
+  };
+  useEffect(()=>{
+    changeColor();
+  },[count]);  
+    
  
   const apiResponse=
   [
@@ -64,9 +75,24 @@ const CareerPage = () => {
     <div className='bg-backgroundMain flex flex-wrap p-5'>
 
       <div className="optionsBox ">
+  
         <div className="mt-[-1.65vmin] text-gray lg:mt-1 text-[4.15vmin] md:text-[2.65vmin] optionsHolder flex gap-x-14  ml-6 text-[2.85vmin]">
-          <p>Technical</p>
-          <p>Non-Technical</p>
+          <div className='bg-'>
+          <p onClick={()=>{
+             document.getElementById(count).style.backgroundColor = "#f2f2f2";
+             setCount("0");
+             setState("Technical");}
+          }>Technical</p>
+          <div className="underline bg-lightGrey h-1 w-[10vmin] mt-1" id="0"></div>
+          </div>
+          <div>
+          <p  onClick={()=>{
+             document.getElementById(count).style.backgroundColor = "#f2f2f2";
+             setCount("1");
+             setState("Non-Technical");}
+          } >Non-Technical</p>
+               <div className="underline bg-lightGrey h-1 w-[10vmin] mt-1" id="1"></div>
+          </div>
         </div>
         <div className="pt-4 HorizontalLine flex justify-center items-center mt-1">
             <div className="line w-[92vw] h-4 border-gray border-t-[1px]"></div>

@@ -1,4 +1,15 @@
+import { useEffect,useState } from "react";
+
 const TechStack = () => {
+  const [count, setCount] = useState("0");
+  const [state,setState] = useState("Frontend");
+  const changeColor = () => {
+    console.log(state);
+    document.getElementById(count).style.backgroundColor = "#6e41c6";
+  };
+  useEffect(()=>{
+    changeColor();
+  },[count]);  
   return (
     <div className="Holder w-[100vw] bg-backgroundMain p-3">
       <p className="text-extrabold text-center text-[7.25vmin] p-2 font-extrabold">
@@ -6,12 +17,41 @@ const TechStack = () => {
       </p>
       <div className="iconHolder flex justify-center items-center text-textGrey gap-x-[10vmin] mt-10 text-[3.1vmin] font-poppins">
         <div>
-          <p>Frontend</p>
-          <div className="underline h-2 w-20 bg-mainText"></div>
+          <p onClick={()=> {
+            document.getElementById(count).style.backgroundColor = "#f0f2ff";
+            setCount("0");
+            setState("Frontend");
+
+          }}>Frontend</p>
+          <div className='underline h-2 w-20 bg-backgroundMain'  id="0"></div>
         </div>
-        <p>Backend</p>
-        <p>Database</p>
-        <p>Android Development</p>
+        <div>
+        <p onClick={()=> {
+            document.getElementById(count).style.backgroundColor = "#f0f2ff";
+            setCount("1");
+            setState("Backend");
+
+          }}>Backend</p>
+        <div className="underline h-2 w-20 bg-backgroundMain"  id="1"></div>
+        </div>
+        <div>
+        <p onClick={()=> {
+            document.getElementById(count).style.backgroundColor = "#f0f2ff";
+            setCount("2");
+            setState("Database");
+
+          }}>Database</p>
+        <div className="underline h-2 w-20 bg-backgroundMain"   id="2"></div>
+        </div>
+        <div>
+        <p onClick={()=> {
+            document.getElementById(count).style.backgroundColor = "#f0f2ff";
+            setCount("3")-
+            setState("Android Development");
+
+          }}>Android Development</p>
+        <div className="underline h-2 w-20 bg-backgroundMain"  id="3"></div>
+        </div>
       </div>
 
       <div className="holder flex justify-center items-center">

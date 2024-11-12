@@ -2,8 +2,19 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Card from "./Card";
 import TitleComponent from "./TitleComponent";
+import { useState,useEffect } from "react";
 
 const Projects=()=>{
+
+  const [count, setCount] = useState("0");
+  const [state,setState] = useState("Frontend");
+  const changeColor = () => {
+    console.log(state);
+    document.getElementById(count).style.backgroundColor = "#6e41c6";
+  };
+  useEffect(()=>{
+    changeColor();
+  },[count]);  
     
   const apiResponse = [
     {
@@ -36,10 +47,28 @@ const Projects=()=>{
         <TitleComponent title="Our Projects" slogan="Some of our recent projects done by our team"/>
         <div className="projectsNavHolder flex justify-center items-center  flex-wrap text-[3vmin] gap-x-8 text-textGrey p-4">
 
-            <div className="optionHolder flex justify-center items-center  flex-wrap text-[3.65vmin] md:text-[2.55vmin] gap-x-5 md:gap-x-36 text-textGrey p-3">
-            <p>Web Projects</p>
-            <p>Android Projects</p>
-            <p>Custom Project</p>
+            <div className="optionHolder flex justify-center items-center  flex-wrap text-[3.65vmin] md:text-[2.75vmin] gap-x-5 md:gap-x-36 text-textGrey p-3">
+            <div>
+            <p onClick={()=>{ 
+            document.getElementById(count).style.backgroundColor = "#f2f2f2";
+            setCount("0");
+            setState("Web");}}>Web Projects</p>
+            <div className="underline bg-lightGrey h-1 w-[10vmin] mt-1" id="0"></div>
+            </div>
+            <div>
+            <p onClick={()=>{ 
+            document.getElementById(count).style.backgroundColor = "#f2f2f2";
+            setCount("1");
+            setState("android");}}>Android Projects</p>
+            <div className="underline bg-lightGrey h-1 w-[10vmin] mt-1" id="1"></div>
+            </div>
+            <div >
+            <p onClick={()=>{ 
+            document.getElementById(count).style.backgroundColor = "#f2f2f2";
+            setCount("2");
+            setState("custom");}}>Custom Project</p>
+            <div className="underline bg-lightGrey h-1 w-[10vmin] mt-1" id="2"></div>
+            </div>
 
             </div>
         </div>
