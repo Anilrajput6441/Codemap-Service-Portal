@@ -14,7 +14,7 @@ const SideBlogCard = (props) => {
         </div>
         <div className="textHolder flex flex-col gap-y-2">
           <p className="date text-red text-[2.1vmin]">{props.data.date}</p>
-          <p className="title font-bold text-[2.1vmin]">{props.data.title}</p>
+          <p className="title font-bold text-[2.35vmin]">{props.data.title}</p>
 
           <div className="readMore text-textGrey  text-[2.1vmin]">
             <a href={props.data.link}>Read More...</a>

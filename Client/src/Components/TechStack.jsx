@@ -15,6 +15,7 @@ const TechStack = () => {
       <p className="text-extrabold text-center text-[7.25vmin] p-2 font-extrabold">
         Tech <span className="text-mainText">Stack</span>
       </p>
+
       <div className="iconHolder flex justify-center items-center text-textGrey gap-x-[10vmin] mt-10 text-[3.1vmin] font-poppins">
         <div>
           <p onClick={()=> {

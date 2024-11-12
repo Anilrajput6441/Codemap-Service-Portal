@@ -59,7 +59,7 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[16vmin]  ml-[11vmin] mt-[5.15vmin]">
+                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin]">
                   <div className="formHolder w-[35vw] bg-white p-5">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
@@ -109,7 +109,7 @@ const Hero = () => {
                   <div className="flex">
                     <div className="w-[85vmin] border-mainText  rounded-[4px] ml-44 flex">
                       <div className="verticalLine h-[8vmin]  w-3 bg-mainText mt-4 rounded-[4px]"></div>
-                      <div className="ml-2">
+                      <div className="ml-4">
                         <p className="HeroheaderText font-bold text-[6.85vmin] ml-2">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>

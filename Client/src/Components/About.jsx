@@ -3,7 +3,7 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-4 mt-12 pb-2 pt-4 ">
+      <div className="aboutSection ml-4 mt-10 pb-5 pt-4 ">
         {screen.width < 760 && (
           <>
             <div className="aboutHeader">
@@ -136,7 +136,7 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[18vmin] flex  ">
-              <div className="imageHolder w-[67vmin] h-[110vmin]">
+              <div className="imageHolder w-[69vmin] h-[110vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
@@ -375,23 +375,23 @@ const About = () => {
           screen.height > 810 &&
           screen.width <= 1500 && (
             <>
-              <div className="aboutHeader mt-[-1vmin]">
+              <div className="aboutHeader mt-[-1vmin] ml-5 ">
                 <p className="font-extrabold text-[8vmin]">
                   About-
                   <span className="text-mainText">Us</span>
                 </p>
               </div>
               <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 justify-center items-center">
-                <div className="imageHolder w-[70vmin] h-[100vmin]">
+                <div className="imageHolder w-[70vmin] h-[95vmin]">
                   <img
                     src={require("../../assets/aboutus.jpg")}
                     className="max-w-full max-h-full object-contain"
                   ></img>
                 </div>
 
-                <div className="textHolder w-[110vmin] text-[2.95vmin]">
-                  <div className="mainTextHolder flex flex-col w-[110vmin]">
-                    <div className="who border-black h-[35vmin]">
+                <div className="textHolder w-[90vmin] text-[2.8vmin] ">
+                  <div className="mainTextHolder flex flex-col w-[90vmin]">
+                    <div className="who border-black h-[35vmin] ml-[-3.75vmin]">
                       <p className="font-bold text-[5vmin]">Who we are?</p>
                       <ul className="mt-2 mainText">
                         <li>
@@ -407,12 +407,12 @@ const About = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="vision  h-[32vmin]">
+                    <div className="vision  h-[32vmin] ml-[-3.75vmin] mt-[-2vmin]">
                       <p className="font-bold text-[4.75vmin]">
                         Our Vision and mission
                       </p>
 
-                      <ul className="mt-2 mainText flex flex-col gap-y-2">
+                      <ul className="mt-6 mainText flex flex-col gap-y-2">
                         <li>Delivering top notch solutions to our clients</li>
                         <li>
                           Providing top quality services at the most affordable
@@ -424,7 +424,7 @@ const About = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="dataHolder h-[25vmin]">
+                    <div className="dataHolder h-[25vmin] ml-[-3.75vmin] mt-[-3.5vmin]">
                       <Datacomponent />
                     </div>
                   </div>
@@ -484,7 +484,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="dataHolder h-[25vmin] mt-[-1.45vmin]">
+                  <div className="dataHolder h-[25vmin] mt-[-1.45vmin] ">
                     <Datacomponent />
                   </div>
                 </div>
