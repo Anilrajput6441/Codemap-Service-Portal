@@ -143,7 +143,7 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.35px] ml-1 2xl:ml-3 2xl:pl-1">
+        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.4px] ml-1 2xl:ml-3 2xl:pl-1">
           <div className="sideArea flex gap-y-9 w-[40vw]  pl-1 ml-1 2xl:ml-4 2xl:pl-1 mt-[-1.75vmin]">
             <ul>
               {apiResponse.map((val, index) => (
