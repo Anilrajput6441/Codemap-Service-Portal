@@ -23,7 +23,7 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col  pl-6 2xl:pl-8 pr-4 pt-8 pb-3 mt-7">
+    <div className="w-[100vw]  flex flex-col  pl-5 2xl:pl-4  pr-4 pt-8 pb-3 mt-7">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
@@ -32,7 +32,7 @@ const BlogHome = () => {
           Get the latest tech and business blogs by Codemap’s team
         </p>
       </div>
-      <div className="flex w-[100vw]   pl-4 pr-4 pt-8 pb-8 mt-6">
+      <div className="flex w-[100vw]  pl-4 pr-4 pt-8 pb-8 mt-6">
         <div className="mainArea  w-[55vw] ml-4">
           <div className="mainBlogCardHolder flex flex-col justify-center items-center w-[55vw]  p-4 pb-7 2xl:gap-y-9">
             <div className="mainBlogCard flex flex-col justify-center">
@@ -143,8 +143,8 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-10 w-[40vw]  pl-3 ml-4 2xl:ml-3 2xl:pl-4">
-          <div className="sideArea flex gap-y-9 w-[40vw]  pl-3 ml-4 2xl:ml-6 2xl:pl-4 mt-[-1.75vmin]">
+        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.15px] ml-1 2xl:ml-3 2xl:pl-1">
+          <div className="sideArea flex gap-y-9 w-[40vw]  pl-1 ml-1 2xl:ml-4 2xl:pl-1 mt-[-1.75vmin]">
             <ul>
               {apiResponse.map((val, index) => (
                 <SideBlogCard data={val} />

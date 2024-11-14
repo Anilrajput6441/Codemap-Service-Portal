@@ -236,9 +236,9 @@ const PartnerPage = () => {
                 <div className="w-[53vw] flex flex-col justify-center  h-[90vh]  text-[2.65vmin] ml-9 mt-[2vmin]">
 
                   <div className='mt-6 font-poppins mt-[2vmin]'>
-                    <p className='leading-[5.45vmin]'>Codemap is a leading software development and consulting firm in India. We provide  our technical solutions and consulting services pan India across multiple business domains in India like Finance, HealthCare, HR,  Education and many more.With an experienced team,We want to deliver the best quality software solutions to our client.We posses strong work ethic and are always strict towards deadline .The reasons to partner with codemap is as  follows:</p>
+                    <p className='leading-[5.6vmin]'>Codemap is a leading software development and consulting firm in India. We provide  our technical solutions and consulting services pan India across multiple business domains in India like Finance, HealthCare, HR,  Education and many more.With an experienced team,We want to deliver the best quality software solutions to our client.We posses strong work ethic and are always strict towards deadline .The reasons to partner with codemap is as  follows:</p>
 
-                    <ol className='leading-[5.45vmin]'>
+                    <ol className='leading-[5.6vmin]'>
                       <li>1. We believe in building long term relations with our business partners.</li>
                       <li>2. Get higher incentives and commiss
                         ions for your leads generated.</li>

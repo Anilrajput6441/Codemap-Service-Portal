@@ -11,7 +11,7 @@ const Card = (props) => {
       <div>
         {(props.type === "Service" &&
           (screen.width <= 1700 || screen.width >= 1730) && (
-            <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[54vmin] 2xl:w-[50vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
+            <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[50vmin] 2xl:w-[52vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
               <div className="imageHolder">
                 {(props.data.title === "Website Development" &&
                   screen.width > 1000 && (
@@ -69,7 +69,7 @@ const Card = (props) => {
                   </p>
                 </div>
                 <div className="captionBody w-[100%] lg:w-[76%] flex justify-center items-center text-textGrey text-[3vmin] md:text-[2.15vmin]">
-                  <p className="mt-2 text-[3.45vmin] md:text-[2.05vmin]">
+                  <p className="mt-2 text-[3.45vmin] md:text-[2.05vmin] pl-2">
                     {props.data.descr}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ const Card = (props) => {
                   <div className="line w-[30vmin]  border-t-[1px]"></div>
                 </div>
                 <div className="captionBody w-[100%] lg:w-[76%] text-center text-textGrey text-[3vmin] md:text-[2.15vmin]">
-                  <p className="mt-2 text-[3.45vmin] md:text-[2.15vmin]">
+                  <p className="mt-2 text-[3.45vmin] md:text-[2.05vmin] text-center">
                     {props.data.description}
                   </p>
                 </div>
@@ -103,7 +103,7 @@ const Card = (props) => {
           )) ||
           (props.type === "Service" &&
             (screen.width > 1700 || screen.width < 1730) && (
-              <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[45vmin] 2xl:w-[40vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
+              <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[46vmin] 2xl:w-[45vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
                 <div className="imageHolder">
                   {(props.data.title === "Website Development" &&
                     screen.width > 1000 && (

@@ -59,8 +59,8 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin]">
-                  <div className="formHolder w-[35vw] bg-white p-5">
+                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin] ">
+                  <div className="formHolder w-[35vw] bg-white p-5 rounded-[1.25vmin]">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
                       {" "}
@@ -107,7 +107,7 @@ const Hero = () => {
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[19vmin]">
                   <div className="flex">
-                    <div className="w-[85vmin] border-mainText  rounded-[4px] ml-44 flex">
+                    <div className="w-[85vmin] border-mainText  rounded-[4px] ml-48 flex">
                       <div className="verticalLine h-[8vmin]  w-3 bg-mainText mt-4 rounded-[4px]"></div>
                       <div className="ml-4">
                         <p className="HeroheaderText font-bold text-[6.85vmin] ml-2">
@@ -133,7 +133,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[13vmin]">
-                  <div className="formHolder w-[30vw] bg-white p-6">
+                  <div className="formHolder w-[36vw] bg-white p-6">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
                       {" "}
