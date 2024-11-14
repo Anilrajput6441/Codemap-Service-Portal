@@ -289,21 +289,21 @@ const PartnerPage = () => {
                       follows:
                     </p>
 
-                    <ol className="leading-[5.6vmin]">
+                    <ol className="leading-[5.6vmin] text-[2.45vmin]">
                       <li>
-                        1. We believe in building long term relations with our
+                        &nbsp;1. We believe in building long term relations with our
                         business partners.
                       </li>
                       <li>
-                        2. Get higher incentives and commiss ions for your leads
+                      &nbsp;2. Get higher incentives and commiss ions for your leads
                         generated.
                       </li>
                       <li>
-                        3. We believe in trust building and mutual benefits
+                      &nbsp;3. We believe in trust building and mutual benefits
                         within the business partners and their stakeholders.
                       </li>
                       <li>
-                        4. With moto of making strong collaborative partners to
+                      &nbsp;4. With moto of making strong collaborative partners to
                         excel and grow both of the partners
                       </li>
                     </ol>

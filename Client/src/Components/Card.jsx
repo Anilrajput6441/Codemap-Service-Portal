@@ -64,12 +64,12 @@ const Card = (props) => {
               </div>
               <div className="flex flex-col justify-center items-center">
                 <div className="titleHolder">
-                  <p className="font-bold text-[4.65vmin] md:text-[3.25vmin]  ">
+                  <p className="font-bold text-[4.65vmin] md:text-[3.35vmin]  ">
                     {props.data.title}
                   </p>
                 </div>
                 <div className="captionBody w-[100%] lg:w-[76%] flex justify-center items-center text-textGrey text-[3vmin] md:text-[2.15vmin]">
-                  <p className="mt-2 text-[3.45vmin] md:text-[2.05vmin] pl-2">
+                  <p className="mt-2 text-[3.45vmin] md:text-[2.35vmin] pl-2">
                     {props.data.descr}
                   </p>
                 </div>
