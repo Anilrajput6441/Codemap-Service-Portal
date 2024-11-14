@@ -28,20 +28,20 @@ const Hero = () => {
           </div>
         </div>
       )) || (
-        <div className="mainHeroLaptop pb-6">
+        <div className="mainHeroLaptop pb-3">
           {screen.width < 1700 && (
             <div className="font-poppins flex  HeroArea w-[100vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)]  bg-backgroundMain pb-10">
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[15vmin]">
                   <div className="flex">
-                    <div className="w-[85vmin] border-mainText  rounded-[4px] lg:ml-16 flex">
+                    <div className="w-[85vmin] border-mainText  rounded-[4px] lg:ml-20 flex">
                       <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-7"></div>
-                      <div className="ml-1">
+                      <div className="ml-2">
                         <p className="HeroheaderText font-bold text-[8vmin] ml-2">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </p>
-                        <p className="ml-[-1vmin] text-mainText font-medium mt-1">
+                        <p className="ml-[-2vmin] text-mainText font-medium mt-1">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[3vmin] ">
+                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[5vmin] ">
                   <div className="formHolder w-[35vw] bg-white p-5 rounded-[1.25vmin]">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">

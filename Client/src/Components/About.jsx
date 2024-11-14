@@ -208,7 +208,7 @@ const About = () => {
                 <div className="mainTextHolder flex flex-col w-[86vmin] gap-y-3">
                   <div className="who border-black h-[35vmin]">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
-                    <ul className="mt-2 mainText">
+                    <ul className="mt-2 mainText leading-[4.5vmin]">
                       <li>
                         We are a software development firm aimed to develop cost
                         effective <br></br>solutions for our clients
@@ -222,7 +222,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="vision  h-[32vmin]">
+                  <div className="vision  h-[32vmin] leading-[5.6vmin]">
                     <p className="font-bold text-[4.75vmin]">
                       Our Vision and mission
                     </p>
