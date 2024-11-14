@@ -28,7 +28,7 @@ const Services = () => {
           We have a mission to provide top quality and affordable services to
           our clients
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-x-20 gap-y-8 md:gap-y-5 mt-10 pl-5 pr-5">
+        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-y-5 mt-10 pl-5 pr-5">
           {servicesObj.map((val, index) => (
             <Card data={servicesObj[index]} type="Service" />
           ))}

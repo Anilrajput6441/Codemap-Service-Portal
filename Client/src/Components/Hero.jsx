@@ -103,7 +103,7 @@ const Hero = () => {
           )}
 
           {screen.width >= 1700 && screen.width <= 1919 && (
-            <div className="font-poppins flex  HeroArea w-[100vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-15vmin)] pb-8  bg-backgroundMain pb-10">
+            <div className="font-poppins flex  HeroArea w-[100vw] bg-backgroundMain pb-5">
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[19vmin]">
                   <div className="flex">
