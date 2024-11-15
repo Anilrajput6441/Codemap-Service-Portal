@@ -20,6 +20,8 @@ import ContactPage from "./ContactPage";
 import SideBlogCard from "./Blogs/SideBlogCard";
 import MainPage from "./Blogs/MainPage";
 import PartnerPage from "./PartnerPage";
+import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
+import Admin from "./CMS/AdminPage/Admin";
 
 dotenv.config();
 const Body = () => {
@@ -46,10 +48,7 @@ const Body = () => {
       path: "/admin/register",
       element: <CMSRegister />,
     },
-    {
-      path: "/admin",
-      element: <CMSLogin />,
-    },
+   
     {
       path: "/cmsDashboard",
       element: <CMSDashboard />,
@@ -95,6 +94,14 @@ const Body = () => {
     {
       path: "/partner",
       element: <PartnerPage />,
+    },
+    {
+      path:"/employeeCMS",
+      element: <EmployeeCMS />
+    },
+    {
+      path:"/admin",
+      element: <Admin />
     }
   ]);
 

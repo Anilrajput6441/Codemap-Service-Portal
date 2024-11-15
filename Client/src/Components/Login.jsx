@@ -28,7 +28,7 @@ const Login =(props)=>{
             <div className="line md:w-[58vmin] border-gray border-t-[1px] ml-2 lg:ml-8 h-4 p"></div>
         </div>
 
-        <div className="textHolder mt-">
+        <div className="textHolder mt-2">
             {props.category==="Client" &&
             <p className="text-[3.15vmin] md:text-[2.1vmin] 2xl:text-[1.98vmin] text-deepViolet mt-[-4vmin] text-center "> ( Track your project timeline and payments
                 in our platform )</p>
