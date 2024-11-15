@@ -23,7 +23,7 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col  pl-5 2xl:pl-4  pr-4 pt-8 pb-3 mt-7">
+    <div className="w-[100vw]  flex flex-col  pl-5 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>

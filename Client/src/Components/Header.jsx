@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-const Header = () => {
+const Header = (props) => {
   const [showNav, setShowNav] = useState(false);
   const navigate=useNavigate();
   return (
@@ -95,11 +95,32 @@ const Header = () => {
                 </p>
               </div>
 
+              {props.category!="dashboard" &&
+
               <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
                 <button onClick={()=>navigate("/clientlogin")} className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
                   Login 
                 </button>
               </div>
+              }
+
+              
+              {props.category==="dashboard" &&
+
+              <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
+                <button onClick={()=>{
+                  localStorage.removeItem("token");
+                  navigate("/cms");
+                }} className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
+                  Logout
+                </button>
+              </div>
+              }
+
+
+
+              
+
             </>
           )}
           {screen.width < 1000 && (

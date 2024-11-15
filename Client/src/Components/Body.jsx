@@ -22,6 +22,7 @@ import MainPage from "./Blogs/MainPage";
 import PartnerPage from "./PartnerPage";
 import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
 import Admin from "./CMS/AdminPage/Admin";
+import CMSCard from "./CMS/CMSCard";
 
 dotenv.config();
 const Body = () => {
@@ -102,6 +103,10 @@ const Body = () => {
     {
       path:"/admin",
       element: <Admin />
+    },
+    {
+      path:"/CMScard",
+      element:<CMSCard />
     }
   ]);
 

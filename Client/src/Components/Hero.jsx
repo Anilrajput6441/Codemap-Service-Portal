@@ -34,7 +34,7 @@ const Hero = () => {
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[15vmin]">
                   <div className="flex">
-                    <div className="w-[85vmin] border-mainText  rounded-[4px] lg:ml-20 flex">
+                    <div className="w-[85vmin] border-mainText  rounded-[4px] lg:ml-16 flex">
                       <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-7"></div>
                       <div className="ml-2">
                         <p className="HeroheaderText font-bold text-[8vmin] ml-2">
@@ -59,7 +59,7 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[18vmin]  ml-[12vmin] mt-[5vmin] ">
+                <div className="w-[50vw] flex flex-col gap-y-10 lg:ml-[16vmin]  ml-[9vmin] mt-[5vmin] ">
                   <div className="formHolder w-[35vw] bg-white p-5 rounded-[1.25vmin]">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
@@ -103,9 +103,9 @@ const Hero = () => {
           )}
 
           {screen.width >= 1700 && screen.width <= 1919 && (
-            <div className="font-poppins flex  HeroArea w-[100vw] bg-backgroundMain pb-5">
+            <div className="font-poppins flex  HeroArea w-[100vw] bg-backgroundMain pb-20">
               <div className="flex">
-                <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[19vmin]">
+                <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[12vmin]">
                   <div className="flex">
                     <div className="w-[85vmin] border-mainText  rounded-[4px] ml-48 flex">
                       <div className="verticalLine h-[8vmin]  w-3 bg-mainText mt-4 rounded-[4px]"></div>
@@ -114,25 +114,25 @@ const Hero = () => {
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </p>
-                        <p className="ml-1 text-mainText font-medium mt-2 text-[2.25vmin]">
+                        <p className="ml-[-0.45vmin] text-mainText font-medium mt-2 text-[2.25vmin]">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="w-[80vmin] text-[2.15vmin] pl-5 pr-5 font-roboto ml-5">
-                    <p className="ml-6 mt-1">
+                    <p className="ml-10 mt-1">
                       We at codemap aim to deliver quality technical solutions
                       to our clients at the most affordable cost. Give us a
                       chance to make your digital dream come true!!!
                     </p>
-                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-6 p-2">
+                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-10 p-2">
                       {" "}
                       <Link to="/contact">Contact us</Link>
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[13vmin]">
+                <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[6vmin]">
                   <div className="formHolder w-[36vw] bg-white p-6">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
@@ -187,7 +187,7 @@ const Hero = () => {
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </p>
-                        <p className="ml-1 text-mainText font-medium mt-2 text-[2.25vmin]">
+                        <p className="ml-[-0.56vmin] text-mainText font-medium mt-2 text-[2.25vmin]">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
@@ -205,8 +205,8 @@ const Hero = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[13vmin]">
-                  <div className="formHolder w-[30vw] bg-white p-6">
+                <div className="w-[50vw] flex flex-col gap-y-10   ml-[12vmin] mt-[10vmin]">
+                  <div className="formHolder w-[35vw] bg-white p-6">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
                       {" "}

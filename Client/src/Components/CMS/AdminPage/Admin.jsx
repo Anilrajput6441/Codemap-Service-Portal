@@ -8,13 +8,12 @@ const Admin = () => {
 
 
   const navigate = useNavigate();
-  const verifyUser =  () => {
+  const verifyUser = async () => {
     const dataObj = {
       token: localStorage.getItem("token"),
     };
 
-    console.log(dataObj.token);
-    const response = useAdminAuth(dataObj, "verify");
+    const response = await useAdminAuth(dataObj, "verify");
     if (response.status === 200) {
        alert("User is verified");
     } else {

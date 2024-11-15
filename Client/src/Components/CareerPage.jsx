@@ -72,7 +72,7 @@ const CareerPage = () => {
       <RevolvingHeader />
     }
     <Header />
-    <div className='bg-backgroundMain flex flex-wrap p-5'>
+    <div className='bg-backgroundMain flex flex-wrap p-5 pb-16'>
 
       <div className="optionsBox ">
   
@@ -105,7 +105,14 @@ const CareerPage = () => {
         ))}
      </div>
      </div>
+     <div className="flex justify-center items-center">
 
+        <div className=" border-headerUnderline border-t-[2px] w-[95vw] ">
+                    
+        </div>
+
+        </div>
+      <Footer />
 
     </>
   )

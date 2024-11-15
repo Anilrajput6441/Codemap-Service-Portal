@@ -3,9 +3,12 @@ import bcrypt from "bcrypt";
 import { SALT_ROUNDS } from "../../Constants/backendConstants.js";
 const postRegister = () => {
   return async (req, res) => {
-    const { username, email, password, secretKey } = req.body;
-
+     const { username, email, password, secretKey } = req.body;
+    // console.log(secretKey,process.env.SECRET_TOKEN)
     if (secretKey === process.env.SECRET_TOKEN) {
+
+      //console.log("Hi")
+
       try {
         if (!username || !email || !password) {
           return res
@@ -45,9 +48,10 @@ const postRegister = () => {
           .json({ status: false, message: "Something went wrong" });
       }
     } else {
+      
       res.status(401).json({ message: "Invalid secret key" });
     }
   };
-};
+  }
 
 export default postRegister;

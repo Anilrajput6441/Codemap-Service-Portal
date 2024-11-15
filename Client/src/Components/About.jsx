@@ -562,7 +562,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[10vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[13vmin]">
               <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -570,7 +570,7 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-12">
+              <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-15">
                 <div className="mainTextHolder flex flex-col w-[110vmin]">
                   <div className="who border-black h-[35vmin]">
                     <p className="font-bold text-[5vmin]">Who we are?</p>

@@ -1,7 +1,53 @@
+import { useState } from "react";
+import { useAdminAuth } from "./CMS/Utils/useAdminAuth";
 import Footer from "./Footer";
 import Header from "./Header";
 import RevolvingHeader from "./RevolvingHeader";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Login =(props)=>{
+
+    toast.configure();
+
+  
+  const navigate=useNavigate();
+
+  const [email, setEmail]=useState(null);
+  const [password, setPassword]=useState(null);
+  const [clientId, setClientId]=useState(null);
+
+  const  LoginUser= async (e)=>{
+
+    e.preventDefault();
+
+     if(props.category!="client"){
+        const loginStatusObj=await useAdminAuth({email, password},"login");
+        console.log(loginStatusObj);
+        if(loginStatusObj.status===201){
+            toast("login Successful... ", {
+                position: toast.POSITION.TOP_RIGHT,
+              });
+           navigate("/cmsDashboard");
+        }
+        else{
+        toast("login Failed... ", {
+                position: toast.POSITION.TOP_RIGHT,
+              });
+  
+        }
+    }
+    else{
+        const loginStatusObj=useAdminAuth({email,clientId},"login");
+        if(loginStatusObj.status===201){
+            alert("User Logged in");
+        }
+        else{
+            alert("Invalid credentials");
+        }
+    }
+
+   }
  return (
     <>
     {
@@ -40,20 +86,30 @@ const Login =(props)=>{
                 <form className="flex flex-col gap-y-8  mt-6 2xl:p-4">
 
                    
-                    <input type="email" placeholder="Enter your email..." className="bg-lightGrey p-3 2xl:text-[2.15vmin] mt-[-2.45vmin]"/>
+                    <input type="email" placeholder="Enter your email..." className="bg-lightGrey p-3 2xl:text-[2.15vmin] mt-[-2.45vmin]" onChange={(e)=>setEmail(e.target.value)}/>
                    
                    {props.category==="Client" &&
-                    <input type="password" placeholder="Enter your client-id"  className="bg-lightGrey p-3  2xl:text-[2.1vmin]"/>
+                    <input type="password" placeholder="Enter your client-id"  className="bg-lightGrey p-3  2xl:text-[2.1vmin]" onChange={(e)=>setClientId(e.target.value)}/>
                    || (
-                    <input type="password" placeholder="Enter your password..." className="bg-lightGrey p-3  2xl:text-[2.1vmin]"/>
+                    <input type="password" placeholder="Enter your password..." className="bg-lightGrey p-3  2xl:text-[2.1vmin]" onChange={(e)=>setPassword(e.target.value)}/>
                    )}
                     <div className="btnHolder flex justify-center items-center mt-[-1.5vmin]">
-                    <button type="submit" className="mt-5 bg-mainText text-white rounded-md p-2 w-24 text-[2.45vmin] lg:text-[2min]">Login</button>
+                    <button type="submit" className="mt-5 bg-mainText text-white rounded-md p-2 w-24 text-[2.45vmin] lg:text-[2min]" onClick={LoginUser}>Login</button>
                     </div>
                 </form>
             </div>
         </div>
         </div>
+
+        <div className="flex justify-center items-center">
+
+        <div className=" border-headerUnderline border-t-[2px] w-[95vw] ">
+                    
+        </div>
+
+        </div>
+        <Footer />
+
 
   
     </>
