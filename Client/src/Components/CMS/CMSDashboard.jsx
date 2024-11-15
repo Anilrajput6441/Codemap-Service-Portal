@@ -3,6 +3,7 @@ import { useAdminAuth } from "./Utils/useAdminAuth";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import CMSCard from "./CMSCard";
 
 const CMSDashboard = () => {
   const navigate = useNavigate();
@@ -27,8 +28,8 @@ const CMSDashboard = () => {
   return (
     <>
       <Header category="dashboard" />
-       <div className="mainHolder w-[100vw] h-[100vh]">
-
+       <div className="mainHolder w-[100vw] pb-20 flex justify-center items-center mt-10">
+          <CMSCard />
        </div>
       <Footer />
     </>

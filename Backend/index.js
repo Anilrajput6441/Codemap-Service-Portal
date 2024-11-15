@@ -10,6 +10,8 @@ import teamsRouter from "./Routes/teamsRouter.js";
 import projectsRouter from "./Routes/projectsRouter.js";
 import technologiesRouter from "./Routes/technologiesRouter.js";
 import authenticationRouter from "./Routes/authenticationRouter.js";
+import ApplyRouter from "./Routes/ApplyRouter.js";
+
 
 dotenv.config();
 
@@ -33,6 +35,8 @@ app.use("/api/v1/teams", teamsRouter);
 app.use("/api/v1/projects", projectsRouter);
 app.use("/api/v1/technologies", technologiesRouter);
 app.use("/api/v1/auth", authenticationRouter);
+app.use("/api/v1/apply",ApplyRouter);
+
 
 //App Listen
 app.listen(PORT, () => {

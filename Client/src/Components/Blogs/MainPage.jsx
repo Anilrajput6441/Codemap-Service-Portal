@@ -29,12 +29,7 @@ const apiResponse=[
     date:"November 20, 2024",
     link: "/mainBlogs"
   },
-  {
-    image:require("../../../assets/PM1.jpg"),
-    title:"What is Project Management and its importance?",
-    date:"November 19, 2024",
-    link: "/mainBlogs"
-  }
+ 
 ]
   
   return (
@@ -46,7 +41,7 @@ const apiResponse=[
     }
 
     <Header />
-    <div className="holder pb-10 pt-10 ">
+    <div className="holder pb-16 pt-10 ">
     <SearchBar />
 
     <p className="pl-3 md:pl-7 2xl:ml-10 mt-10 font-medium text-[5.5vmin] md:text-[4.45vmin] font-poppines">Our Latest Blogs...</p>
