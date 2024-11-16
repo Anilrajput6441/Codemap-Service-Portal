@@ -235,8 +235,7 @@ const About = () => {
                       </li>
                       <li>
                         Quality customer service is our motto which help us to
-                        make strong <br></br> long term relationship with our
-                        clients{" "}
+                        make strong long term relationship with our clients{" "}
                       </li>
                     </ul>
                   </div>

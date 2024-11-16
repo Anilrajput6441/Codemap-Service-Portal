@@ -278,7 +278,7 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="w-[50vw] flex flex-col gap-y-14   ml-[12vmin] mt-[13vmin]">
-                  <div className="formHolder w-[30vw] bg-white p-6">
+                  <div className="formHolder w-[35vw] bg-white p-6">
                     <p className="text-[4vmin] font-bold">Contact us</p>
                     <p className="text-mainText mt-[0.75px]">
                       {" "}

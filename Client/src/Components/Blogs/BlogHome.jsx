@@ -23,7 +23,7 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col  pl-5 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
+    <div className="w-[100vw]  flex flex-col  pl-4 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
@@ -71,7 +71,18 @@ const BlogHome = () => {
               {screen.width >= 1096 &&
                 screen.width <= 1280 &&
                 screen.height >= 800 && (
-                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[57vmin] pl-4">
+                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[57vmin] pl-2">
+                    <img
+                      src={require("../../../assets/PM5.webp")}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                )}
+
+              {screen.width > 1280 &&
+                screen.width <= 1400 &&
+                screen.height <= 810 && (
+                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
                     <img
                       src={require("../../../assets/PM5.webp")}
                       className="max-w-full max-h-full object-contain"
@@ -92,7 +103,7 @@ const BlogHome = () => {
 
               {screen.width >= 1400 &&
                 screen.width <= 1500 &&
-                screen.height > 810 && (
+                screen.height < 810 && (
                   <>
                     <div className="imageArea  w-[55vw] h-[50vmin] pl-4">
                       <img
@@ -143,8 +154,8 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.4px] ml-1 2xl:ml-3 2xl:pl-1">
-          <div className="sideArea flex gap-y-9 w-[40vw]  pl-1 ml-1 2xl:ml-4 2xl:pl-1 mt-[-1.75vmin]">
+        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.15px] ml-1 2xl:ml-3 2xl:pl-1">
+          <div className="sideArea flex gap-y-9 w-[40vw]  pl-[1.5px] ml-1 2xl:ml-2 2xl:pl-1 mt-[-1.75vmin]">
             <ul>
               {apiResponse.map((val, index) => (
                 <SideBlogCard data={val} />

@@ -1,5 +1,5 @@
 import careerObj from "../../Models/career.js";
-const getCareer = () => {
+const getCareer = (req, res) => {
   careerObj
     .find()
     .then((data) => {

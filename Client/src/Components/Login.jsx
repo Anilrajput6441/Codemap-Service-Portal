@@ -46,7 +46,7 @@ const Login = (props) => {
       <div className="bg-backgroundMain h-[100vh]">
         <Header />
         <div className="mainBody w-[100vw]  lg:h-[calc(100vh-12vmin)] bg-backgroundMain flex justify-center lg:items-center">
-          <div className="loginForm  w-[93vw] md:w-[67vmin] p-5 pb-5  lg:p-3 lg:pb-5 flex flex-col gap-y-6 bg-white mt-8 md:p-7 md:mt-[15vmin]  lg:mt-[-6.45vmin]">
+          <div className="loginForm  w-[93vw] md:w-[67vmin] p-5 pb-5  lg:p-3 lg:pb-5 flex flex-col gap-y-6 bg-white mt-8 md:p-7 md:mt-[15vmin]  lg:mt-[-6.45vmin] p-6">
             <div className="logoArea">
               <div className="logoIcon ml-4 flex justify-center  items-center gap-x-4">
                 <img

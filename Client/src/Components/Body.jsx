@@ -23,6 +23,7 @@ import PartnerPage from "./PartnerPage";
 import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
 import Admin from "./CMS/AdminPage/Admin";
 import CMSCard from "./CMS/CMSCard";
+import CareerCMS from "./CMS/CareerCMS/CareerCMS";
 
 dotenv.config();
 const Body = () => {
@@ -49,65 +50,71 @@ const Body = () => {
       path: "/admin/register",
       element: <CMSRegister />,
     },
-   
+
     {
       path: "/cmsDashboard",
       element: <CMSDashboard />,
     },
     {
       path: "/clientlogin",
-      element: <Login category="Client" />
-    }
-    ,{
-      path:"/cms",
-      element: <Login category="CMS" />
+      element: <Login category="Client" />,
     },
     {
-        path:"/career",
-        element:<CareerPage />
-    },{
-      path:"/apply",
-      element:<ApplyPortal />
-    }
-    ,{
-      path:"/team",
-      element:<TeamPage />
-    },{
-      path:"/projects",
-      element:<Projects />
+      path: "/cms",
+      element: <Login category="CMS" />,
+    },
+    {
+      path: "/career",
+      element: <CareerPage />,
+    },
+    {
+      path: "/apply",
+      element: <ApplyPortal />,
+    },
+    {
+      path: "/team",
+      element: <TeamPage />,
+    },
+    {
+      path: "/projects",
+      element: <Projects />,
     },
     {
       path: "/contact",
       element: <ContactPage />,
-    }
-    ,{
-      path:"/sideblog",
-      element:<SideBlogCard />
-    }
-    ,{
-      path:"/searchBar",
-      element:<SearchBar />
     },
     {
-      path:"/blogsArea",
-      element:<MainPage />
+      path: "/sideblog",
+      element: <SideBlogCard />,
+    },
+    {
+      path: "/searchBar",
+      element: <SearchBar />,
+    },
+    {
+      path: "/blogsArea",
+      element: <MainPage />,
     },
     {
       path: "/partner",
       element: <PartnerPage />,
     },
     {
-      path:"/employeeCMS",
-      element: <EmployeeCMS />
+      path: "/employeeCMS",
+      element: <EmployeeCMS />,
     },
     {
-      path:"/admin",
-      element: <Admin />
+      path: "/admin",
+      element: <Admin />,
     },
     {
-      path:"/CMScard",
-      element:<CMSCard />
-    }
+      path: "/CMScard",
+      element: <CMSCard />,
+    },
+    {
+      path: "/careerCMS",
+      element: <CareerCMS />,
+    },
   ]);
 
   return <RouterProvider router={appRouter} />;

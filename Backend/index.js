@@ -11,7 +11,7 @@ import projectsRouter from "./Routes/projectsRouter.js";
 import technologiesRouter from "./Routes/technologiesRouter.js";
 import authenticationRouter from "./Routes/authenticationRouter.js";
 import ApplyRouter from "./Routes/ApplyRouter.js";
-
+import careerRouter from "./Routes/CareerRouter.js";
 
 dotenv.config();
 
@@ -35,8 +35,8 @@ app.use("/api/v1/teams", teamsRouter);
 app.use("/api/v1/projects", projectsRouter);
 app.use("/api/v1/technologies", technologiesRouter);
 app.use("/api/v1/auth", authenticationRouter);
-app.use("/api/v1/apply",ApplyRouter);
-
+app.use("/api/v1/apply", ApplyRouter);
+app.use("/api/v1/career", careerRouter);
 
 //App Listen
 app.listen(PORT, () => {
