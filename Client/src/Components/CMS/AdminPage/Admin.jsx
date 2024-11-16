@@ -40,7 +40,7 @@ const Admin = () => {
 
   return (
     <>
-      <Header type="dashboard" />
+      <Header category="dashboard" />
       <div className="mainHolder w-[100vw]  pb-14 flex  flex-col mt-[15vmin] md:mt-[12vmin] items-center 2xl:text-[2.25vmin]">
         <form className="w-[90vw] lg:w-[70vmin] border-lightGrey border-2 border-grey p-5  flex  flex-col gap-y-9">
           <p className="text-center text-[6.5vmin] md:text-[4.5vmin] font-extrabold text-deepViolet">
