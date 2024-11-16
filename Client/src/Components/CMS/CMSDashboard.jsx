@@ -6,6 +6,18 @@ import Footer from "../Footer";
 import CMSCard from "./CMSCard";
 
 const CMSDashboard = () => {
+  const apiResponse = [
+    {
+      image: require("../../../assets/employee.png"),
+      title: "Employee Management",
+      link: "/EmployeeCMS",
+    },
+    {
+      image: require("../../../assets/careerImage.png"),
+      title: "Career Management",
+      link: "/CareerCMS",
+    },
+  ];
   const navigate = useNavigate();
   const verifyUser = async () => {
     const dataObj = {
@@ -13,7 +25,7 @@ const CMSDashboard = () => {
     };
 
     console.log(dataObj.token);
-    const response =await useAdminAuth(dataObj, "verify");
+    const response = await useAdminAuth(dataObj, "verify");
     if (response.status === 200) {
       console.log("User is verified");
     } else {
@@ -21,16 +33,17 @@ const CMSDashboard = () => {
     }
   };
 
-  
   useEffect(() => {
     verifyUser();
   }, []);
   return (
     <>
       <Header category="dashboard" />
-       <div className="mainHolder w-[100vw] pb-20 flex justify-center items-center mt-10">
-          <CMSCard />
-       </div>
+      <div className="mainHolder w-[100vw] pb-20 flex justify-center items-center mt-10   gap-x-12">
+        {apiResponse.map((val, index) => (
+          <CMSCard data={val} />
+        ))}
+      </div>
       <Footer />
     </>
   );

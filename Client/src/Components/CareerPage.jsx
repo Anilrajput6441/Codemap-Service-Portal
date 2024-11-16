@@ -99,11 +99,22 @@ const CareerPage = () => {
         </div>
       </div>
 
+      {count==="0" &&
       <div className="displayArea mt-8 lg:mt-4  w-[100vw] flex flex-wrap justify-center items-center gap-x-6 gap-y-8">
         {apiResponse.map((item, index) => (
           <Card data={item} type="Career"/>
         ))}
-     </div>
+    
+      </div>
+      }
+
+      
+      {count==="1" &&
+      <div className="displayArea mt-8 lg:mt-4  w-[100vw] flex flex-wrap justify-center items-center gap-x-6 gap-y-8">
+      
+    
+      </div>
+      }
      </div>
      <div className="flex justify-center items-center">
 
