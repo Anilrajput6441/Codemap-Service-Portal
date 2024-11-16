@@ -28,7 +28,7 @@ const Contactus = () => {
                     className="text bg-lightGrey p-3"
                     placeholder="Enter your name..."
                   />
-                  1<input
+                  <input
                     type="text"
                     className="text bg-lightGrey p-3"
                     placeholder="Enter your email..."
