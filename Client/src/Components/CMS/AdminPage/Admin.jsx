@@ -6,22 +6,22 @@ import { useAddAdmin } from "../Utils/useAddAdmin";
 import { useAdminAuth } from "../Utils/useAdminAuth";
 const Admin = () => {
   const navigate = useNavigate();
-  const verifyUser = async () => {
-    const dataObj = {
-      token: localStorage.getItem("token"),
-    };
+  // const verifyUser = async () => {
+  //   const dataObj = {
+  //     token: localStorage.getItem("token"),
+  //   };
 
-    const response = await useAdminAuth(dataObj, "verify");
-    if (response.status === 200) {
-      alert("User is verified");
-    } else {
-      navigate("/cms");
-    }
-  };
+  //   const response = await useAdminAuth(dataObj, "verify");
+  //   if (response.status === 200) {
+  //     alert("User is verified");
+  //   } else {
+  //     navigate("/cms");
+  //   }
+  // };
 
-  useEffect(() => {
-    verifyUser();
-  }, []);
+  // useEffect(() => {
+  //   verifyUser();
+  // }, []);
 
   const [tigger, setTigger] = useState(false);
   const [name, setName] = useState("");
