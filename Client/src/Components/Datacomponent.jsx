@@ -82,107 +82,55 @@ const Datacomponent = () => {
         </div>
       )}
       {screen.width >= 1000 && screen.width < 1280 && (
-        <div className="boxHolder flex w-[84vmin] h-[18vmin] mt-5 font-poppins">
-          <div className="box1 border-black border-[1px] w-[28vmin] h-[18vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/projects.png")}
-                height={3}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1 mt-1">
-                Projects:
-              </p>
+        <div className="boxHolder flex w-[76vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin] ml-4">
+          <div className="textHolder flex justify-center items-center p-4 w-[33%]">
+            <div className="box1 ml-4">
+              <p className="text-[3.75vmin] font-bold ">Team</p>
+              <p className="mt-1 ml-4 text-[3.45vmin]">50+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {projects}+
-            </p>
+            <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10"></div>
           </div>
-          <div className="box2 border-black border-[1px] h-[18vmin] w-[28vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/clients.png")}
-                height={2}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1  mt-1">
-                Clients:
-              </p>
+
+          <div className="textHolder flex justify-center items-center p-2 w-[33%]">
+            <div className="box1 ">
+              <p className="text-[3.75vmin] font-bold  mr-3 ">Clients</p>
+              <p className="mt-1 ml-6 text-[3.45vmin] ">40+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {clients}+
-            </p>
+            <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10"></div>
           </div>
-          <div className="box3 border-black border-[1px] h-[18vmin] w-[28vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/engineers.png")}
-                height={5}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1 mt-1">
-                Members:
-              </p>
+
+          <div className="textHolder flex justify-center items-center  w-[33%]">
+            <div className="box1 mr-10">
+              <p className="text-[3.75vmin] font-bold ">Projects</p>
+              <p className="mt-1 ml-4 text-[3.45vmin]">100+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {members}+
-            </p>
           </div>
         </div>
       )}
 
       {screen.width >= 1280 && screen.width < 1500 && screen.height < 800 && (
-        <div className="boxHolder flex w-[84vmin] h-[18vmin] mt-5 font-poppins">
-          <div className="box1 border-black border-[0.5px] w-[28vmin] h-[18vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/projects.png")}
-                height={3}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1 mt-1">
-                Projects:
-              </p>
+        <div className="boxHolder flex w-[76vmin] h-[18vmin] mt-5 border-[1px] bg-[#6e41c6] text-white rounded-[1.5vmin] ml-4">
+          <div className="textHolder flex justify-center items-center p-4 w-[33%]">
+            <div className="box1 ml-4">
+              <p className="text-[3.75vmin] font-bold ">Team</p>
+              <p className="mt-1 ml-4 text-[3.45vmin]">50+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {projects}+
-            </p>
+            <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10"></div>
           </div>
-          <div className="box2 border-black border-[0.5px] h-[18vmin] w-[28vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/clients.png")}
-                height={2}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1  mt-1">
-                Clients:
-              </p>
+
+          <div className="textHolder flex justify-center items-center p-2 w-[33%]">
+            <div className="box1 ">
+              <p className="text-[3.75vmin] font-bold  mr-3 ">Clients</p>
+              <p className="mt-1 ml-6 text-[3.45vmin] ">40+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {clients}+
-            </p>
+            <div className="vertcalLine h-20 w-1 rounded-[4px] bg-white ml-10"></div>
           </div>
-          <div className="box3 border-black border-[0.5px] h-[18vmin] w-[28vmin]">
-            <div className="flex gap-x-1">
-              <img
-                src={require("../../assets/engineers.png")}
-                height={5}
-                width={30}
-                className="mt-2 ml-2"
-              />
-              <p className="font-medium text-[3.35vmin] p-1 ml-1 mt-1">
-                Members:
-              </p>
+
+          <div className="textHolder flex justify-center items-center  w-[33%]">
+            <div className="box1 mr-10">
+              <p className="text-[3.75vmin] font-bold ">Projects</p>
+              <p className="mt-1 ml-4 text-[3.45vmin]">100+</p>
             </div>
-            <p className="font-extrabold text-[4.25vmin] p-1 ml-2 mt-2 ml-4 text-mainText">
-              {members}+
-            </p>
           </div>
         </div>
       )}
