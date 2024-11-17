@@ -113,6 +113,19 @@ const BlogHome = () => {
                     </div>
                   </>
                 )}
+
+              {screen.width >= 1400 &&
+                screen.width <= 1500 &&
+                screen.height > 810 && (
+                  <>
+                    <div className="imageArea  w-[55vw] h-[50vmin] pl-4">
+                      <img
+                        src={require("../../../assets/PM5.webp")}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  </>
+                )}
               {screen.width > 1500 && screen.width <= 1700 && (
                 <div className="imageArea  w-[55vw] h-[59vmin]  pl-4">
                   <img
