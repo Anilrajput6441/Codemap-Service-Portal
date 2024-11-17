@@ -48,7 +48,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="w-[90vmin] text-[2.35vmin] pl-7 pr-5 font-poppins">
-                    <p className="lg:ml-9 mt-1 leading-9">
+                    <p className="ml-7 2xl:ml-9 mt-1 leading-7">
                       We at codemap aim to deliver quality technical solutions
                       to our clients at the most affordable cost. Give us a
                       chance to make your digital dream come true!!!
