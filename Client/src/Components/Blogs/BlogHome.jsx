@@ -92,7 +92,7 @@ const BlogHome = () => {
 
               {screen.width > 1280 &&
                 screen.width <= 1400 &&
-                screen.height <= 810 && (
+                screen.height >= 810 && (
                   <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
                     <img
                       src={require("../../../assets/PM5.webp")}
