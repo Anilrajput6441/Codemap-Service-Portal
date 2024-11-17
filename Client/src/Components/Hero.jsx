@@ -34,7 +34,7 @@ const Hero = () => {
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[15vmin]">
                   <div className="flex">
-                    <div className="w-[85vmin] border-mainText  rounded-[4px] lg:ml-16 flex">
+                    <div className="w-[90vmin] border-mainText  rounded-[4px] lg:ml-12 flex">
                       <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-7"></div>
                       <div className="ml-2">
                         <p className="HeroheaderText font-bold text-[8vmin] ml-2">
@@ -48,12 +48,12 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="w-[90vmin] text-[2.35vmin] pl-7 pr-5 font-roboto">
-                    <p className="ml-12 mt-1">
+                    <p className="lg:ml-5 mt-1">
                       We at codemap aim to deliver quality technical solutions
                       to our clients at the most affordable cost. Give us a
                       chance to make your digital dream come true!!!
                     </p>
-                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-12 p-2">
+                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-7 p-2">
                       {" "}
                       <Link to="/contact">Contact us</Link>
                     </button>

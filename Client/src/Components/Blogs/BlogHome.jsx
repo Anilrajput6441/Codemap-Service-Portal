@@ -23,12 +23,12 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col  pl-4 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
+    <div className="w-[100vw]  flex flex-col  pl-7 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
         </p>
-        <p className="text-center pl-3 text-textGrey m text-[2.25vmin]">
+        <p className="text-center pl-3 text-textGrey m text-[2.75vmin]">
           Get the latest tech and business blogs by Codemap’s team
         </p>
       </div>
@@ -143,7 +143,7 @@ const BlogHome = () => {
                 </p>
               </div>
               <div className="blogTitleArea">
-                <p className="font-bold text-[4.25vmin] pl-3 font-poppins">
+                <p className="font-bold text-[4.35vmin] pl-1 font-poppins">
                   What is Project Management in our software industry ?
                 </p>
               </div>
