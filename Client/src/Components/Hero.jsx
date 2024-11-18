@@ -34,14 +34,14 @@ const Hero = () => {
               <div className="flex">
                 <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[12.95vmin] 2xl:mt-[15vmin]">
                   <div className="flex">
-                    <div className="w-[90vmin] border-mainText  rounded-[4px] lg:ml-12 flex">
-                      <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-7"></div>
-                      <div className="ml-2">
+                    <div className="w-[90vmin] border-mainText  rounded-[4px] lg:ml-14 flex">
+                      <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-9"></div>
+                      <div className="ml-3">
                         <p className="HeroheaderText font-bold text-[8vmin] ml-1">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </p>
-                        <p className="ml-[-2vmin] text-mainText font-medium mt-1">
+                        <p className="ml-[-1vmin] text-mainText font-medium mt-1">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
