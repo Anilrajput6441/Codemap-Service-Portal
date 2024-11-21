@@ -152,7 +152,7 @@ const Hero = () => {
                     <div className="mainBrandHolderText ">
                       <div className="brandIconHolder flex gap-x-2">
                         <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
-                        <div className="brandText text-[8.75vmin]  font-extrabold font-poppins">
+                        <div className="brandText text-[8.75vmin]  font-extrabold font-poppins mt-[-0.65vmin]">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </div>
