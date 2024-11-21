@@ -33,10 +33,10 @@ const BlogHome = () => {
         </p>
       </div>
 
-      <div className="blogsHolder flex mt-[5vmin] pb-[6vmin]">
-        <div className="mainBlogs w-[62%]  h-[100vh] flex flex-col items-center ml-2">
+      <div className="blogsHolder flex mt-[4vmin] pb-[6vmin]">
+        <div className="mainBlogs w-[60%]  flex flex-col items-center ml-2">
           <div className="blogHolder">
-            <div className="imageholder  w-[98%] h-[60vh]  mt-[5vmin] flex justify-center items-center ml-2">
+            <div className="imageholder w-[98%] h-[60vh]  mt-[5vmin] flex justify-center items-end   ml-2">
               <img
                 src={require("../../../assets/PM5.webp")}
                 className="max-w-full max-h-full object-contain"
@@ -56,7 +56,7 @@ const BlogHome = () => {
             </div>
           </div>
         </div>
-        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1  flex flex-col  justify-center">
+        <div className="sideBlogs w-[40%]   lg:ml-1  flex flex-col  justify-center">
           {apiResponse.map((val, index) => (
             <SideBlogCard data={val} />
           ))}
