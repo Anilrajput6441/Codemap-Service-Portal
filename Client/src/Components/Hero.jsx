@@ -73,7 +73,7 @@ const Hero = () => {
                 </div>
                 <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
                   <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
-                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.75vmin]">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.25vmin]">
                       <div className="formHolder flex flex-col gap-y-10 p-6 ">
                         <div className="textHolder">
                           <p className="font-extrabold text-[4vmin]">
@@ -87,7 +87,7 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -95,7 +95,7 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -103,7 +103,7 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -113,7 +113,7 @@ const Hero = () => {
                             <select
                               name="cars"
                               id="cars"
-                              className="w-[100%] text-[2.45vmin]"
+                              className="w-[100%] text-[2.65vmin]"
                             >
                               <option value="volvo">
                                 Which service are you looking for?
