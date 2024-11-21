@@ -82,7 +82,7 @@ const BlogHome = () => {
               {screen.width > 1280 &&
                 screen.width <= 1400 &&
                 screen.height <= 810 && (
-                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
+                  <div className="imageArea  w-[57vw] h-[50vmin] pl-4">
                     <img
                       src={require("../../../assets/PM5.webp")}
                       className="max-w-full max-h-full object-contain"
@@ -143,7 +143,7 @@ const BlogHome = () => {
                 </p>
               </div>
               <div className="blogTitleArea">
-                <p className="font-bold text-[4.35vmin] pl-1 font-poppins">
+                <p className="font-bold text-[4.25vmin] pl-1 font-poppins">
                   What is Project Management in our software industry ?
                 </p>
               </div>
@@ -154,7 +154,7 @@ const BlogHome = () => {
           </div>
         </div>
 
-        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.10px] ml-1 2xl:ml-3 2xl:pl-1">
+        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.2px] ml-1 2xl:ml-3 2xl:pl-1">
           <div className="sideArea flex gap-y-9 w-[40vw]  pl-[1.10px] ml-1 2xl:ml-2 2xl:pl-1 mt-[-1.75vmin]">
             <ul>
               {apiResponse.map((val, index) => (
