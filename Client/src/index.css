@@ -18,14 +18,12 @@ input:focus {
   outline: none;
 }
 
-
-.mainText{
-  margin:0; 
-  padding:0; 
+.mainText {
+  margin: 0;
+  padding: 0;
   list-style-type: square;
-
 }
- 
-.mainText li{
+
+.mainText li {
   margin-left: 27px;
 }
