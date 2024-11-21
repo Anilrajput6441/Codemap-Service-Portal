@@ -264,11 +264,11 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-7">
+              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-7 leading-[5.25vmin]">
                 <div className="mainTextHolder flex flex-col ">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
-                    <ul className="mt-2 mainText">
+                    <ul className="mt-5 mainText ">
                       <li>
                         We are a software development firm aimed to develop cost
                         effective solutions for our clients
@@ -282,12 +282,12 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="vision ">
-                    <p className="font-bold text-[4.75vmin]">
+                  <div className="vision leading-[5.25vmin]">
+                    <p className="font-bold text-[4.75vmin] mt-5">
                       Our Vision and mission
                     </p>
 
-                    <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <ul className="mt-5 mainText flex flex-col gap-y-2  ">
                       <li>Delivering top notch solutions to our clients</li>
                       <li>
                         Providing top quality services at the most affordable
