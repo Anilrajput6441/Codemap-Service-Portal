@@ -257,18 +257,18 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-4 ">
-              <div className="imageHolder w-[60vmin] h-[85vmin]">
+              <div className="imageHolder w-[65vmin] h-[92vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-7 leading-[5.35vmin]">
+              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-7 leading-[5.25vmin]">
                 <div className="mainTextHolder flex flex-col ">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
-                    <ul className="mt-5 mainText ">
+                    <ul className="mt-4 mainText ">
                       <li>
                         We are a software development firm aimed to develop cost
                         effective solutions for our clients
@@ -282,7 +282,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="vision leading-[5.35vmin]">
+                  <div className="vision leading-[5.25vmin]">
                     <p className="font-bold text-[4.75vmin] mt-5">
                       Our Vision and mission
                     </p>
