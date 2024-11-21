@@ -56,7 +56,7 @@ const BlogHome = () => {
             </div>
           </div>
         </div>
-        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-3  flex flex-col  justify-center">
+        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1  flex flex-col  justify-center">
           {apiResponse.map((val, index) => (
             <SideBlogCard data={val} />
           ))}
