@@ -194,7 +194,7 @@ const Card = (props) => {
             </div>
           )) ||
           (props.type === "Team" && orientation != "reverse" && (
-            <div className="teamcard w-[90vw] md:w-[98vmin] lg:w-[100vmin] flex flex-wrap md:gap-x-3 mt-4">
+            <div className="teamcard w-[90vw] md:w-[98vmin] lg:w-[120vmin] flex flex-wrap md:gap-x-3 mt-4">
               <div className="imageHolder h-[40vmin] w-[40vmin] md:h-[30vmin] md:w-[25vmin] flex lg:justify-center items-center">
                 <img
                   src={props.data.image}
@@ -274,7 +274,7 @@ const Card = (props) => {
             </div>
           )) ||
           (props.type === "Team" && orientation === "reverse" && (
-            <div className="teamcard w-[90vw] md:w-[98vmin] lg:w-[100vmin] flex flex-wrap-reverse md:gap-x-3 mt-4">
+            <div className="teamcard w-[90vw] md:w-[98vmin] lg:w-[120vmin] flex flex-wrap-reverse md:gap-x-3 mt-4">
               <div className="textHolder w-[95vw] md:w-[68vmin] flex flex-col justify-center  mt-3 lg:mt-0 lg:ml-5">
                 <div className="personalInfo flex gap-x-3">
                   <p className="font-poppins font-bold text-[5vmin] md:text-[3.45vmin] md:ml-2">
