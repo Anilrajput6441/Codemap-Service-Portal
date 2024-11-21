@@ -264,7 +264,7 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-7 leading-[5.25vmin]">
+              <div className="textHolder w-[102vmin] text-[2.95vmin] pr-7 leading-[5.25vmin]">
                 <div className="mainTextHolder flex flex-col ">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
