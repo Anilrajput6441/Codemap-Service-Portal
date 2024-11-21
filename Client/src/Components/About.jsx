@@ -196,7 +196,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[4vmin] ">
+            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[4vmin] ">
               <div className="imageHolder w-[70vmin] h-[85vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}

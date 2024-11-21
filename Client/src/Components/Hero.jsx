@@ -35,40 +35,34 @@ const Hero = () => {
         </div>
       )) || (
         <div className="mainHeroLaptop pb-3">
-          {screen.width <= 1280 && (
-            <>
-              <div className="holder w-[100vw] flex bg-backgroundMain">
-                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
-                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
-                    <div className="mainBrandHolderText ">
-                      <div className="brandIconHolder flex gap-x-2">
-                        <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
-                        <div className="brandText text-[6.85vmin] 2xl:text-[8vmin] font-extrabold font-poppins">
+          {screen.width < 1700 && (
+            <div className="font-poppins flex  HeroArea w-[100vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)]  bg-backgroundMain pb-10">
+              <div className="flex">
+                <div className="w-[50vw] flex flex-col gap-y-10 items-center mt-[15vmin]">
+                  <div className="flex">
+                    <div className="w-[90vmin] border-mainText  rounded-[4px] lg:ml-12 flex">
+                      <div className="verticalLine h-[8vmin]  w-2 bg-mainText mt-4 rounded-[3px] ml-7"></div>
+                      <div className="ml-2">
+                        <p className="HeroheaderText font-bold text-[8vmin] ml-2">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
-                        </div>
-                      </div>
-
-                      <div className="sloganHolder">
-                        <p className="slogan mt-2 text-mainText text-[2.45vmin] font-medium font-poppins">
+                        </p>
+                        <p className="ml-[-2vmin] text-mainText font-medium mt-1">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
                     </div>
-
-                    <div className="headerExplain">
-                      <p className="text-[2.35vmin] 2xl:text-[2.55vmin] leading-[5.35vmin] font-poppins">
-                        We at codemap aim to deliver quality technical solutions
-                        to our clients at the most affordable cost. Give us a
-                        chance to make your digital dream come true!!!
-                      </p>
-                    </div>
-
-                    <div className="buttonHolder">
-                      <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
-                        <p className="text-[2.45vmin]">Contact Us</p>
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-[90vmin] text-[2.35vmin] pl-7 pr-5 font-roboto">
+                    <p className="lg:ml-5 mt-1">
+                      We at codemap aim to deliver quality technical solutions
+                      to our clients at the most affordable cost. Give us a
+                      chance to make your digital dream come true!!!
+                    </p>
+                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-7 p-2">
+                      {" "}
+                      <Link to="/contact">Contact us</Link>
+                    </button>
                   </div>
                 </div>
                 <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
