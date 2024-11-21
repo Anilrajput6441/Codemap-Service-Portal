@@ -3,7 +3,7 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-4 mt-10 pb-5 pt-4 ">
+      <div className="aboutSection ml-2 mt-10 pb-5 pt-4 ">
         {screen.width < 760 && (
           <>
             <div className="aboutHeader">
@@ -196,7 +196,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[4vmin] ">
+            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[2vmin] ">
               <div className="imageHolder w-[70vmin] h-[85vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}

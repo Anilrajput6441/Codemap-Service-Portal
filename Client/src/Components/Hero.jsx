@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       )) || (
         <div className="mainHeroLaptop pb-3">
-          {screen.width <= 1280 && (
+          {screen.width <= 1280 && screen.height >= 800 && (
             <>
               <div className="holder w-[100vw] flex bg-backgroundMain">
                 <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
@@ -43,7 +43,333 @@ const Hero = () => {
                     <div className="mainBrandHolderText ">
                       <div className="brandIconHolder flex gap-x-2">
                         <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
-                        <div className="brandText text-[7.85vmin]  font-extrabold font-poppins">
+                        <div className="brandText text-[6.85vmin]  font-extrabold font-poppins">
+                          Codemap{" "}
+                          <span className="text-mainText">Services</span>
+                        </div>
+                      </div>
+
+                      <div className="sloganHolder">
+                        <p className="slogan mt-2 text-mainText text-[2.45vmin] font-medium font-poppins">
+                          ( where ideas transform into innovation )
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="headerExplain">
+                      <p className="text-[2.35vmin] 2xl:text-[2.55vmin] leading-[5.35vmin] font-poppins">
+                        We at codemap aim to deliver quality technical solutions
+                        to our clients at the most affordable cost. Give us a
+                        chance to make your digital dream come true!!!
+                      </p>
+                    </div>
+
+                    <div className="buttonHolder">
+                      <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
+                        <p className="text-[2.45vmin]">Contact Us</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
+                  <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.25vmin]">
+                      <div className="formHolder flex flex-col gap-y-10 p-6 ">
+                        <div className="textHolder">
+                          <p className="font-extrabold text-[4vmin]">
+                            Contact us
+                          </p>
+                          <p className="text-deepViolet mt-1 text-[2.45vmin]">
+                            ( Get Flat 20% discount on your first order )
+                          </p>
+                        </div>
+                        <div className="inputHolder flex flex-col gap-y-12">
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your name..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your email..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your phone..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+
+                          <div className="w-[100%]">
+                            <select
+                              name="cars"
+                              id="cars"
+                              className="w-[100%] text-[2.65vmin]"
+                            >
+                              <option value="volvo">
+                                Which service are you looking for?
+                              </option>
+                              <option value="saab">Web Development</option>
+                              <option value="mercedes">
+                                Android Development
+                              </option>
+                              <option value="audi">
+                                Custom Software Development
+                              </option>
+                            </select>
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                        </div>
+                        <div className="buttonHolderContainer flex justify-center items-center">
+                          <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
+                            <button className="p-2 text-[2.45vmin]">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+          {screen.width > 1280 && screen.width < 1700 && (
+            <>
+              <div className="holder w-[100vw] flex bg-backgroundMain">
+                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
+                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
+                    <div className="mainBrandHolderText ">
+                      <div className="brandIconHolder flex gap-x-2">
+                        <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
+                        <div className="brandText text-[6.85vmin] 2xl:text-[8.5vmin] font-extrabold font-poppins">
+                          Codemap{" "}
+                          <span className="text-mainText">Services</span>
+                        </div>
+                      </div>
+
+                      <div className="sloganHolder">
+                        <p className="slogan mt-2 text-mainText text-[2.45vmin] font-medium font-poppins">
+                          ( where ideas transform into innovation )
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="headerExplain">
+                      <p className="text-[2.35vmin] 2xl:text-[2.55vmin] leading-[5.35vmin] font-poppins">
+                        We at codemap aim to deliver quality technical solutions
+                        to our clients at the most affordable cost. Give us a
+                        chance to make your digital dream come true!!!
+                      </p>
+                    </div>
+
+                    <div className="buttonHolder">
+                      <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
+                        <p className="text-[2.45vmin]">Contact Us</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
+                  <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.75vmin]">
+                      <div className="formHolder flex flex-col gap-y-10 p-6 ">
+                        <div className="textHolder">
+                          <p className="font-extrabold text-[4vmin]">
+                            Contact us
+                          </p>
+                          <p className="text-deepViolet mt-1 text-[2.45vmin]">
+                            ( Get Flat 20% discount on your first order )
+                          </p>
+                        </div>
+                        <div className="inputHolder flex flex-col gap-y-12">
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.45vmin]"
+                              placeholder="Enter your name..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.45vmin]"
+                              placeholder="Enter your email..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.45vmin]"
+                              placeholder="Enter your phone..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+
+                          <div className="w-[100%]">
+                            <select
+                              name="cars"
+                              id="cars"
+                              className="w-[100%] text-[2.45vmin]"
+                            >
+                              <option value="volvo">
+                                Which service are you looking for?
+                              </option>
+                              <option value="saab">Web Development</option>
+                              <option value="mercedes">
+                                Android Development
+                              </option>
+                              <option value="audi">
+                                Custom Software Development
+                              </option>
+                            </select>
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                        </div>
+                        <div className="buttonHolderContainer flex justify-center items-center">
+                          <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
+                            <button className="p-2 text-[2.45vmin]">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {screen.width <= 1280 && screen.height >= 800 && (
+            <>
+              <div className="holder w-[100vw] flex bg-backgroundMain">
+                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
+                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
+                    <div className="mainBrandHolderText ">
+                      <div className="brandIconHolder flex gap-x-2">
+                        <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
+                        <div className="brandText text-[6.85vmin]  font-extrabold font-poppins">
+                          Codemap{" "}
+                          <span className="text-mainText">Services</span>
+                        </div>
+                      </div>
+
+                      <div className="sloganHolder">
+                        <p className="slogan mt-2 text-mainText text-[2.45vmin] font-medium font-poppins">
+                          ( where ideas transform into innovation )
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="headerExplain">
+                      <p className="text-[2.35vmin] 2xl:text-[2.55vmin] leading-[5.35vmin] font-poppins">
+                        We at codemap aim to deliver quality technical solutions
+                        to our clients at the most affordable cost. Give us a
+                        chance to make your digital dream come true!!!
+                      </p>
+                    </div>
+
+                    <div className="buttonHolder">
+                      <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
+                        <p className="text-[2.45vmin]">Contact Us</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
+                  <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.25vmin]">
+                      <div className="formHolder flex flex-col gap-y-10 p-6 ">
+                        <div className="textHolder">
+                          <p className="font-extrabold text-[4vmin]">
+                            Contact us
+                          </p>
+                          <p className="text-deepViolet mt-1 text-[2.45vmin]">
+                            ( Get Flat 20% discount on your first order )
+                          </p>
+                        </div>
+                        <div className="inputHolder flex flex-col gap-y-12">
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your name..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your email..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                          <div>
+                            <input
+                              type="text"
+                              className="text text-grey p-1 text-[2.65vmin]"
+                              placeholder="Enter your phone..."
+                            />
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+
+                          <div className="w-[100%]">
+                            <select
+                              name="cars"
+                              id="cars"
+                              className="w-[100%] text-[2.65vmin]"
+                            >
+                              <option value="volvo">
+                                Which service are you looking for?
+                              </option>
+                              <option value="saab">Web Development</option>
+                              <option value="mercedes">
+                                Android Development
+                              </option>
+                              <option value="audi">
+                                Custom Software Development
+                              </option>
+                            </select>
+                            <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          </div>
+                        </div>
+                        <div className="buttonHolderContainer flex justify-center items-center">
+                          <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
+                            <button className="p-2 text-[2.45vmin]">
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {screen.width <= 1280 && screen.height < 800 && (
+            <>
+              <div className="holder w-[100vw] flex bg-backgroundMain">
+                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
+                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
+                    <div className="mainBrandHolderText ">
+                      <div className="brandIconHolder flex gap-x-2">
+                        <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
+                        <div className="brandText text-[8vmin]  font-extrabold font-poppins">
                           Codemap{" "}
                           <span className="text-mainText">Services</span>
                         </div>
