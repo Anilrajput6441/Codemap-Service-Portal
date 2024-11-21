@@ -43,7 +43,7 @@ const BlogHome = () => {
               />
             </div>
             <div className="textHolder">
-              <p className="text-red mt-4 text-[2.65vmin] ml-4">
+              <p className="text-red mt-4 text-[2.65vmin] ml-7">
                 November 12,2024
               </p>
 
