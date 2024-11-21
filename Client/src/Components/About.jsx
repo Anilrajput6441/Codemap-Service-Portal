@@ -193,7 +193,7 @@ const About = () => {
             <div className="aboutHeader mt-[-1vmin] ">
               <p className="font-extrabold text-[8vmin]">
                 About-
-                <span className="text-mainText">Us</span>
+                <span className="text-mainText">U</span>
               </p>
             </div>
             <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[2vmin] ">
@@ -208,7 +208,7 @@ const About = () => {
                 <div className="mainTextHolder flex flex-col w-[86vmin] gap-y-3">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
-                    <ul className="mt-2 mainText leading-[4.5vmin]">
+                    <ul className="mt-2 mainText leading-[5.25vmin]">
                       <li>
                         We are a software development firm aimed to develop cost
                         effective <br></br>solutions for our clients
@@ -227,7 +227,7 @@ const About = () => {
                       Our Vision and mission
                     </p>
 
-                    <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <ul className="mt-2 mainText flex flex-col gap-y-2 leading-[5.25vmin]">
                       <li>Delivering top notch solutions to our clients</li>
                       <li>
                         Providing top quality services at the most affordable
@@ -392,7 +392,7 @@ const About = () => {
                   <div className="mainTextHolder flex flex-col w-[90vmin]">
                     <div className="who border-black h-[35vmin] ml-[-3.75vmin]">
                       <p className="font-bold text-[5vmin]">Who we are?</p>
-                      <ul className="mt-2 mainText">
+                      <ul className="mt-2 mainText leading-[5.56vmin]">
                         <li>
                           We are a software development firm aimed to develop
                           cost effective solutions for our clients
@@ -406,12 +406,12 @@ const About = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="vision  h-[32vmin] ml-[-3.75vmin] mt-[-2vmin]">
+                    <div className="vision  h-[32vmin] ml-[-3.75vmin] mt-[2vmin]">
                       <p className="font-bold text-[4.75vmin]">
                         Our Vision and mission
                       </p>
 
-                      <ul className="mt-6 mainText flex flex-col gap-y-2">
+                      <ul className="mt-6 mainText flex flex-col gap-y-2 leading-[5.56vmin]">
                         <li>Delivering top notch solutions to our clients</li>
                         <li>
                           Providing top quality services at the most affordable
@@ -423,7 +423,7 @@ const About = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="dataHolder h-[25vmin] ml-[-3.75vmin] mt-[-3.5vmin]">
+                    <div className="dataHolder h-[25vmin] ml-[-3.75vmin] mt-[-1vmin]">
                       <Datacomponent />
                     </div>
                   </div>

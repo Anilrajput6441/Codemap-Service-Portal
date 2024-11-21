@@ -256,7 +256,7 @@ const Hero = () => {
             <>
               <div className="holder w-[100vw] flex bg-backgroundMain">
                 <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
-                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
+                  <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin] mt-[-2.45vmin]">
                     <div className="mainBrandHolderText ">
                       <div className="brandIconHolder flex gap-x-2">
                         <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
@@ -267,7 +267,7 @@ const Hero = () => {
                       </div>
 
                       <div className="sloganHolder">
-                        <p className="slogan mt-2 text-mainText text-[2.45vmin] font-medium font-poppins">
+                        <p className="slogan mt-4 text-mainText text-[2.45vmin] font-medium font-poppins">
                           ( where ideas transform into innovation )
                         </p>
                       </div>
@@ -288,9 +288,9 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-                <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
+                <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] 6.25md:h-[calc(100vh-10vmin)] ">
                   <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
-                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.75vmin]">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-6.25vmin]">
                       <div className="formHolder flex flex-col gap-y-10 p-6 ">
                         <div className="textHolder">
                           <p className="font-extrabold text-[4vmin]">
