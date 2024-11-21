@@ -161,7 +161,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="vision  h-[32vmin] mt-5">
+                  <div className="vision  h-[32vmin] mt-7">
                     <p className="font-bold text-[4.75vmin]">
                       Our Vision and mission
                     </p>
