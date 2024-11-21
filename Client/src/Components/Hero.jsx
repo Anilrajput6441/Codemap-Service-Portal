@@ -182,7 +182,7 @@ const Hero = () => {
                 </div>
                 <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
                   <div className="formHolder flex h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] justify-center items-center">
-                    <div className="w-[78%]  bg-white rounded-lg mt-[-5.25vmin]">
+                    <div className="w-[78%]  bg-white rounded-lg mt-[-4.5vmin]">
                       <div className="formHolder flex flex-col gap-y-10 p-6 ">
                         <div className="textHolder">
                           <p className="font-extrabold text-[4vmin]">
