@@ -12,7 +12,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-2">
               <div className="imageHolder w-[85vw] h-[60vmin]">
                 <img
                   src={require("../../assets/teamicon.jpg")}
@@ -74,7 +74,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
+            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-2 ml-1">
               <div className="imageHolder w-[95vw] h-[50vmin]">
                 <img
                   src={require("../../assets/teamicon.jpg")}
@@ -135,7 +135,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[18vmin] flex  ">
+            <div className="contentHolder flex flex-wrap gap-x-12 mt-6  justify-center items-center">
               <div className="imageHolder w-[69vmin] h-[110vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -143,7 +143,7 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[90vmin] text-[2.95vmin] ml-[-1vmin] mt-[5vmin]">
+              <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[-1vmin] mt-[5vmin]">
                 <div className="mainTextHolder flex flex-col w-[112vmin]">
                   <div className="who border-black h-[35vmin]">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -196,7 +196,7 @@ const About = () => {
                 <span className="text-mainText">U</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[2vmin] ">
+            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-[4vmin] ">
               <div className="imageHolder w-[70vmin] h-[85vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -256,8 +256,8 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-4 ">
-              <div className="imageHolder w-[67vmin] h-[96vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
+              <div className="imageHolder w-[60vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
@@ -318,7 +318,7 @@ const About = () => {
                   <span className="text-mainText">Us</span>
                 </p>
               </div>
-              <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-7 ">
+              <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-6 ml-7 ">
                 <div className="imageHolder w-[60vmin] h-[100vmin]">
                   <img
                     src={require("../../assets/aboutus.jpg")}
@@ -380,7 +380,7 @@ const About = () => {
                   <span className="text-mainText">Us</span>
                 </p>
               </div>
-              <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 justify-center items-center">
+              <div className="contentHolder flex flex-wrap gap-x-9 mt-6 justify-center items-center">
                 <div className="imageHolder w-[70vmin] h-[95vmin]">
                   <img
                     src={require("../../assets/aboutus.jpg")}
@@ -440,7 +440,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-6 justify-center items-center">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 justify-center items-center">
               <div className="imageHolder w-[65vmin] h-[90vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -500,7 +500,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-[4vmin] ">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  justify-center items-center">
               <div className="imageHolder w-[60vmin] h-[100vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -561,7 +561,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[13vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 justify-center items-center">
               <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
                 <img
                   src={require("../../assets/aboutus.jpg")}
@@ -621,7 +621,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6  ml-[10vmin]">
+            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 justify-center items-center">
               <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
                 <img
                   src={require("../../assets/aboutus.jpg")}

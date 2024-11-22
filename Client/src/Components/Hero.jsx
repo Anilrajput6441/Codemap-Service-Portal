@@ -55,20 +55,17 @@ const Hero = () => {
                         </p>
                       </div>
                     </div>
-
-                    <div className="headerExplain">
-                      <p className="text-[2.35vmin] 2xl:text-[2.55vmin] leading-[5.35vmin] font-poppins">
-                        We at codemap aim to deliver quality technical solutions
-                        to our clients at the most affordable cost. Give us a
-                        chance to make your digital dream come true!!!
-                      </p>
-                    </div>
-
-                    <div className="buttonHolder">
-                      <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
-                        <p className="text-[2.45vmin]">Contact Us</p>
-                      </button>
-                    </div>
+                  </div>
+                  <div className="w-[90vmin] text-[2.35vmin] pl-7 pr-5 font-poppins">
+                    <p className="ml-7 2xl:ml-9 mt-1 leading-7">
+                      We at codemap aim to deliver quality technical solutions
+                      to our clients at the most affordable cost. Give us a
+                      chance to make your digital dream come true!!!
+                    </p>
+                    <button className="bg-mainText text-white pr-4 pl-4 mt-10 ml-9 p-2">
+                      {" "}
+                      <Link to="/contact">Contact us</Link>
+                    </button>
                   </div>
                 </div>
                 <div className="formHolder w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] ">
