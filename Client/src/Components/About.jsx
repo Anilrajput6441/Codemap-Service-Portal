@@ -257,7 +257,7 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
-              <div className="imageHolder w-[60vmin] h-[100vmin]">
+              <div className="imageHolder w-[65vmin] h-[110vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
@@ -562,18 +562,18 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-9 mt-6 justify-center items-center">
-              <div className="imageHolder w-[59vmin] h-[90vmin] mt-4">
+              <div className="imageHolder w-[70vmin] h-[96vmin] mt-4">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[75vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-15">
+              <div className="textHolder w-[86vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-15">
                 <div className="mainTextHolder flex flex-col w-[110vmin]">
-                  <div className="who border-black h-[35vmin]">
-                    <p className="font-bold text-[5vmin]">Who we are?</p>
-                    <ul className="mt-2 mainText">
+                  <div className="who border-black ">
+                    <p className="font-bold text-[5vmin] ">Who we are?</p>
+                    <ul className="mt-2 mainText  leading-[5.65vmin]">
                       <li>
                         We are a software development firm aimed to develop cost{" "}
                         <br></br> effective solutions for our clients
@@ -587,12 +587,12 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="vision  h-[32vmin]">
+                  <div className="vision mt-6">
                     <p className="font-bold text-[4.75vmin]">
                       Our Vision and mission
                     </p>
 
-                    <ul className="mt-2 mainText flex flex-col gap-y-2">
+                    <ul className="mt-2 mainText flex flex-col gap-y-2  leading-[5.65vmin]">
                       <li>Delivering top notch solutions to our clients</li>
                       <li>
                         Providing top quality services at the most affordable
@@ -605,7 +605,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="dataHolder h-[25vmin]">
+                  <div className="dataHolder h-[25vmin] mt-6">
                     <Datacomponent />
                   </div>
                 </div>
