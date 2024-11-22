@@ -15,7 +15,7 @@ const About = () => {
             <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
               <div className="imageHolder w-[85vw] h-[60vmin]">
                 <img
-                  src={require("../../assets/teamicon.avif")}
+                  src={require("../../assets/teamicon.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
@@ -77,7 +77,7 @@ const About = () => {
             <div className="contentHolder flex flex-wrap gap-x-9 mt-2 ml-1">
               <div className="imageHolder w-[95vw] h-[50vmin]">
                 <img
-                  src={require("../../assets/teamicon.avif")}
+                  src={require("../../assets/teamicon.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>

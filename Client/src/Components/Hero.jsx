@@ -258,7 +258,7 @@ const Hero = () => {
                 <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
                   <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin] mt-[-2.45vmin]">
                     <div className="mainBrandHolderText ">
-                      <div className="brandIconHolder flex gap-x-2">
+                      <div className="brandIconHolder flex gap-x-3">
                         <div className="verticalLine h-[11vmin] w-[1.25vmin] bg-deepViolet rounded-lg"></div>
                         <div className="brandText text-[6.85vmin] 2xl:text-[8.5vmin] font-extrabold font-poppins">
                           Codemap{" "}
