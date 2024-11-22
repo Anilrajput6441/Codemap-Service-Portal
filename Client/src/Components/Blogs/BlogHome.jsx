@@ -23,7 +23,7 @@ const BlogHome = () => {
     },
   ];
   return (
-    <div className="w-[100vw]  flex flex-col  pl-7 2xl:pl-8  pr-4 pt-8 pb-3 mt-7">
+    <div className="w-[100vw]  flex flex-col pt-10">
       <div className="headerArea">
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
@@ -82,7 +82,7 @@ const BlogHome = () => {
               {screen.width > 1280 &&
                 screen.width <= 1400 &&
                 screen.height <= 810 && (
-                  <div className="imageArea  w-[60vw] h-[50vmin] pl-4">
+                  <div className="imageArea  w-[55vw] h-[42vmin] 2xl:h-[48vmin] pl-4">
                     <img
                       src={require("../../../assets/PM5.webp")}
                       className="max-w-full max-h-full object-contain"
@@ -159,22 +159,15 @@ const BlogHome = () => {
                 <p className="font-bold text-[4.35vmin] pl-1 font-poppins">
                   What is Project Management in our software industry ?
                 </p>
-              </div>
-              <div className="readMoreArea pl-3 text-textGrey mt-3 text-[2.15vmin]">
-                Read more...
+                <p className="text-textGrey ml-6 mt-4">Read More...</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="sideArea flex gap-y-10 w-[40vw]  pl-[0.15px] ml-1 2xl:ml-3 2xl:pl-1">
-          <div className="sideArea flex gap-y-9 w-[40vw]  pl-[1.5px] ml-1 2xl:ml-2 2xl:pl-1 mt-[-1.75vmin]">
-            <ul>
-              {apiResponse.map((val, index) => (
-                <SideBlogCard data={val} />
-              ))}
-            </ul>
-          </div>
+        <div className="sideBlogs w-[40%]   lg:ml-1  flex flex-col  justify-center">
+          {apiResponse.map((val, index) => (
+            <SideBlogCard data={val} />
+          ))}
         </div>
       </div>
     </div>
