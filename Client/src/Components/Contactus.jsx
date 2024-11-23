@@ -95,7 +95,7 @@ const Contactus = () => {
                 <div className="iconsHolder flex flex-col gap-y-8 mt-16 ml-[12vmin]">
                   <div className="infoHolder flex gap-x-5">
                     <div className="imageHolder">
-                      <div className="squreHolder w-[9vmin] h-[9vmin] p-6 bg-deepViolet rounded-[0.45vmin]">
+                      <div className="squreHolder w-[8vmin] h-[8vmin] p-4 bg-deepViolet rounded-[0.45vmin]">
                         <img
                           src={val.image}
                           alt="contactIcon"
