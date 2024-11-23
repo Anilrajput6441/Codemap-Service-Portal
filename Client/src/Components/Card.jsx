@@ -11,7 +11,7 @@ const Card = (props) => {
       <div>
         {(props.type === "Service" &&
           (screen.width <= 1700 || screen.width >= 1730) && (
-            <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[50vmin] lg:w-[45vmin] 2xl:w-[52vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
+            <div className="bg-white card flex flex-col items-center justify-center pl-3 pr-4 md:pr-0 md:p-3 md:pl-2 w-[62vw] h-[70vmin]  md:w-[50vmin] lg:w-[50vmin] 2xl:w-[52vmin]  border-[#d0cfcf] border-[1px] md:h-[40vmin] gap-y-5  pr-1">
               <div className="imageHolder">
                 {(props.data.title === "Website Development" &&
                   screen.width > 1000 && (
