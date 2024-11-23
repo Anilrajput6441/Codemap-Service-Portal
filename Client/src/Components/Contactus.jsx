@@ -116,7 +116,7 @@ const Contactus = () => {
               ))}
             </div>
             <div className="rightHolder w-[45vw]  h-[100vh] flex items-center">
-              <div className="contactHolder w-[95%] mt-[10vmin]  bg-backgroundMain  rounded-[1vmin]">
+              <div className="contactHolder w-[95%] mt-[12vmin]  bg-backgroundMain  rounded-[1vmin]">
                 <div className="contactForm flex flex-col ml-8 gap-y-10 mt-[5vmin] pb-[4vmin]">
                   <p className="text-mainText font-medium text-[2.75vmin] font-poppins">
                     Please Fill the details...

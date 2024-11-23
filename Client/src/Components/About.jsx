@@ -144,7 +144,7 @@ const About = () => {
               </div>
 
               <div className="textHolder text-[2.95vmin] ml-[-1vmin] mt-[5vmin]">
-                <div className="mainTextHolder flex flex-col w-[112vmin]">
+                <div className="mainTextHolder flex flex-col w-[105vmin]">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
                     <ul className="mt-2 mainText text-[3vmin] leading-[5.65vmin]">
