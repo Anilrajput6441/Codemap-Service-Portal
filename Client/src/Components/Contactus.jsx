@@ -39,21 +39,21 @@ const Contactus = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-3 w-[92%]"
+                    className="p-3 w-[92%] rounded-md"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
-                    className="p-3 w-[92%]"
+                    className="p-3 w-[92%] rounded-md"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
-                    className="p-3 w-[92%]"
+                    className="p-3 w-[92%] rounded-md"
                     placeholder="Enter your phone..."
                   />
                   <textarea
-                    className="w-[92%] p-3"
+                    className="w-[92%] p-3 rounded-md"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
