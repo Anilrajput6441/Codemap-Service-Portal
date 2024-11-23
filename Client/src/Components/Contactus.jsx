@@ -74,20 +74,20 @@ const Contactus = () => {
 
       {screen.width >= 1000 && (
         <>
-          <div className="w-[100vw] p-5 pt-1 flex pl-4">
+          <div className="w-[100vw] p-5 pb-8 pt-1 flex pl-4">
             <div className="leftHolder w-[55vw]  flex flex-col  ">
-              <div className="textHolder flex flex-col mt-[10vmin] flex justify-center items-center">
+              <div className="textHolder flex flex-col mt-[10vmin] justify-center items-center">
                 <p className="title text-deepViolet text-[2.35vmin]  font-bold">
                   Contact Us
                 </p>
                 <p className="purpose text-[8.75vmin] font-extrabold mt-[-0.75vmin]">
                   Get In Touch
                 </p>
-                <p className="sloganBodyLarge mt-5 w-[85%] ml-10 text-[2.15vmin]">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Aliquid ea repudiandae, neque iusto perspiciatis doloribus a
-                  magni ratione sunt! Fugit doloribus numquam saepe porro
-                  perspiciatis animi eos libero, hic id. Lorem ipsum dolor sit
+                <p className="sloganBodyLarge mt-5 w-[85%] ml-10 text-[2.15vmin] leading-[5vmin]">
+                  We’d love to hear from you! Whether you have a question,
+                  suggestion, or need support, our team is here to help. Please
+                  feel free to reach out to us through any of the following
+                  channelsç
                 </p>
               </div>
 
