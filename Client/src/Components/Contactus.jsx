@@ -33,7 +33,7 @@ const Contactus = () => {
                 </p>
               </div>
               <div className="contactHolder w-[95%] mt-[10vmin]  bg-mainText  rounded-[1vmin]">
-                <div className="contactForm flex flex-col ml-4  gap-y-10 mt-[5vmin] pb-[4vmin]">
+                <div className="contactForm flex flex-col ml-5  gap-y-10 mt-[5vmin] pb-[4vmin]">
                   <p className="text-lightGrey font-medium text-[5vmin] font-poppins">
                     Please Fill the details...
                   </p>
