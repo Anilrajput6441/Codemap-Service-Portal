@@ -38,7 +38,7 @@ const Hero = () => {
           {screen.width <= 1280 && screen.height >= 800 && (
             <>
               <div className="holder w-[100vw] flex bg-backgroundMain">
-                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex justify-center items-center">
+                <div className="textHolder  w-[50vw] h-[calc(100vh-27vmin)] md:h-[calc(100vh-10vmin)] flex flex-col justify-center items-center">
                   <div className="headerText w-[87%] 2xl:w-[85%] flex flex-col gap-y-[4.95vmin]">
                     <div className="mainBrandHolderText ">
                       <div className="brandIconHolder flex gap-x-2">

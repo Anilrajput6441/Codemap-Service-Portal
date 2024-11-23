@@ -35,19 +35,19 @@ const BlogHome = () => {
       <div className="blogsHolder flex mt-[5vmin] pb-[4vmin]">
         <div className="mainBlogs w-[62%]  h-[100vh] flex flex-col items-center ml-3">
           <div className="blogHolder mt-[-2.45vmin]">
-            <div className="imageholder  w-[98%] h-[66vh] 2xl:h-[63vh]  mt-[5vmin] flex justify-center items-center ml-1">
+            <div className="imageholder  w-[98%] h-[63vh] 2xl:h-[63vh]  mt-[5vmin] flex justify-center items-center ml-1">
               <img
                 src={require("../../../assets/PM5.webp")}
                 className="max-w-full max-h-full object-contain"
               />
             </div>
             <div className="textHolder">
-              <p className="text-red mt-2 text-[2.65vmin] ml-3">
+              <p className="text-red 2xl:mt-2 text-[2.65vmin] ml-3">
                 November 12,2024
               </p>
 
               <div className="titleText">
-                <p className="font-extrabold text-[5vmin] ml-3">
+                <p className="font-extrabold text-[5.35vmin] ml-3">
                   What is Project Management in our software industry ?
                 </p>
                 <p className="text-textGrey ml-3 mt-4 text-[2.45vmin]">
@@ -57,7 +57,7 @@ const BlogHome = () => {
             </div>
           </div>
         </div>
-        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1 2xl:ml-[0.10px]  mt-[-1.45vmin] flex flex-col  justify-center">
+        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1 2xl:ml-[1.45vmin]  mt-[-1.45vmin] flex flex-col  justify-center">
           {apiResponse.map((val, index) => (
             <SideBlogCard data={val} />
           ))}

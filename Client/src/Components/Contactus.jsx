@@ -74,7 +74,7 @@ const Contactus = () => {
 
       {screen.width >= 1000 && (
         <>
-          <div className="w-[100vw] p-5 pb-10 pt-8 flex pl-4">
+          <div className="w-[100vw] p-5 pt-1 flex pl-4">
             <div className="leftHolder w-[55vw]  flex flex-col  ">
               <div className="textHolder flex flex-col mt-[10vmin] flex justify-center items-center">
                 <p className="title text-deepViolet text-[2.35vmin]  font-bold">
@@ -83,7 +83,7 @@ const Contactus = () => {
                 <p className="purpose text-[8.75vmin] font-extrabold mt-[-0.75vmin]">
                   Get In Touch
                 </p>
-                <p className="sloganBodyLarge mt-5 w-[89%] ml-10">
+                <p className="sloganBodyLarge mt-5 w-[85%] ml-10 text-[2.15vmin]">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Aliquid ea repudiandae, neque iusto perspiciatis doloribus a
                   magni ratione sunt! Fugit doloribus numquam saepe porro
@@ -104,8 +104,8 @@ const Contactus = () => {
                       </div>
                     </div>
                     <div className="textHolder w-[38vmin]">
-                      <div className="title font-extrabold font-poppins">
-                        {val.title}
+                      <div className="title font-extrabold font-poppins ">
+                        <p className="text-[2.15vmin]">{val.title}</p>
                       </div>
                       <div className="information text-[2vmin] text-textGrey mt-1">
                         {val.description}
@@ -123,21 +123,21 @@ const Contactus = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-3 w-[90%]"
+                    className="p-3 w-[90%] text-[2.25vmin]"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
-                    className="p-3 w-[90%]"
+                    className="p-3 w-[90%] text-[2.25vmin]"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
-                    className="p-3 w-[90%]"
+                    className="p-3 w-[90%] text-[2.25vmin]"
                     placeholder="Enter your phone..."
                   />
                   <textarea
-                    className="w-[90%] p-5 pb-10"
+                    className="w-[90%] p-5 pb-10 text-[2.25vmin]"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">

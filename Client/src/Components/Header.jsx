@@ -129,7 +129,7 @@ const Header = (props) => {
             </div>
           )}
         </div>
-        <div className="ml-4 underline h-[2px] w-[92vw] border-headerUnderline border-t-[2px]"></div>
+        <div className="ml-4 underline h-[2px] w-[92vw] 2xl:w-[96vw] border-headerUnderline border-t-[2px]"></div>
       </div>
 
       <div className="navIconHolder bg-backgroundMain pb-3 ">
