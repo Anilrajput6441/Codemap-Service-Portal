@@ -136,16 +136,16 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap gap-x-12 mt-6  justify-center items-center">
-              <div className="imageHolder w-[69vmin] h-[110vmin]">
+              <div className="imageHolder w-[50vmin] h-[110vmin]">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[100vmin] text-[2.95vmin] ml-[-1vmin] mt-[5vmin]">
-                <div className="mainTextHolder flex flex-col">
-                  <div className="who border-black">
+              <div className="textHolder text-[2.95vmin] ml-[-1vmin] mt-[5vmin]">
+                <div className="mainTextHolder flex flex-col w-[112vmin]">
+                  <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
                     <ul className="mt-2 mainText text-[3vmin] leading-[5.65vmin]">
                       <li>
