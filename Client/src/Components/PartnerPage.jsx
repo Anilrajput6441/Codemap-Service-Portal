@@ -77,9 +77,9 @@ const PartnerPage = () => {
           <>
             <div className="mainBody w-[100vw] bg-backgroundMain flex flex-wrap pb-20">
               <div className="left w-[50vw]  flex justify-center items-center mt-8">
-                <div className="imageHolder w-[100vw] md:w-[45vw] md:h-[75vh] 2xl:w-[36vw] mt-[7vmin]">
+                <div className="imageHolder w-[100vw] md:w-[30vw] md:h-[55vh] 2xl:w-[25vw] mt-[7vmin]">
                   <img
-                    src={require("../../assets/company3.jpeg")}
+                    src={require("../../assets/handshake.png")}
                     alt="partnerIcon"
                     className="max-w-full max-h-full object-contain"
                   />
@@ -291,20 +291,21 @@ const PartnerPage = () => {
 
                     <ol className="leading-[5.6vmin] text-[2.45vmin]">
                       <li>
-                        &nbsp;1. We believe in building long term relations with our
-                        business partners.
+                        &nbsp;1. We believe in building long term relations with
+                        our business partners.
                       </li>
                       <li>
-                      &nbsp;2. Get higher incentives and commiss ions for your leads
-                        generated.
+                        &nbsp;2. Get higher incentives and commiss ions for your
+                        leads generated.
                       </li>
                       <li>
-                      &nbsp;3. We believe in trust building and mutual benefits
-                        within the business partners and their stakeholders.
+                        &nbsp;3. We believe in trust building and mutual
+                        benefits within the business partners and their
+                        stakeholders.
                       </li>
                       <li>
-                      &nbsp;4. With moto of making strong collaborative partners to
-                        excel and grow both of the partners
+                        &nbsp;4. With moto of making strong collaborative
+                        partners to excel and grow both of the partners
                       </li>
                     </ol>
                   </div>
