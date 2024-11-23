@@ -2,7 +2,7 @@ import "./input.css";
 const Footer = () => {
   return (
     <>
-      <div className="footerHolder pb-4 pt-4 bg-bgColor flex flex-col justify-center items-center bg-backgroundMain ">
+      <div className="footerHolder pb-4 pt-4 bg-bgColor flex flex-col justify-center items-center bg-backgroundMain overflow-x-hidden ">
         <div className="flex flex-col pb-4 pt-4 justify-center items-center row1  w-[100vw]">
           <div className="logoHolder flex  gap-x-4  justify-center items-center">
             <div className="logoPic   w-[28vmin] md:w-[16vmin]  lg:w-[17vmin]">

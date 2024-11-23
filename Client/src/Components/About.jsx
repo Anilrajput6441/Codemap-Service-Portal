@@ -3,7 +3,7 @@ import Datacomponent from "./Datacomponent";
 const About = () => {
   return (
     <>
-      <div className="aboutSection ml-2 mt-10 pb-5 pt-4 ">
+      <div className="aboutSection ml-2 mt-10 pb-5 pt-4 overflow-x-hidden  ">
         {screen.width < 760 && (
           <>
             <div className="aboutHeader">

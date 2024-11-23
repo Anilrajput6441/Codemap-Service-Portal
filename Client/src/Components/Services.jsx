@@ -20,7 +20,7 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="bg-backgroundMain mt-[4vmin]  pb-20 pt-12">
+      <div className="bg-backgroundMain mt-[4vmin]  pb-20 pt-12  overflow-x-hidden ">
         <p className="text-[8vmin] font-extrabold text-center font-poppins">
           Our <span className="text-mainText"> Services</span>
         </p>
