@@ -75,7 +75,7 @@ const Contactus = () => {
       {screen.width >= 1000 && (
         <>
           <div className="w-[100vw] p-5 pt-1 flex pl-4">
-            <div className="leftHolder w-[55vw]  flex flex-col  ">
+            <div className="leftHolder w-[55vw] mt-[6vmin] flex flex-col  ">
               <div className="textHolder flex flex-col mt-[10vmin] flex justify-center items-center">
                 <p className="title text-deepViolet text-[2.35vmin]  font-bold">
                   Contact Us
@@ -95,7 +95,7 @@ const Contactus = () => {
                 <div className="iconsHolder flex flex-col gap-y-8 mt-16 ml-[12vmin]">
                   <div className="infoHolder flex gap-x-5">
                     <div className="imageHolder">
-                      <div className="squreHolder w-[9.45vmin] h-[9.45vmin] p-4 bg-deepViolet rounded-[0.45vmin]">
+                      <div className="squreHolder w-[9vmin] h-[9vmin] p-6 bg-deepViolet rounded-[0.45vmin]">
                         <img
                           src={val.image}
                           alt="contactIcon"
