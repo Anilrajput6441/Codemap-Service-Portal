@@ -34,7 +34,7 @@ const Datacomponent = () => {
             </div>
             <p className="font-bold text-[4.1vmin] p-1 ml-7">50+</p>
           </div>
-          <div className="vertcalLine h-12 w-1 mt-3 rounded-[4px] bg-white ml-[-2.45vmin]"></div>
+          <div className="vertcalLine h-12 w-[0.5px] mt-3 rounded-[2px] bg-white ml-[-2.45vmin]"></div>
           <div className="box2 w-[29vw]  h-[20vmin] pb-5 text-white">
             <div className="flex gap-x-1">
               <p className="font-medium text-[4.15vmin] p-1 ml-4  mt-1">
@@ -43,7 +43,7 @@ const Datacomponent = () => {
             </div>
             <p className="font-bold text-[4.1vmin] p-1 ml-8 ">40+</p>
           </div>
-          <div className="vertcalLine h-12 w-1 mt-3 rounded-[4px] bg-white ml-[-2.45vmin]"></div>
+          <div className="vertcalLine h-12 w-[0.5px] mt-3 rounded-[2px] bg-white ml-[-2.45vmin]"></div>
           <div className="box3  h-[20vmin] pb-5 text-white">
             <div className="flex gap-x-1">
               <p className="font-medium text-[4.15vmin] p-1 ml-2 mt-1">

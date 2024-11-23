@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <>
       <div className="headerFrame bg-backgroundMain pt-6 pb-2 overflow-x-hidden">
-        <div className="Header h-[15vmin] md:h-[10vmin] 2xl:h-[8vmin]  bg-backgroundMain pt-2 pb-3 flex p-2">
+        <div className="Header h-[15vmin] md:h-[10vmin] 2xl:h-[8vmin]  bg-backgroundMain pt-2 pb-3 flex p-1">
           <div className="brandLogo flex mt-[-0.65vmin]">
             <div className="ml-1 logo-area w-[27vmin] md:w-[18vmin] h-[25vmin] md:h-[10vmin] 2xl:h-[6vmin]">
               <Link to="/">
@@ -232,7 +232,7 @@ const Header = (props) => {
                   Login Now
                 </button>
               </div>
-              <div className="ml-1 underline h-[2px] w-[96vw] border-headerUnderline border-t-[2px]"></div>
+              <div className="ml-[0.15px] underline h-[2px] w-[92vw] border-headerUnderline border-t-[2px]"></div>
             </div>
           </>
         )}
