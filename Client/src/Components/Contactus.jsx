@@ -53,7 +53,7 @@ const Contactus = () => {
                     placeholder="Enter your phone..."
                   />
                   <textarea
-                    className="w-[92%] p-5 pb-10"
+                    className="w-[92%] p-3"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
