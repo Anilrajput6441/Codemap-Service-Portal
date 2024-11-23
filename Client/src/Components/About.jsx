@@ -179,7 +179,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="dataHolder h-[25vmin] mt-[10vmin]">
+                  <div className="dataHolder h-[25vmin] mt-[4vmin]">
                     <Datacomponent />
                   </div>
                 </div>
