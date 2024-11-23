@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className="mainHero">
       {(screen.width < 1000 && (
-        <div className="font-poppins HeroArea w-[100vw] bg-backgroundMain pb-[28vmin]">
+        <div className="font-poppins HeroArea w-[100vw] bg-backgroundMain pb-[35vmin]">
           <div className="textHolder flex flex-col items-center h-[100%]">
             <div className="textContainer flex flex-col  mt-[15vmin] md:mt-[11vmin] items-center h-[100%] p-2">
               <p className="font-poppins text-[3.65vmin] md:text-[3.15vmin]  text-center">

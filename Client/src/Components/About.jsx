@@ -13,7 +13,7 @@ const About = () => {
               </p>
             </div>
             <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-2">
-              <div className="imageHolder w-[85vw] h-[60vmin]">
+              <div className="imageHolder w-[85vw] h-[55vmin]">
                 <img
                   src={require("../../assets/teamicon.jpg")}
                   className="max-w-full max-h-full object-contain"
