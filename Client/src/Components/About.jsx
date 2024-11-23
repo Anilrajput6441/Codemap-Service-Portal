@@ -256,15 +256,15 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-6 ml-4 ">
-              <div className="imageHolder w-[65vmin] h-[110vmin]">
+            <div className="contentHolder w-[100vw]  flex flex-wrap justify-center items-center gap-x-9">
+              <div className="imageHolder w-[65vmin] h-[100vmin] ">
                 <img
                   src={require("../../assets/aboutus.jpg")}
                   className="max-w-full max-h-full object-contain"
                 ></img>
               </div>
 
-              <div className="textHolder w-[102vmin] text-[2.95vmin] pr-7 leading-[5.25vmin]">
+              <div className="textHolder w-[90vmin] text-[2.95vmin] pr-3 leading-[5.25vmin]">
                 <div className="mainTextHolder flex flex-col ">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -299,7 +299,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="dataHolder h-[25vmin]">
+                  <div className="dataHolder h-[25vmin] mt-[6vmin]">
                     <Datacomponent />
                   </div>
                 </div>

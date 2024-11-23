@@ -3,7 +3,7 @@ import React from "react";
 const SideBlogCard = (props) => {
   return (
     <div className="sideBlogCardContainer mt-6">
-      <div className="sideBlogCard flex gap-x-3 w-[90%] pt-2 pl-1">
+      <div className="sideBlogCard flex gap-x-3 w-[93%] 2xl:w-[92%] pt-2 pl-1">
         <div className="imgHolder">
           <div className="imageHolder w-[29vmin] h-[29vmin]">
             <img
