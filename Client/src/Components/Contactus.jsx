@@ -21,7 +21,7 @@ const Contactus = () => {
     <>
       {screen.width < 700 && (
         <>
-          <div className="w-[100vw] flex flex-col pt-[9vmin] pb-[18vmin]">
+          <div className="w-[100vw] flex flex-col pt-[9vmin] pb-[18vmin] overflow-x-hidden">
             <div className="mainHolder w-[100vw]  flex flex-col justify-center  items-center">
               <div className="textHolder w-[100vw] flex flex-col justify-center items-center">
                 <p className="text-[9vmin] font-extrabold">
