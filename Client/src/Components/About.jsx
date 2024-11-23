@@ -264,7 +264,7 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[95vmin] text-[2.95vmin] pr-3 leading-[5.25vmin]">
+              <div className="textHolder w-[100vmin] text-[2.95vmin] pr-3 leading-[5.25vmin]">
                 <div className="mainTextHolder flex flex-col ">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
@@ -299,7 +299,7 @@ const About = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="dataHolder h-[25vmin] mt-[6vmin]">
+                  <div className="dataHolder h-[25vmin] mt-[4vmin]">
                     <Datacomponent />
                   </div>
                 </div>
