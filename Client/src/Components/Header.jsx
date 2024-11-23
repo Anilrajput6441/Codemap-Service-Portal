@@ -2,25 +2,24 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 const Header = (props) => {
   const [showNav, setShowNav] = useState(false);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <>
-      <div className="headerFrame bg-backgroundMain pt-6 pb-2 ">
+      <div className="headerFrame bg-backgroundMain pt-6 pb-2 overflow-x-hidden">
         <div className="Header h-[15vmin] md:h-[10vmin] 2xl:h-[8vmin]  bg-backgroundMain pt-2 pb-3 flex p-2">
           <div className="brandLogo flex mt-[-0.65vmin]">
             <div className="ml-1 logo-area w-[27vmin] md:w-[18vmin] h-[25vmin] md:h-[10vmin] 2xl:h-[6vmin]">
               <Link to="/">
-              <img
-                src={require("../../assets/CodemapIconHorizontal.png")}
-                className="max-w-full max-h-full object-contain"
-              />
+                <img
+                  src={require("../../assets/CodemapIconHorizontal.png")}
+                  className="max-w-full max-h-full object-contain"
+                />
               </Link>
             </div>
           </div>
           {screen.width > 1000 && (
             <>
               <div className="iconsArea flex gap-x-9  h-[10vmin] w-[65vw]  ml-[14vmin] justify-center mt-[0.5vmin] text-[2.45vmin]">
-                
                 <p
                   id="projects"
                   className="underline-offset-[1.35vmin] "
@@ -33,7 +32,7 @@ const Header = (props) => {
                       "";
                   }}
                 >
-                <Link to="/team">Team</Link>
+                  <Link to="/team">Team</Link>
                 </p>
 
                 <p
@@ -47,10 +46,8 @@ const Header = (props) => {
                     document.getElementById("team").style.textDecoration = "";
                   }}
                 >
-                 <Link to="/projects">Projects</Link>
+                  <Link to="/projects">Projects</Link>
                 </p>
-
-                
 
                 <p
                   id="Career"
@@ -63,7 +60,7 @@ const Header = (props) => {
                     document.getElementById("Career").style.textDecoration = "";
                   }}
                 >
-                 <Link to="/career">Career</Link>
+                  <Link to="/career">Career</Link>
                 </p>
 
                 <p
@@ -77,7 +74,7 @@ const Header = (props) => {
                     document.getElementById("Blogs").style.textDecoration = "";
                   }}
                 >
-                     <Link to="/blogsarea">Blogs</Link>
+                  <Link to="/blogsarea">Blogs</Link>
                 </p>
                 <p
                   id="Partner"
@@ -95,32 +92,30 @@ const Header = (props) => {
                 </p>
               </div>
 
-              {props.category!="dashboard" &&
+              {props.category != "dashboard" && (
+                <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
+                  <button
+                    onClick={() => navigate("/clientlogin")}
+                    className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]"
+                  >
+                    Login
+                  </button>
+                </div>
+              )}
 
-              <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
-                <button onClick={()=>navigate("/clientlogin")} className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
-                  Login 
-                </button>
-              </div>
-              }
-
-              
-              {props.category==="dashboard" &&
-
-              <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
-                <button onClick={()=>{
-                  localStorage.removeItem("token");
-                  navigate("/cms");
-                }} className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]">
-                  Logout
-                </button>
-              </div>
-              }
-
-
-
-              
-
+              {props.category === "dashboard" && (
+                <div className="buttonArea ml-[8vmin] mt-[-1.15vmin]">
+                  <button
+                    onClick={() => {
+                      localStorage.removeItem("token");
+                      navigate("/cms");
+                    }}
+                    className="p-3  bg-mainText text-white rounded-[5px] pl-6 pr-7 text-[2.45vmin] mt-[-0.1vmin]"
+                  >
+                    Logout
+                  </button>
+                </div>
+              )}
             </>
           )}
           {screen.width < 1000 && (
@@ -141,7 +136,6 @@ const Header = (props) => {
         {screen.width < 1000 && showNav && (
           <>
             <div className="navIconsMobile gap-y-3 p-2 pl-3 flex flex-col">
-      
               <p
                 id="technologies1"
                 className="underline-offset-[1.35vmin] "
@@ -186,17 +180,14 @@ const Header = (props) => {
                   setShowNav(!showNav);
                 }}
                 onMouseOver={() => {
-                  document.getElementById(
-                    "career"
-                  ).style.textDecoration = "underline";
+                  document.getElementById("career").style.textDecoration =
+                    "underline";
                 }}
                 onMouseOut={() => {
-                  document.getElementById(
-                    "career"
-                  ).style.textDecoration = "";
+                  document.getElementById("career").style.textDecoration = "";
                 }}
               >
-               <Link to="/career">Career</Link>
+                <Link to="/career">Career</Link>
               </p>
               <p
                 id="team1"
@@ -212,7 +203,7 @@ const Header = (props) => {
                   document.getElementById("team1").style.textDecoration = "";
                 }}
               >
-              <Link to="/blogs">Blogs</Link>
+                <Link to="/blogs">Blogs</Link>
               </p>
 
               <p
@@ -230,11 +221,14 @@ const Header = (props) => {
                     "";
                 }}
               >
-               <Link to="/partner">Partner</Link>
+                <Link to="/partner">Partner</Link>
               </p>
-            
+
               <div className="buttonArea">
-                <button onClick={()=>navigate("/clientlogin")} className="p-3 ml-[-0.35vmin] bg-mainText text-white rounded-[5px] pl-8 pr-8 text-[3.45vmin] md:text-[2.15vmin]">
+                <button
+                  onClick={() => navigate("/clientlogin")}
+                  className="p-3 ml-[-0.35vmin] bg-mainText text-white rounded-[5px] pl-8 pr-8 text-[3.45vmin] md:text-[2.15vmin]"
+                >
                   Login Now
                 </button>
               </div>
