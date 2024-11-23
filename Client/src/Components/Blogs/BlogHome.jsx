@@ -28,11 +28,14 @@ const BlogHome = () => {
         <p className="text-center text-[8vmin] font-extrabold ">
           Our <span className="text-mainText font-extrabold">Blogs</span>
         </p>
+        <p className="text-center text-[2.45vmin] text-textGrey">
+          Get latest blogs and update from our Codemap Team!!!
+        </p>
       </div>
       <div className="blogsHolder flex mt-[5vmin] pb-[4vmin]">
         <div className="mainBlogs w-[62%]  h-[100vh] flex flex-col items-center ml-3">
           <div className="blogHolder mt-[-2.45vmin]">
-            <div className="imageholder  w-[98%] h-[60vh] 2xl:h-[63vh]  mt-[5vmin] flex justify-center items-center ml-1">
+            <div className="imageholder  w-[98%] h-[66vh] 2xl:h-[63vh]  mt-[5vmin] flex justify-center items-center ml-1">
               <img
                 src={require("../../../assets/PM5.webp")}
                 className="max-w-full max-h-full object-contain"
@@ -54,7 +57,7 @@ const BlogHome = () => {
             </div>
           </div>
         </div>
-        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1 2xl:ml-[0.15px]  mt-[-1.45vmin] flex flex-col  justify-center">
+        <div className="sideBlogs w-[38%]   h-[100vh] lg:ml-1 2xl:ml-[0.10px]  mt-[-1.45vmin] flex flex-col  justify-center">
           {apiResponse.map((val, index) => (
             <SideBlogCard data={val} />
           ))}

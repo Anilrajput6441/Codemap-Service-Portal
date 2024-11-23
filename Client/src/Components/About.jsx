@@ -12,7 +12,7 @@ const About = () => {
                 <span className="text-mainText">Us</span>
               </p>
             </div>
-            <div className="contentHolder flex flex-wrap gap-x-9 mt-2">
+            <div className="contentHolder flex flex-wrap justify-center items-center gap-x-9 mt-2">
               <div className="imageHolder w-[85vw] h-[60vmin]">
                 <img
                   src={require("../../assets/teamicon.jpg")}
@@ -23,7 +23,7 @@ const About = () => {
               <div className="textHolder w-[99vw] mt-3 ml-[-1.45vmin]">
                 <div className="mainTextHolder flex flex-col w-[100vmin]">
                   <div className="who border-black ">
-                    <p className="font-bold text-[5vmin]">Who we are?</p>
+                    <p className="font-bold text-[5vmin] ml-4">Who we are?</p>
                     <ul className="mt-2 mainText flex flex-col gap-y-4 text-[3.75vmin] ml-3">
                       <li>
                         We are a software development firm aimed to <br></br>{" "}
@@ -40,7 +40,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="vision mt-4">
-                    <p className="font-bold text-[4.75vmin]">
+                    <p className="font-bold text-[4.75vmin] ml-4">
                       Our Vision and mission
                     </p>
 
@@ -269,7 +269,7 @@ const About = () => {
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin]">Who we are?</p>
                     <ul className=" mainText ">
-                      <li className="mt-[2.25vmin]">
+                      <li>
                         We are a software development firm aimed to develop cost
                         effective solutions for our clients
                       </li>
