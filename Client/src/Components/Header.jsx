@@ -232,7 +232,6 @@ const Header = (props) => {
                   Login Now
                 </button>
               </div>
-              <div className="ml-[0.15px] underline h-[2px] w-[92vw] border-headerUnderline border-t-[2px]"></div>
             </div>
           </>
         )}
