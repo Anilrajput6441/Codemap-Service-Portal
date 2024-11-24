@@ -1,15 +1,15 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 const TechStack = () => {
   const [count, setCount] = useState("0");
-  const [state,setState] = useState("Frontend");
+  const [state, setState] = useState("Frontend");
   const changeColor = () => {
     console.log(state);
     document.getElementById(count).style.backgroundColor = "#6e41c6";
   };
-  useEffect(()=>{
+  useEffect(() => {
     changeColor();
-  },[count]);  
+  }, [count]);
   return (
     <div className="Holder w-[100vw] bg-backgroundMain p-3">
       <p className="text-extrabold text-center text-[7.25vmin] p-2 font-extrabold">
@@ -18,40 +18,51 @@ const TechStack = () => {
 
       <div className="iconHolder flex justify-center items-center text-textGrey gap-x-[10vmin] mt-10 text-[3.1vmin] font-poppins">
         <div>
-          <p onClick={()=> {
-            document.getElementById(count).style.backgroundColor = "#f0f2ff";
-            setCount("0");
-            setState("Frontend");
-
-          }}>Frontend</p>
-          <div className='underline h-2 w-20 bg-backgroundMain'  id="0"></div>
+          <p
+            onClick={() => {
+              document.getElementById(count).style.backgroundColor = "#f0f2ff";
+              setCount("0");
+              setState("Frontend");
+            }}
+          >
+            Frontend
+          </p>
+          <div className="underline h-2 w-20 bg-backgroundMain" id="0"></div>
         </div>
         <div>
-        <p onClick={()=> {
-            document.getElementById(count).style.backgroundColor = "#f0f2ff";
-            setCount("1");
-            setState("Backend");
-
-          }}>Backend</p>
-        <div className="underline h-2 w-20 bg-backgroundMain"  id="1"></div>
+          <p
+            onClick={() => {
+              document.getElementById(count).style.backgroundColor = "#f0f2ff";
+              setCount("1");
+              setState("Backend");
+            }}
+          >
+            Backend
+          </p>
+          <div className="underline h-2 w-20 bg-backgroundMain" id="1"></div>
         </div>
         <div>
-        <p onClick={()=> {
-            document.getElementById(count).style.backgroundColor = "#f0f2ff";
-            setCount("2");
-            setState("Database");
-
-          }}>Database</p>
-        <div className="underline h-2 w-20 bg-backgroundMain"   id="2"></div>
+          <p
+            onClick={() => {
+              document.getElementById(count).style.backgroundColor = "#f0f2ff";
+              setCount("2");
+              setState("Database");
+            }}
+          >
+            Database
+          </p>
+          <div className="underline h-2 w-20 bg-backgroundMain" id="2"></div>
         </div>
         <div>
-        <p onClick={()=> {
-            document.getElementById(count).style.backgroundColor = "#f0f2ff";
-            setCount("3")-
-            setState("Android Development");
-
-          }}>Android Development</p>
-        <div className="underline h-2 w-20 bg-backgroundMain"  id="3"></div>
+          <p
+            onClick={() => {
+              document.getElementById(count).style.backgroundColor = "#f0f2ff";
+              setCount("3") - setState("Android Development");
+            }}
+          >
+            Android Development
+          </p>
+          <div className="underline h-2 w-20 bg-backgroundMain" id="3"></div>
         </div>
       </div>
 
@@ -61,7 +72,7 @@ const TechStack = () => {
 
       <div className="mt-5 iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
         <div className="w-[60vw]  h-[44vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
-          <img
+          {/* <img
             src={require("../../assets/html.png")}
             height={80}
             width={80}
@@ -120,7 +131,14 @@ const TechStack = () => {
             height={76}
             width={76}
             className="mt-2"
-          ></img>
+          ></img> */}
+
+          <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[10vmin] md:w-[10vmin]">
+            <img
+              src={require("../../assets/vue.png")}
+              className="max-w-full max-h-full object-contain"
+            ></img>
+          </div>
         </div>
         <div></div>
       </div>
