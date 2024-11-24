@@ -119,7 +119,7 @@ const Contactus = () => {
 
       {screen.width >= 1000 && (
         <>
-          <div className="w-[100vw] p-5 pt-1 pb-[8vmin] 2xl:pb-[4vmin] flex pl-1">
+          <div className="w-[100vw] p-5 pt-1 pb-[8vmin] 2xl:pb-[3.25vmin] flex pl-1">
             <div className="leftHolder w-[55vw]  flex flex-col  ml-[-4.75vmin]">
               <div className="textHolder flex flex-col mt-[13vmin] flex justify-center items-center">
                 <p className="title text-deepViolet text-[2.35vmin]  font-bold">
@@ -168,21 +168,21 @@ const Contactus = () => {
                   </p>
                   <input
                     type="text"
-                    className="p-3 w-[90%] text-[2.25vmin]"
+                    className="p-3 w-[90%] text-[2.35vmin]"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
-                    className="p-3 w-[90%] text-[2.25vmin]"
+                    className="p-3 w-[90%] text-[2.35vmin]"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
-                    className="p-3 w-[90%] text-[2.25vmin]"
+                    className="p-3 w-[90%] text-[2.35vmin]"
                     placeholder="Enter your phone..."
                   />
                   <textarea
-                    className="w-[90%] p-5 pb-10 text-[2.25vmin]"
+                    className="w-[90%] p-5 pb-10 text-[2.35vmin]"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
