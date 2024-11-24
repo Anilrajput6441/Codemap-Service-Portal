@@ -280,7 +280,7 @@ const Hero = () => {
 
                     <div className="buttonHolder">
                       <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
-                        <p className="text-[2.45vmin]">Contact Us</p>
+                        <Link to="/contact">Contact us</Link>
                       </button>
                     </div>
                   </div>
@@ -387,7 +387,7 @@ const Hero = () => {
 
                   <div className="buttonHolder">
                     <button className="bg-deepViolet text-white p-2 pl-8 pr-8">
-                      <p className="text-[2.45vmin]">Contact Us</p>
+                      <Link to="/contact">Contact us</Link>
                     </button>
                   </div>
                 </div>
@@ -495,7 +495,7 @@ const Hero = () => {
 
                     <div className="buttonHolder">
                       <button className="bg-deepViolet text-white p-3 pl-[5vmin] pr-[5vmin]">
-                        <p className="text-[2.65vmin]">Contact Us</p>
+                        <Link to="/contact">Contact us</Link>
                       </button>
                     </div>
                   </div>
@@ -603,7 +603,7 @@ const Hero = () => {
 
                     <div className="buttonHolder">
                       <button className="bg-deepViolet text-white p-3 pl-[5vmin] pr-[5vmin]">
-                        <p className="text-[2.65vmin]">Contact Us</p>
+                        <Link to="/contact">Contact us</Link>
                       </button>
                     </div>
                   </div>
