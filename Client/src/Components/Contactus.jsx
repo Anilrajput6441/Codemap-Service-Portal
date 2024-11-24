@@ -120,7 +120,7 @@ const Contactus = () => {
       {screen.width >= 1000 && (
         <>
           <div className="w-[100vw] p-5 pt-1 pb-[7vmin] flex pl-1">
-            <div className="leftHolder w-[55vw]  flex flex-col  ml-[-2.75vmin]">
+            <div className="leftHolder w-[55vw]  flex flex-col  ml-[-4.75vmin]">
               <div className="textHolder flex flex-col mt-[13vmin] flex justify-center items-center">
                 <p className="title text-deepViolet text-[2.35vmin]  font-bold">
                   Contact Us
