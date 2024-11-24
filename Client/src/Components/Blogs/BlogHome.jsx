@@ -35,7 +35,7 @@ const BlogHome = () => {
       <div className="blogsHolder flex mt-[5vmin] pb-[4vmin]">
         <div className="mainBlogs w-[62%]  h-[100vh] flex flex-col items-center ml-3">
           <div className="blogHolder mt-[-2.45vmin]">
-            <div className="imageholder  w-[98%] h-[63vh] 2xl:h-[62.75vh]  mt-[5vmin] flex justify-center items-center ml-1">
+            <div className="imageholder  w-[98%] h-[63vh] 2xl:h-[63vh]  mt-[5vmin] flex justify-center items-center ml-1">
               <img
                 src={require("../../../assets/PM5.webp")}
                 className="max-w-full max-h-full object-contain"
