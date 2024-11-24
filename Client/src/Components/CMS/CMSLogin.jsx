@@ -26,7 +26,7 @@ const CMSLogin = () => {
 
       navigate(`/cmsDashboard`);
     } else {
-      toast("login Failed... ", {
+      toast.error("login Failed... ", {
         position: toast.POSITION.TOP_RIGHT,
       });
     }

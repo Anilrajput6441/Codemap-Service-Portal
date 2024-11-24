@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import CMSCard from "./CMSCard";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+toast.configure();
 
 const CMSDashboard = () => {
   const apiResponse = [
@@ -29,6 +33,9 @@ const CMSDashboard = () => {
     if (response.status === 200) {
       console.log("User is verified");
     } else {
+      toast.error("User not verified... ", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
       navigate("/cms");
     }
   };
