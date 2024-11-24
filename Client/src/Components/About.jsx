@@ -571,7 +571,7 @@ const About = () => {
                 ></img>
               </div>
 
-              <div className="textHolder w-[86vmin] text-[2.95vmin] ml-[2vmin] mt-4 ml-15">
+              <div className="textHolder w-[86vmin] text-[2.95vmin] ml-[-1vmin] mt-4 ml-15">
                 <div className="mainTextHolder flex flex-col w-[110vmin]">
                   <div className="who border-black ">
                     <p className="font-bold text-[5vmin] ">Who we are?</p>
