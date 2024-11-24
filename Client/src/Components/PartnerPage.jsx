@@ -228,20 +228,20 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-12 p-3 mt-5 text-[2.35vmin]">
                         <input
                           type="text"
-                          className="text border-gray border-b-[1px] p-2"
+                          className="text border-gray border-b-[1px] p-2 text-[2.35vmin]"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
-                          className="text border-gray border-b-[1px] p-2"
+                          className="text border-gray border-b-[1px] p-2 text-[2.35vmin]"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
-                          className="text border-gray border-b-[1px] p-2"
+                          className="text border-gray border-b-[1px] p-2 text-[2.35vmin]"
                           placeholder="Enter your phone..."
                         />
-                        <select className="text border-gray border-b-[1px] p-2 text-[2vmin]">
+                        <select className="text border-gray text-[2.35vmin] border-b-[1px] p-2 text-[2vmin]">
                           <option value="None">
                             Which service are you looking for?
                           </option>
