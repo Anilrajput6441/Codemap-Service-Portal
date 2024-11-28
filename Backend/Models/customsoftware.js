@@ -19,5 +19,5 @@ const customSoftwareSchema = mongoose.Schema(
   }
 );
 
-const customsoftwareModelObj = mongoose.model("cuustomsoftwareModelObj", customSoftwareSchema);
+const customsoftwareModelObj = mongoose.model("cuustomsoftware", customSoftwareSchema);
 export default customsoftwareModelObj;

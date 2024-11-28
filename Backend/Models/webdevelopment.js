@@ -19,5 +19,5 @@ const webdevelopmentSchema = mongoose.Schema(
   }
 );
 
-const webdevelopmentModelObj = mongoose.model("webdevelopmentModelObj", webdevelopmentSchema);
+const webdevelopmentModelObj = mongoose.model("webdevelopment", webdevelopmentSchema);
 export default webdevelopmentModelObj;

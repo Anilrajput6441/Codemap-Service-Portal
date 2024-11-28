@@ -15,9 +15,11 @@ const androidSchema = mongoose.Schema(
    
   },
   {
-    Collection: "android",
+    // this is table name
+    Collection: "android", 
+     
   }
 );
-
-const androidModelObj = mongoose.model("androidModelObj", androidSchema);
+// this is 
+const androidModelObj = mongoose.model("android", androidSchema);
 export default androidModelObj;
