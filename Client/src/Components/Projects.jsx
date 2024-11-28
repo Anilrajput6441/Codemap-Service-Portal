@@ -70,7 +70,7 @@ const Projects = () => {
               Web Projects
             </p>
             <div
-              className="underline h-1 w-[10vmin] mt-1 bg-white"
+              className="underline h-1 w-[13vmin] mt-1 bg-white"
               id="0"
             ></div>
           </div>
@@ -83,7 +83,7 @@ const Projects = () => {
               Android Projects
             </p>
             <div
-              className="underline  h-1 w-[10vmin] mt-1 bg-white"
+              className="underline  h-1 w-[13vmin] mt-1 bg-white"
               id="1"
             ></div>
           </div>
@@ -96,7 +96,7 @@ const Projects = () => {
               Custom Project
             </p>
             <div
-              className="underline  h-1 w-[10vmin] mt-1 bg-white"
+              className="underline  h-1 w-[13vmin] mt-1 bg-white"
               id="2"
             ></div>
           </div>
