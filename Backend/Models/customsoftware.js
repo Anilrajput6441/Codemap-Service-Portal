@@ -12,12 +12,14 @@ const customSoftwareSchema = mongoose.Schema(
       required: true,
       trim: true,
     },
-   
   },
   {
     Collection: "customsoftware",
   }
 );
 
-const customsoftwareModelObj = mongoose.model("cuustomsoftware", customSoftwareSchema);
+const customsoftwareModelObj = mongoose.model(
+  "customsoftware",
+  customSoftwareSchema
+);
 export default customsoftwareModelObj;
