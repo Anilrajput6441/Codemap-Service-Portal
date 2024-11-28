@@ -3,8 +3,20 @@ import { useEffect, useState } from "react";
 const TechStack = () => {
   const [count, setCount] = useState("0");
   const [state, setState] = useState("Frontend");
+  const navMap = {
+    0: "Frontend",
+    1: "Backend",
+    2: "Database",
+    3: "Android",
+  };
+  const handleChange = (index) => {
+    if (index != count) {
+      document.getElementById(count).style.backgroundColor = "#f0f2ff";
+      setState(navMap[index]);
+      setCount(index);
+    }
+  };
   const changeColor = () => {
-    console.log(state);
     document.getElementById(count).style.backgroundColor = "#6e41c6";
   };
   useEffect(() => {
@@ -20,9 +32,7 @@ const TechStack = () => {
         <div>
           <p
             onClick={() => {
-              document.getElementById(count).style.backgroundColor = "#f0f2ff";
-              setCount("0");
-              setState("Frontend");
+              handleChange("0");
             }}
           >
             Frontend
@@ -32,9 +42,7 @@ const TechStack = () => {
         <div>
           <p
             onClick={() => {
-              document.getElementById(count).style.backgroundColor = "#f0f2ff";
-              setCount("1");
-              setState("Backend");
+              handleChange("1");
             }}
           >
             Backend
@@ -44,9 +52,7 @@ const TechStack = () => {
         <div>
           <p
             onClick={() => {
-              document.getElementById(count).style.backgroundColor = "#f0f2ff";
-              setCount("2");
-              setState("Database");
+              handleChange("2");
             }}
           >
             Database
@@ -56,8 +62,7 @@ const TechStack = () => {
         <div>
           <p
             onClick={() => {
-              document.getElementById(count).style.backgroundColor = "#f0f2ff";
-              setCount("3") - setState("Android Development");
+              handleChange("3");
             }}
           >
             Android Development
