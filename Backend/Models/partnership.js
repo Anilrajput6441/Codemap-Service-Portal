@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const querySchema = mongoose.Schema(
+const partnershipSchema = mongoose.Schema(
   {
     name: {
       type: String,
