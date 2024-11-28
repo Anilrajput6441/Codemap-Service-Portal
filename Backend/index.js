@@ -12,6 +12,7 @@ import technologiesRouter from "./Routes/technologiesRouter.js";
 import authenticationRouter from "./Routes/authenticationRouter.js";
 import ApplyRouter from "./Routes/ApplyRouter.js";
 import careerRouter from "./Routes/CareerRouter.js";
+import partnershipRouter from "./Routes/partnershipRouter.js";
 
 dotenv.config();
 
@@ -37,6 +38,7 @@ app.use("/api/v1/technologies", technologiesRouter);
 app.use("/api/v1/auth", authenticationRouter);
 app.use("/api/v1/apply", ApplyRouter);
 app.use("/api/v1/career", careerRouter);
+app.use("/api/v1/partnership", partnershipRouter);
 
 //App Listen
 app.listen(PORT, () => {
