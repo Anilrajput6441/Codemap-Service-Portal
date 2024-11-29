@@ -83,9 +83,9 @@ const TechStack = () => {
         <div className="w-[60vw]    flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
           {data.length > 0 && (
             <>
-              <div className="imageContainer flex flex-wrap p-10  gap-x-16 gap-y-10">
+              <div className="imageContainer flex flex-wrap p-10  gap-x-16 gap-y-20">
                 {data.map((val) => (
-                  <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[12vmin] md:w-[12vmin]">
+                  <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin]">
                     <img
                       src={API_TEST_URL + val.image}
                       className="max-w-full max-h-full object-contain"
