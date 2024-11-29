@@ -32,7 +32,7 @@ const usePostData = (tigger, link, data, type) => {
       };
 
       axios
-        .post(API_TEST_URL1 + "api/v1/" + link, data, config)
+        .post(API_TEST_URL + "api/v1/" + link, data, config)
         .then((res) => {
           if (res.status === 200) {
             toast("Upload Successful... ", {

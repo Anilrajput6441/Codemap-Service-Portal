@@ -16,7 +16,7 @@ const userGetData = (tigger, url, type) => {
         });
     } else if (tigger != false && type === "technologies") {
       axios
-        .get(API_TEST_URL1 + "api/v1/" + url + "/" + "data?category=" + tigger)
+        .get(API_TEST_URL + "api/v1/" + url + "/" + "data?category=" + tigger)
         .then((res) => {
           setData(res.data);
         })
