@@ -2,14 +2,15 @@ import partnershipModelObj from "../../Models/partnership.js";
 
 const postPartnership = () => {
   return (req, res) => {
-    const { service, description} = req.body;
+    const { name, email, phone, service } = req.body;
     // the above line also can be written as below
     // const service = req.body.service;
     // const description = req.body.description;
     const partnershipModelObjNew = new partnershipModelObj({
-      service: service,
-      description: description,
-     
+      name,
+      email,
+      phone,
+      service,
     });
 
     partnershipModelObjNew
