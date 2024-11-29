@@ -86,7 +86,7 @@ const TechStack = () => {
               <div className="imageContainer flex flex-wrap justify-center items-center p-10  gap-x-20 gap-y-24">
                 {data.map((val) => (
                   <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin]">
-                    {(val.name === "PHP" && (
+                    {(val.name === "PHP" && val.name === "Neo4j" && (
                       <img
                         src={API_TEST_URL + val.image}
                         className="max-w-full max-h-full object-contain mt-4"
