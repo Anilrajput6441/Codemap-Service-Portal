@@ -87,7 +87,7 @@ const TechStack = () => {
                 {data.map((val) => (
                   <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[12vmin] md:w-[12vmin]">
                     <img
-                      src={API_TEST_URL1 + val.image}
+                      src={API_TEST_URL + val.image}
                       className="max-w-full max-h-full object-contain"
                     ></img>
                   </div>
