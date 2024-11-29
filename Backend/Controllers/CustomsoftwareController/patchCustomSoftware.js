@@ -3,12 +3,12 @@ const customsoftwarePATCH = () => {
   return (req, res) => {
     const { service, description } = req.body;
     // Update the description with the new description
-   androidModelObj
+    customsoftwareModelObj
       .findOne({ service: service })
       .then((data) => {
         // update all the data as needed
         data.description = description;
-        // the below code will be same in any case 
+        // the below code will be same in any case
         data
           .save()
           .then((savedData) => {

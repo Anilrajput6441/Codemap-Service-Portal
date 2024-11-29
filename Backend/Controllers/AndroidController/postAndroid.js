@@ -2,14 +2,13 @@ import androidModelObj from "../../Models/android.js";
 
 const postAndroid = () => {
   return (req, res) => {
-    const { service, description} = req.body;
+    const { service, description } = req.body;
     // the above line also can be written as below
     // const service = req.body.service;
     // const description = req.body.description;
     const androidModelObjNew = new androidModelObj({
       service: service,
       description: description,
-     
     });
 
     androidModelObjNew
