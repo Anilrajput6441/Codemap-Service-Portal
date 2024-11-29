@@ -15,6 +15,7 @@ import careerRouter from "./Routes/CareerRouter.js";
 import partnershipRouter from "./Routes/partnershipRouter.js";
 import { customsoftwareRouter } from "./Routes/customsoftwareRouter.js";
 import { androidRouter } from "./Routes/androidRouter.js";
+import { webDevelopmentRouter } from "./Routes/WebDevelopmentRouter.js";
 
 dotenv.config();
 
@@ -43,6 +44,8 @@ app.use("/api/v1/career", careerRouter);
 app.use("/api/v1/partnership", partnershipRouter);
 app.use("/api/v1/customsoftware", customsoftwareRouter);
 app.use("/api/v1/android", androidRouter);
+app.use("/api/v1/webdevelopment", webDevelopmentRouter);
+
 
 //App Listen
 app.listen(PORT, () => {
