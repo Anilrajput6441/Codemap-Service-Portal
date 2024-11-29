@@ -83,7 +83,7 @@ const TechStack = () => {
         <div className="w-[60vw]    flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
           {data.length > 0 && (
             <>
-              <div className="imageContainer flex flex-wrap p-10  gap-x-16 gap-y-20">
+              <div className="imageContainer flex flex-wrap justify-center items-center p-10  gap-x-16 gap-y-20">
                 {data.map((val) => (
                   <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin]">
                     <img
