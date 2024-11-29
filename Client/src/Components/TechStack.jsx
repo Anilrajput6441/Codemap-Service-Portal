@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
+import { userGetData } from "../Utils/useGetData";
 
 const TechStack = () => {
   const [count, setCount] = useState("0");
-  const [state, setState] = useState("Frontend");
+  const [tigger, setTigger] = useState("Frontend");
   const navMap = {
     0: "Frontend",
     1: "Backend",
     2: "Database",
     3: "Android",
   };
+  const { API_TEST_URL1, API_TEST_URL } = process.env;
+  const data = userGetData(tigger, "technologies", "technologies");
+
   const handleChange = (index) => {
     if (index != count) {
       document.getElementById(count).style.backgroundColor = "#f0f2ff";
-      setState(navMap[index]);
+      setTigger(navMap[index]);
       setCount(index);
     }
   };
@@ -21,7 +25,7 @@ const TechStack = () => {
   };
   useEffect(() => {
     changeColor();
-  }, [count]);
+  }, [count, tigger]);
   return (
     <div className="Holder w-[100vw] bg-backgroundMain p-3">
       <p className="text-extrabold text-center text-[7.25vmin] p-2 font-extrabold">
@@ -75,77 +79,24 @@ const TechStack = () => {
         <div className="line w-[88vw] border-t-[0.5px] mt-6"></div>
       </div>
 
-      <div className="mt-5 iconHolder w-[90vw] h-[55vmin] flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
-        <div className="w-[60vw]  h-[44vmin]  flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
-          {/* <img
-            src={require("../../assets/html.png")}
-            height={80}
-            width={80}
-          ></img>
-
-          <img
-            src={require("../../assets/css.png")}
-            height={95}
-            width={95}
-            className="mt-[-1vmin]"
-          ></img>
-          <img
-            src={require("../../assets/js.webp")}
-            height={100}
-            width={100}
-            className="mt-2"
-          ></img>
-          <img
-            src={require("../../assets/tailwind.webp")}
-            height={85}
-            width={85}
-            className="mt-2"
-          ></img>
-          <img
-            src={require("../../assets/bootstrap.png")}
-            height={85}
-            width={85}
-            className="mt-2"
-          ></img>
-          <img
-            src={require("../../assets/mui.png")}
-            height={85}
-            width={85}
-            className="mt-2"
-          ></img>
-          <img
-            src={require("../../assets/react.png")}
-            height={130}
-            width={130}
-          ></img>
-
-          <img
-            src={require("../../assets/angular.webp")}
-            height={76}
-            width={76}
-            className="mt-[-1vmin]"
-          ></img>
-          <img
-            src={require("../../assets/vue.png")}
-            height={76}
-            width={76}
-            className="mt-2"
-          ></img>
-          <img
-            src={require("../../assets/next.png")}
-            height={76}
-            width={76}
-            className="mt-2"
-          ></img> */}
-
-          <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[10vmin] md:w-[10vmin]">
-            <img
-              src={require("../../assets/vue.png")}
-              className="max-w-full max-h-full object-contain"
-            ></img>
-          </div>
+      <div className="iconHolder w-[90vw] p-10  flex flex-col justify-center items-center gap-x-20 ml-12 mt-[-3vmin] lg:mt-[-5vmin]">
+        <div className="w-[60vw]    flex flex-wrap gap-x-14 justify-center items-center gap-y-4">
+          {data.length > 0 && (
+            <>
+              <div className="imageContainer flex flex-wrap p-10  gap-x-16 gap-y-10">
+                {data.map((val) => (
+                  <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[12vmin] md:w-[12vmin]">
+                    <img
+                      src={API_TEST_URL1 + val.image}
+                      className="max-w-full max-h-full object-contain"
+                    ></img>
+                  </div>
+                ))}
+              </div>
+              <div></div>
+            </>
+          )}
         </div>
-        <div></div>
       </div>
     </div>
   );

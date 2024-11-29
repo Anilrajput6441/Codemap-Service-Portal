@@ -6,7 +6,7 @@ const CMSCard = (props) => {
   return (
     <>
       {props.type != "application" && (
-        <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[55vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
+        <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[54vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
           <div className="imageHolder mt-[5vmin]">
             <img src={props.data.image} height={140} width={140} />
           </div>

@@ -11,4 +11,17 @@ const technologiesGET = (req, res) => {
     });
 };
 
+const technologiesGETQuery = (req, res) => {
+  const category = req.query.category;
+  technologiesModelObj
+    .find({ category })
+    .then((data) => {
+      res.status(200).send(data);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+};
+
 export default technologiesGET;
+export { technologiesGETQuery };

@@ -24,6 +24,7 @@ import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
 import Admin from "./CMS/AdminPage/Admin";
 import CMSCard from "./CMS/CMSCard";
 import CareerCMS from "./CMS/CareerCMS/CareerCMS";
+import TechnologiesCMS from "./CMS/TechnologiesCMS.js/TechnologiesCMS";
 
 dotenv.config();
 const Body = () => {
@@ -114,6 +115,10 @@ const Body = () => {
     {
       path: "/careerCMS",
       element: <CareerCMS />,
+    },
+    {
+      path: "/TechnologiesCMS",
+      element: <TechnologiesCMS />,
     },
   ]);
 

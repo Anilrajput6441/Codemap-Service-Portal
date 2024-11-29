@@ -6,6 +6,9 @@ import Footer from "../Footer";
 import CMSCard from "./CMSCard";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { title } from "process";
+import { link } from "fs";
+import RevolvingHeader from "../RevolvingHeader";
 
 toast.configure();
 
@@ -21,6 +24,13 @@ const CMSDashboard = () => {
       title: "Career Management",
       link: "/CareerCMS",
     },
+    {
+      image: require("../../../assets/Technologies.png"),
+      title: "Add Technology",
+      link: "/TechnologiesCMS",
+    },
+    {},
+    {},
   ];
   const navigate = useNavigate();
   const verifyUser = async () => {
@@ -45,8 +55,9 @@ const CMSDashboard = () => {
   }, []);
   return (
     <>
+      {screen.width > 1000 && <RevolvingHeader />}
       <Header category="dashboard" />
-      <div className="mainHolder w-[100vw] pb-20 flex justify-center items-center mt-10   gap-x-12">
+      <div className="mainHolder ml-[-1vmin] pb-20 w-[100vw] flex flex-wrap justify-center items-center mt-10 gap-y-6   gap-x-12">
         {apiResponse.map((val, index) => (
           <CMSCard data={val} />
         ))}

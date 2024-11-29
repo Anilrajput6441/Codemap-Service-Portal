@@ -1,5 +1,7 @@
 import express from "express";
-import technologiesGET from "../Controllers/TechnologiesController/technologiesGET.js";
+import technologiesGET, {
+  technologiesGETQuery,
+} from "../Controllers/TechnologiesController/technologiesGET.js";
 import technologiesPOST from "../Controllers/TechnologiesController/technologiesPOST.js";
 import technologiesDELETE from "../Controllers/TechnologiesController/technologiesDELETE.js";
 import multer from "multer";
@@ -23,6 +25,8 @@ var upload = multer({ storage: storage });
 const technologiesRouter = express.Router();
 
 technologiesRouter.get("/", technologiesGET);
+
+technologiesRouter.get("/:id", technologiesGETQuery);
 
 technologiesRouter.post("/", upload.single("file"), technologiesPOST());
 
