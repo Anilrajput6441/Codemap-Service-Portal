@@ -35,9 +35,9 @@ const Contactus = () => {
     e.preventDefault();
     // Here, you should send the form data to your server-side API
     // For the purpose of this example, we'll simulate the form submission using console.log
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const name = document.getElementById("name1").value;
+    const email = document.getElementById("email1").value;
+    const phone = document.getElementById("phone1").value;
     const message = document.getElementById("message1").value;
 
     // Validate the form data before submission
@@ -47,7 +47,7 @@ const Contactus = () => {
     };
 
     const verifyResult = InputValidator(verifyData);
-
+    console.log(name);
     if (message != "") {
       if (name != "") {
         if (verifyResult) {
@@ -62,10 +62,10 @@ const Contactus = () => {
           setData(dataBody);
           setTigger(true);
 
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("phone").value = "";
-          document.getElementById("message").value = "";
+          document.getElementById("name1").value = "";
+          document.getElementById("email1").value = "";
+          document.getElementById("phone1").value = "";
+          document.getElementById("message1").value = "";
         } else {
           toast.error("Invalid email or phone no. ... ", {
             position: toast.POSITION.TOP_RIGHT,
@@ -111,19 +111,19 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[92%] rounded-md"
-                    id="name"
+                    id="name1"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
-                    id="email"
+                    id="email1"
                     className="p-3 w-[92%] rounded-md"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[92%] rounded-md"
-                    id="phone"
+                    id="phone1"
                     placeholder="Enter your phone..."
                   />
                   <textarea
@@ -167,19 +167,19 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[95%] rounded-md"
-                    id="name"
+                    id="name1"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
-                    id="email"
+                    id="email1"
                     className="p-3 w-[95%] rounded-md"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[95%] rounded-md"
-                    id="phone"
+                    id="phone1"
                     placeholder="Enter your phone..."
                   />
                   <textarea
@@ -254,19 +254,19 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[90%] text-[2.35vmin]"
-                    id="name"
+                    id="name1"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
                     className="p-3 w-[90%] text-[2.35vmin]"
-                    id="email"
+                    id="email1"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[90%] text-[2.35vmin]"
-                    id="phone"
+                    id="phone1"
                     placeholder="Enter your phone..."
                   />
                   <textarea
