@@ -5,7 +5,7 @@ import RevolvingHeader from "./RevolvingHeader";
 import Footer from "./Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { userGetData } from "./CMS/Utils/useGetData";
+import { useGetData } from "./CMS/Utils/useGetData";
 
 const { API_TEST_URL } = process.env;
 const CareerPage = () => {
@@ -13,7 +13,7 @@ const CareerPage = () => {
   const [state, setState] = useState("Frontend");
   const [tigger, setTigger] = useState(false);
 
-  const data = userGetData(tigger, "career");
+  const data = useGetData(tigger, "career");
 
   const changeColor = () => {
     console.log(state);

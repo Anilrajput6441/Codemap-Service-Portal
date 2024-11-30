@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const { API_TEST_URL, API_TEST_URL1 } = process.env;
-const userGetData = (tigger, url) => {
+const useGetData = (tigger, url) => {
   const [data, setData] = useState([]);
   useEffect(() => {
     if (tigger == true) {
@@ -29,4 +29,4 @@ const userGetData = (tigger, url) => {
   return data;
 };
 
-export { userGetData };
+export { useGetData };

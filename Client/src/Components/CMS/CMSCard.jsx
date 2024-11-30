@@ -5,25 +5,27 @@ const { API_TEST_URL } = process.env;
 const CMSCard = (props) => {
   return (
     <>
-      {props.type != "application" && (
-        <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[54vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
-          <div className="imageHolder mt-[5vmin]">
-            <img src={props.data.image} height={140} width={140} />
-          </div>
-          <div className="cardHolderContainer text-[6vmin] md:text-[4vmin]  w-[88vw]  lg:w-[50vmin]">
-            <p className="cardTitle font-extrabold text-center mt-5 font-poppins">
-              {props.data.title}
-            </p>
-            <div className="flex justify-center items-center mt-4">
-              <buttton className="bg-deepViolet text-white text-[3.45vmin] md:text-[2.15vmin] p-2">
-                <Link to={props.data.link}>Click Here!!!</Link>
-              </buttton>
+      {props.type != "application" &&
+        props.type != "messages" &&
+        props.type != "message" && (
+          <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[54vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
+            <div className="imageHolder mt-[5vmin]">
+              <img src={props.data.image} height={140} width={140} />
+            </div>
+            <div className="cardHolderContainer text-[6vmin] md:text-[4vmin]  w-[88vw]  lg:w-[50vmin]">
+              <p className="cardTitle font-extrabold text-center mt-5 font-poppins">
+                {props.data.title}
+              </p>
+              <div className="flex justify-center items-center mt-4">
+                <buttton className="bg-deepViolet text-white text-[3.45vmin] md:text-[2.15vmin] p-2">
+                  <Link to={props.data.link}>Click Here!!!</Link>
+                </buttton>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {props.type == "application" && (
+      {props.type == "application" && props.type != "message" && (
         <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[55vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
           <div className="cardHolderContainer text-[4vmin] md:text-[2.45vmin]  w-[88vw]  lg:w-[50vmin]">
             <p className="cardTitle font-extrabold text-center mt-5 font-poppins">
@@ -61,6 +63,25 @@ const CMSCard = (props) => {
               height={50}
               width={50}
             />
+          </div>
+        </div>
+      )}
+
+      {props.type == "message" && props.type != "application" && (
+        <div className="cardHolder bg-white border-gray border-[1px] w-[88vw] md:w-[60vmin] lg:w-[55vmin] pl-2 pb-4 flex flex-col justify-center items-center p-2 pl-4">
+          <div className="cardHolderContainer text-[4vmin] md:text-[2.45vmin]  w-[88vw]  lg:w-[50vmin]">
+            <p className="cardTitle font-extrabold text-center mt-5 font-poppins">
+              Name:{props.data.name}
+            </p>
+            <p className="text-center mt-5 font-poppins">
+              Email: {props.data.email}
+            </p>
+            <p className="text-center mt-5 font-poppins">
+              Phone: {props.data.phone}
+            </p>
+            <p className="text-center mt-5 font-poppins">
+              message:{props.data.message}
+            </p>
           </div>
         </div>
       )}

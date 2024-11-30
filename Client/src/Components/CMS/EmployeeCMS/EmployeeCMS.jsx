@@ -5,13 +5,13 @@ import { useAdminAuth } from "../Utils/useAdminAuth";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../../Card";
-import { userGetData } from "../Utils/useGetData";
+import { useGetData } from "../Utils/useGetData";
 import CMSCard from "../CMSCard";
 const EmployeeCMS = () => {
   const [count, setCount] = useState("0");
   const [state, setState] = useState("Frontend");
   // const [data, setData] = useState([]);
-  const [tigger, setTigger] = useState(false);
+  const [tigger, setTigger] = useState(true);
   const changeColor = () => {
     console.log(state);
     document.getElementById(count).style.backgroundColor = "#6e41c6";
@@ -32,9 +32,9 @@ const EmployeeCMS = () => {
     }
   };
 
-  const data = userGetData(tigger, "apply");
+  const data = useGetData(tigger, "apply");
   useEffect(() => {
-    setTigger(true);
+    setTigger(false);
   }, []);
 
   console.log(data);
@@ -93,7 +93,8 @@ const EmployeeCMS = () => {
         </div>
       </div>
 
-      <div className="mainHolder flex justify-center items-center pb-20">
+      <div className="mainHolder flex flex-wrap gap-x-6 justify-center items-center pb-20">
+        {console.log(data)}
         {data.map((val, index) => (
           <CMSCard type="application" data={val} />
         ))}
