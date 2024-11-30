@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../../Header";
+import { useState, useEffect } from "react";
 import Footer from "../../Footer";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useAdminAuth } from "../Utils/useAdminAuth";
-const MessagesCMS = () => {
+import "react-toastify/dist/ReactToastify.css";
+const TeamCMS = () => {
   toast.configure();
   const navigate = useNavigate();
   const verifyUser = async () => {
@@ -30,11 +31,11 @@ const MessagesCMS = () => {
   }, []);
   return (
     <>
-      <Header category="dashboard" />
-      <div className="messagesBody"></div>
+      <Header />
+      <div className="mainHolder h-[40vh] w-[100vw]"></div>
       <Footer />
     </>
   );
 };
 
-export default MessagesCMS;
+export default TeamCMS;

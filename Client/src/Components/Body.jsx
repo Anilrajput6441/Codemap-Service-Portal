@@ -26,6 +26,9 @@ import CMSCard from "./CMS/CMSCard";
 import MessagesCMS from "../Components/CMS/MessagesCMS/MessagesCMS";
 import CareerCMS from "./CMS/CareerCMS/CareerCMS";
 import TechnologiesCMS from "./CMS/TechnologiesCMS.js/TechnologiesCMS";
+import TeamCMS from "./CMS/TeamCMS/TeamCMS";
+import ProjectCMS from "./CMS/ProjectCMS/ProjectCMS";
+import BlogsCMS from "./CMS/BlogsCMS/BlogsCMS";
 
 dotenv.config();
 const Body = () => {
@@ -124,6 +127,26 @@ const Body = () => {
     {
       path: "/MessagesCMS",
       element: <MessagesCMS />,
+    },
+    {
+      path: "/ProjectsCMS",
+      element: <ProjectCMS />,
+    },
+    {
+      path: "/ProjectCMS",
+      element: <ProjectCMS />,
+    },
+    {
+      path: "/BlogsCMS",
+      element: <BlogsCMS />,
+    },
+    {
+      path: "/BlogCMS",
+      element: <BlogsCMS />,
+    },
+    {
+      path: "/TeamCMS",
+      element: <TeamCMS />,
     },
   ]);
 

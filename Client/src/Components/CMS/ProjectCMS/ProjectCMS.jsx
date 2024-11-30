@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "../../Header";
 import Footer from "../../Footer";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useAdminAuth } from "../Utils/useAdminAuth";
-const MessagesCMS = () => {
+import "react-toastify/dist/ReactToastify.css";
+const ProjectCMS = () => {
   toast.configure();
   const navigate = useNavigate();
+
   const verifyUser = async () => {
     const dataObj = {
       token: localStorage.getItem("token"),
@@ -30,11 +32,11 @@ const MessagesCMS = () => {
   }, []);
   return (
     <>
-      <Header category="dashboard" />
-      <div className="messagesBody"></div>
+      <Header />
+      <div className="mainHolder h-[40vh] w-[100vw]"></div>
       <Footer />
     </>
   );
 };
 
-export default MessagesCMS;
+export default ProjectCMS;
