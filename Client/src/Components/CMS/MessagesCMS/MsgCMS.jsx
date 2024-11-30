@@ -8,7 +8,7 @@ import { useGetData } from "../Utils/useGetData";
 import { useNavigate } from "react-router-dom";
 import { useAdminAuth } from "../Utils/useAdminAuth";
 import CMSCard from "../CMSCard";
-const MessagesCMS = () => {
+const MsgCMS = () => {
   const [tigger, setTigger] = useState(true);
   toast.configure();
 
@@ -59,4 +59,4 @@ const MessagesCMS = () => {
   );
 };
 
-export default MessagesCMS;
+export default MsgCMS;
