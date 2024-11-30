@@ -2,9 +2,14 @@ import React, { useEffect } from "react";
 import Header from "../../../Components/Header";
 import Footer from "../../../Components/Footer";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { usePostData } from "../Utils/usePostData";
+import { useAdminAuth } from "../Utils/useAdminAuth";
 const TechnologiesCMS = () => {
+  toast.configure();
+  const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [tigger, setTigger] = useState(false);
   const [state, setState] = useState({
@@ -39,11 +44,30 @@ const TechnologiesCMS = () => {
     setData(data);
     setTigger(true);
   };
+  const verifyUser = async () => {
+    const dataObj = {
+      token: localStorage.getItem("token"),
+    };
 
+    console.log(dataObj.token);
+    const response = await useAdminAuth(dataObj, "verify");
+    if (response.status === 200) {
+      console.log("User is verified");
+    } else {
+      toast.error("User not verified... ", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+      navigate("/cms");
+    }
+  };
   useEffect(() => {
     setTigger(false);
     status = null;
   }, [status]);
+
+  useEffect(() => {
+    verifyUser();
+  }, []);
 
   return (
     <>

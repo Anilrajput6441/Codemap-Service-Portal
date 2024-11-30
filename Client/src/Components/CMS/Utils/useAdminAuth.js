@@ -1,7 +1,7 @@
 import axios from "axios";
 import dotenv from "dotenv";
 
-const { API_TEST_URL } = process.env;
+const { API_TEST_URL, API_TEST_URL1 } = process.env;
 
 dotenv.config();
 export const useAdminAuth = async (data, type) => {

@@ -29,7 +29,11 @@ const CMSDashboard = () => {
       title: "Add Technology",
       link: "/TechnologiesCMS",
     },
-    {},
+    {
+      image: require("../../../assets/messages.png"),
+      title: "View Messages",
+      link: "/MessagesCMS",
+    },
     {},
   ];
   const navigate = useNavigate();
@@ -57,7 +61,7 @@ const CMSDashboard = () => {
     <>
       {screen.width > 1000 && <RevolvingHeader />}
       <Header category="dashboard" />
-      <div className="mainHolder ml-[-1vmin] pb-20 w-[100vw] flex flex-wrap justify-center items-center mt-10 gap-y-6   gap-x-12">
+      <div className="mainHolder ml-[-1vmin] pb-20 w-[100vw] flex flex-wrap justify-center items-center mt-10 gap-y-8   gap-x-12">
         {apiResponse.map((val, index) => (
           <CMSCard data={val} />
         ))}

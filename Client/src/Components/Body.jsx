@@ -23,6 +23,7 @@ import PartnerPage from "./PartnerPage";
 import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
 import Admin from "./CMS/AdminPage/Admin";
 import CMSCard from "./CMS/CMSCard";
+import MessagesCMS from "../Components/CMS/MessagesCMS/MessagesCMS";
 import CareerCMS from "./CMS/CareerCMS/CareerCMS";
 import TechnologiesCMS from "./CMS/TechnologiesCMS.js/TechnologiesCMS";
 
@@ -119,6 +120,10 @@ const Body = () => {
     {
       path: "/TechnologiesCMS",
       element: <TechnologiesCMS />,
+    },
+    {
+      path: "/MessagesCMS",
+      element: <MessagesCMS />,
     },
   ]);
 
