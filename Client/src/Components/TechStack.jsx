@@ -89,10 +89,12 @@ const TechStack = () => {
                     {val.name === "PHP" ||
                       (val.name === "Neo4j" && (
                         <>
-                          <img
-                            src={API_TEST_URL + val.image}
-                            className="max-w-full max-h-full object-contain mt-[1.95vmin]"
-                          ></img>
+                          <div className="mt-[1.75vmin] h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin] 2xl:h-[9vmin] 2xl:w-[9vmin]">
+                            <img
+                              src={API_TEST_URL + val.image}
+                              className="max-w-full max-h-full object-contain "
+                            ></img>
+                          </div>
                         </>
                       )) || (
                         <img
