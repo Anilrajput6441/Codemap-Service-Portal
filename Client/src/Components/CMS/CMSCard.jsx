@@ -80,7 +80,7 @@ const CMSCard = (props) => {
               Phone: {props.data.phone}
             </p>
             <p className="text-center mt-5 font-poppins">
-              message:{props.data.message}
+              message:{props.data.message || props.data.service}
             </p>
           </div>
         </div>
