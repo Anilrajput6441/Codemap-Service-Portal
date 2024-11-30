@@ -1,4 +1,15 @@
+import { useState } from "react";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { InputValidator } from "../Utils/InputValidator.js";
+import { usePostDataMain } from "../Utils/usePostDataMain";
+
 const Contactus = () => {
+  toast.configure();
+
+  const [data, setData] = useState([]);
+  const [tigger, setTigger] = useState(false);
   const apiResponseMock = [
     {
       image: require("../../assets/locationContact.png"),
@@ -17,6 +28,66 @@ const Contactus = () => {
       description: "+91 7585824862",
     },
   ];
+
+  let status = usePostDataMain(tigger, "queries", data, "queries");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here, you should send the form data to your server-side API
+    // For the purpose of this example, we'll simulate the form submission using console.log
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message1").value;
+
+    // Validate the form data before submission
+    const verifyData = {
+      email: email,
+      phone: phone,
+    };
+
+    const verifyResult = InputValidator(verifyData);
+
+    if (message != "") {
+      if (name != "") {
+        if (verifyResult) {
+          // alert(verifyResult);
+          const dataBody = {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message,
+          };
+
+          setData(dataBody);
+          setTigger(true);
+
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("message").value = "";
+        } else {
+          toast.error("Invalid email or phone no. ... ", {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      } else {
+        toast.error("Please enter your name... ", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
+    } else {
+      toast.error("Please enter your message ... ", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    }
+  };
+
+  useEffect(() => {
+    setTigger(false);
+    status = null;
+  }, [status]);
+
   return (
     <>
       {screen.width < 700 && (
@@ -40,24 +111,31 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[92%] rounded-md"
+                    id="name"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
+                    id="email"
                     className="p-3 w-[92%] rounded-md"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[92%] rounded-md"
+                    id="phone"
                     placeholder="Enter your phone..."
                   />
                   <textarea
                     className="w-[92%] p-3 rounded-md"
+                    id="message1"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
-                    <button className="submitButton bg-backgroundMain   w-[35%] p-3  font-medium text-[4vmin] mt-5 font-poppins">
+                    <button
+                      className="submitButton bg-backgroundMain   w-[35%] p-3  font-medium text-[4vmin] mt-5 font-poppins"
+                      onClick={handleSubmit}
+                    >
                       Submit
                     </button>
                   </div>
@@ -89,24 +167,31 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[95%] rounded-md"
+                    id="name"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
+                    id="email"
                     className="p-3 w-[95%] rounded-md"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[95%] rounded-md"
+                    id="phone"
                     placeholder="Enter your phone..."
                   />
                   <textarea
                     className="w-[95%] p-3 rounded-md"
+                    id="message1"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
-                    <button className="submitButton bg-backgroundMain   w-[35%] p-3  font-medium text-[4vmin] mt-5 font-poppins">
+                    <button
+                      className="submitButton bg-backgroundMain   w-[35%] p-3  font-medium text-[4vmin] mt-5 font-poppins"
+                      onClick={handleSubmit}
+                    >
                       Submit
                     </button>
                   </div>
@@ -169,24 +254,31 @@ const Contactus = () => {
                   <input
                     type="text"
                     className="p-3 w-[90%] text-[2.35vmin]"
+                    id="name"
                     placeholder="Enter your name..."
                   />
                   <input
                     type="email"
                     className="p-3 w-[90%] text-[2.35vmin]"
+                    id="email"
                     placeholder="Enter your email..."
                   />
                   <input
                     type="phone"
                     className="p-3 w-[90%] text-[2.35vmin]"
+                    id="phone"
                     placeholder="Enter your phone..."
                   />
                   <textarea
                     className="w-[90%] p-5 pb-10 text-[2.35vmin]"
+                    id="message1"
                     placeholder="Enter your message..."
                   />
                   <div className="buttonHolder flex justify-center items-center">
-                    <button className="submitButton bg-deepViolet text-white  w-[35%] p-3  font-medium text-[2.25vmin] mt-5 font-poppins">
+                    <button
+                      className="submitButton bg-deepViolet text-white  w-[35%] p-3  font-medium text-[2.25vmin] mt-5 font-poppins"
+                      onClick={handleSubmit}
+                    >
                       Submit
                     </button>
                   </div>

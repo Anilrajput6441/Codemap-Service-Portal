@@ -1,9 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import RevolvingHeader from "./RevolvingHeader";
 import Header from "./Header";
 import Footer from "./Footer";
 import TitleComponent from "./TitleComponent";
+import { InputValidator } from "../Utils/InputValidator";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { usePostDataMain } from "../Utils/usePostDataMain";
+import { useEffect } from "react";
+
+toast.configure();
+
 const PartnerPage = () => {
+  const [tigger, setTigger] = useState(false);
+  const [data, setData] = useState([]);
+  let status = usePostDataMain(tigger, "partnership", data, "partnership");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+
+    //Verification of these data needed
+    const data = {
+      email: email,
+      phone: phone,
+    };
+
+    const verifyInput = InputValidator(data);
+
+    if (verifyInput === false) {
+      toast.error("Invalid entry for email or phone... ", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    } else {
+      //Post the Data to server
+      const dataObj = {
+        name,
+        email,
+        phone,
+        service,
+      };
+      setData(dataObj);
+      setTigger(true);
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+    }
+  };
+
+  useEffect(() => {
+    setTigger(false);
+    status = null;
+  }, [status]);
+
   return (
     <>
       <div id="hero">
@@ -97,35 +148,43 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-8 p-3 mt-5">
                         <input
                           type="text"
+                          id="name"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
+                          id="email"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
+                          id="phone"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
-                        <select className="text border-gray border-b-[1px] p-2">
+                        <select
+                          className="text border-gray text-[2.45vmin] border-b-[1px] p-2 text-[2vmin]"
+                          id="service"
+                        >
                           <option value="None">
-                            Which service are you partnering for?
+                            Which service are you looking for?
                           </option>
-                          <option value="Talk to you later">
-                            Lead Generation
-                          </option>
-                          <option value="To be honest">
-                            Technology Outsourcing
-                          </option>
-                          <option value=" I don’t know">
+                          <option value="Digital Marketing">
                             Digital Marketing
                           </option>
+                          <option value="Lead Generation">
+                            Lead Generation
+                          </option>
+                          <option value="outsourcing">outsourcing</option>
+                          <option value="others">others</option>
                         </select>
                         <div className="flex justify-center items-center">
-                          <button className="p-2 bg-mainText text-white w-[20vmin]">
+                          <button
+                            className="p-2 bg-mainText text-white w-[20vmin]"
+                            onClick={handleSubmit}
+                          >
                             Submit
                           </button>
                         </div>
@@ -145,29 +204,44 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-10 p-3 mt-5 text-[2vmin]">
                         <input
                           type="text"
+                          id="name"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
+                          id="email"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
+                          id="phone"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
-                        <select className="text border-gray border-b-[1px] p-2 text-[2vmin]">
+                        <select
+                          className="text border-gray text-[2.45vmin] border-b-[1px] p-2 text-[2vmin]"
+                          id="service"
+                        >
                           <option value="None">
                             Which service are you looking for?
                           </option>
-                          <option value="Talk to you later">TTYL</option>
-                          <option value="To be honest">TBH</option>
-                          <option value=" I don’t know">IDK</option>
+                          <option value="Digital Marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="Lead Generation">
+                            Lead Generation
+                          </option>
+                          <option value="outsourcing">outsourcing</option>
+                          <option value="others">others</option>
                         </select>
+
                         <div className="flex justify-center items-center">
-                          <button className="p-2 bg-mainText text-white w-[20vmin]">
+                          <button
+                            className="p-2 bg-mainText text-white w-[20vmin]"
+                            onClick={handleSubmit}
+                          >
                             Submit
                           </button>
                         </div>
@@ -187,29 +261,44 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-10 p-3 mt-5 text-[2vmin]">
                         <input
                           type="text"
+                          id="name"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
+                          id="email"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
+                          id="phone"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
-                        <select className="text border-gray border-b-[1px] p-2 text-[2vmin]">
+                        <select
+                          className="text border-gray text-[2.45vmin] border-b-[1px] p-2 text-[2vmin]"
+                          id="service"
+                        >
                           <option value="None">
                             Which service are you looking for?
                           </option>
-                          <option value="Talk to you later">TTYL</option>
-                          <option value="To be honest">TBH</option>
-                          <option value=" I don’t know">IDK</option>
+                          <option value="Digital Marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="Lead Generation">
+                            Lead Generation
+                          </option>
+                          <option value="outsourcing">outsourcing</option>
+                          <option value="others">others</option>
                         </select>
+
                         <div className="flex justify-center items-center">
-                          <button className="p-2 bg-mainText text-white w-[20vmin]">
+                          <button
+                            className="p-2 bg-mainText text-white w-[20vmin]"
+                            onClick={handleSubmit}
+                          >
                             Submit
                           </button>
                         </div>
@@ -228,29 +317,44 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-12 p-3 mt-5 text-[2.45vmin]">
                         <input
                           type="text"
+                          id="name"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
+                          id="email"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
+                          id="phone"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your phone..."
                         />
-                        <select className="text border-gray text-[2.45vmin] border-b-[1px] p-2 text-[2vmin]">
+                        <select
+                          className="text border-gray text-[2.45vmin] border-b-[1px] p-2 text-[2vmin]"
+                          id="service"
+                        >
                           <option value="None">
                             Which service are you looking for?
                           </option>
-                          <option value="Talk to you later">TTYL</option>
-                          <option value="To be honest">TBH</option>
-                          <option value=" I don’t know">IDK</option>
+                          <option value="Digital Marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="Lead Generation">
+                            Lead Generation
+                          </option>
+                          <option value="outsourcing">outsourcing</option>
+                          <option value="others">others</option>
                         </select>
+                        .
                         <div className="flex justify-center items-center">
-                          <button className="p-2 bg-mainText text-white w-[20vmin]">
+                          <button
+                            className="p-2 bg-mainText text-white w-[20vmin]"
+                            onClick={handleSubmit}
+                          >
                             Submit
                           </button>
                         </div>

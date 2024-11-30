@@ -1,12 +1,87 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { InputValidator } from "../Utils/InputValidator.js";
+import { usePostDataMain } from "../Utils/usePostDataMain";
+
 const Hero = () => {
-  // const height_test = 864;
-  // const width_test = 1536;
-  // const { height, width } = screen;
-  // if (height_test === height && width_test === width) {
-  //   alert("Screen Found");
-  // }
+  toast.configure();
+  const [data, setData] = useState([]);
+  const [tigger, setTigger] = useState(false);
+  const apiResponseMock = [
+    {
+      image: require("../../assets/locationContact.png"),
+      title: "Location:",
+      description:
+        "1st Floor,IIMT LBF Incubation Center,Greater Noida,UP,201310",
+    },
+    {
+      image: require("../../assets/emailContact.png"),
+      title: "Email:",
+      description: "codemap2024@gmail.com",
+    },
+    {
+      image: require("../../assets/phoneContact.png"),
+      title: "Phone:",
+      description: "+91 7585824862",
+    },
+  ];
+
+  let status = usePostDataMain(tigger, "queries", data, "queries");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here, you should send the form data to your server-side API
+    // For the purpose of this example, we'll simulate the form submission using console.log
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+    if (name != "") {
+      if (message != "default") {
+        const verifyData = {
+          email: email,
+          phone: phone,
+        };
+        const verifyResult = InputValidator(verifyData);
+        if (verifyResult) {
+          const dataBody = {
+            name: name,
+            email: email,
+            phone: phone,
+            message: message,
+          };
+          setData(dataBody);
+          setTigger(true);
+
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phone").value = "";
+        } else {
+          toast.error("Invalid email or phone no. ...", {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
+      } else {
+        toast.error("Please choose the service you're looking for...", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+      }
+    } else {
+      toast.error("Please enter your name.", {
+        position: toast.POSITION.TOP_RIGHT,
+      });
+    }
+  };
+
+  useEffect(() => {
+    setTigger(false);
+    status = null;
+  }, [status]);
+
   return (
     <div className="mainHero">
       {(screen.width < 1000 && (
@@ -84,7 +159,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              className="text text-grey p-1 text-[2.65vmin] w-[100%]"
+                              id="name"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -92,7 +168,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              className="text text-grey p-1 text-[2.65vmin] w-[100%]"
+                              id="email"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -100,7 +177,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]  w-[100%]"
+                              id="phone"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -108,18 +186,20 @@ const Hero = () => {
 
                           <div className="w-[100%]">
                             <select
-                              name="cars"
-                              id="cars"
+                              name="message"
+                              id="message"
                               className="w-[100%] text-[2.65vmin]"
                             >
-                              <option value="volvo">
+                              <option value="default">
                                 Which service are you looking for?
                               </option>
-                              <option value="saab">Web Development</option>
-                              <option value="mercedes">
+                              <option value="Web Development">
+                                Web Development
+                              </option>
+                              <option value="Android Development">
                                 Android Development
                               </option>
-                              <option value="audi">
+                              <option value="Custom Software Development">
                                 Custom Software Development
                               </option>
                             </select>
@@ -128,7 +208,10 @@ const Hero = () => {
                         </div>
                         <div className="buttonHolderContainer flex justify-center items-center">
                           <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                            <button className="p-2 text-[2.45vmin]">
+                            <button
+                              className="p-2 text-[2.45vmin]"
+                              onClick={handleSubmit}
+                            >
                               Submit
                             </button>
                           </div>
@@ -193,7 +276,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]  w-[100%]"
+                              id="name"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -201,7 +285,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              className="text text-grey p-1 text-[2.65vmin]  w-[100%]"
+                              id="email"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -209,7 +294,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.65vmin]"
+                              id="phone"
+                              className="text text-grey p-1 text-[2.65vmin]  w-[100%]"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -217,18 +303,20 @@ const Hero = () => {
 
                           <div className="w-[100%]">
                             <select
-                              name="cars"
-                              id="cars"
+                              name="message"
+                              id="message"
                               className="w-[100%] text-[2.65vmin]"
                             >
-                              <option value="volvo">
+                              <option value="default">
                                 Which service are you looking for?
                               </option>
-                              <option value="saab">Web Development</option>
-                              <option value="mercedes">
+                              <option value="Web Development">
+                                Web Development
+                              </option>
+                              <option value="Android Development">
                                 Android Development
                               </option>
-                              <option value="audi">
+                              <option value="Custom Software Development">
                                 Custom Software Development
                               </option>
                             </select>
@@ -237,7 +325,10 @@ const Hero = () => {
                         </div>
                         <div className="buttonHolderContainer flex justify-center items-center">
                           <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                            <button className="p-2 text-[2.45vmin]">
+                            <button
+                              className="p-2 text-[2.45vmin]"
+                              onClick={handleSubmit}
+                            >
                               Submit
                             </button>
                           </div>
@@ -301,7 +392,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin] w-[100%]"
+                              id="name"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -309,7 +401,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="email"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -317,7 +410,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="phone"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -325,18 +419,20 @@ const Hero = () => {
 
                           <div className="w-[100%]">
                             <select
-                              name="cars"
-                              id="cars"
-                              className="w-[100%] text-[2.45vmin]"
+                              name="message"
+                              id="message"
+                              className="w-[100%] text-[2.65vmin]"
                             >
-                              <option value="volvo">
+                              <option value="default">
                                 Which service are you looking for?
                               </option>
-                              <option value="saab">Web Development</option>
-                              <option value="mercedes">
+                              <option value="Web Development">
+                                Web Development
+                              </option>
+                              <option value="Android Development">
                                 Android Development
                               </option>
-                              <option value="audi">
+                              <option value="Custom Software Development">
                                 Custom Software Development
                               </option>
                             </select>
@@ -345,7 +441,10 @@ const Hero = () => {
                         </div>
                         <div className="buttonHolderContainer flex justify-center items-center">
                           <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                            <button className="p-2 text-[2.45vmin]">
+                            <button
+                              className="p-2 text-[2.45vmin]"
+                              onClick={handleSubmit}
+                            >
                               Submit
                             </button>
                           </div>
@@ -408,15 +507,17 @@ const Hero = () => {
                         <div>
                           <input
                             type="text"
-                            className="text text-grey p-1 text-[2.45vmin]"
+                            className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                            id="name"
                             placeholder="Enter your name..."
                           />
-                          <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
+                          <div className="underline border-headerUnderline border-[0.15px] mt-1 "></div>
                         </div>
                         <div>
                           <input
                             type="text"
-                            className="text text-grey p-1 text-[2.45vmin]"
+                            id="email"
+                            className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
                             placeholder="Enter your email..."
                           />
                           <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -424,7 +525,8 @@ const Hero = () => {
                         <div>
                           <input
                             type="text"
-                            className="text text-grey p-1 text-[2.45vmin]"
+                            className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                            id="phone"
                             placeholder="Enter your phone..."
                           />
                           <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -432,18 +534,20 @@ const Hero = () => {
 
                         <div className="w-[100%]">
                           <select
-                            name="cars"
-                            id="cars"
-                            className="w-[100%] text-[2.45vmin]"
+                            name="message"
+                            id="message"
+                            className="w-[100%] text-[2.65vmin]"
                           >
-                            <option value="volvo">
+                            <option value="default">
                               Which service are you looking for?
                             </option>
-                            <option value="saab">Web Development</option>
-                            <option value="mercedes">
+                            <option value="Web Development">
+                              Web Development
+                            </option>
+                            <option value="Android Development">
                               Android Development
                             </option>
-                            <option value="audi">
+                            <option value="Custom Software Development">
                               Custom Software Development
                             </option>
                           </select>
@@ -452,7 +556,10 @@ const Hero = () => {
                       </div>
                       <div className="buttonHolderContainer flex justify-center items-center">
                         <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                          <button className="p-2 text-[2.45vmin]">
+                          <button
+                            className="p-2 text-[2.45vmin]"
+                            onClick={handleSubmit}
+                          >
                             Submit
                           </button>
                         </div>
@@ -516,7 +623,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin] w-[100%]"
+                              id="name"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -524,7 +632,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              id="email"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -532,7 +641,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="phone"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -540,27 +650,33 @@ const Hero = () => {
 
                           <div className="w-[100%]">
                             <select
-                              name="cars"
-                              id="cars"
-                              className="w-[100%] text-[2.45vmin]"
+                              name="message"
+                              id="message"
+                              className="w-[100%] text-[2.65vmin]"
                             >
-                              <option value="volvo">
+                              <option value="default">
                                 Which service are you looking for?
                               </option>
-                              <option value="saab">Web Development</option>
-                              <option value="mercedes">
+                              <option value="Web Development">
+                                Web Development
+                              </option>
+                              <option value="Android Development">
                                 Android Development
                               </option>
-                              <option value="audi">
+                              <option value="Custom Software Development">
                                 Custom Software Development
                               </option>
                             </select>
+
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
                           </div>
                         </div>
                         <div className="buttonHolderContainer flex justify-center items-center mt-3">
                           <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                            <button className="p-2 text-[2.45vmin]">
+                            <button
+                              className="p-2 text-[2.45vmin]"
+                              onClick={handleSubmit}
+                            >
                               Submit
                             </button>
                           </div>
@@ -624,7 +740,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="name"
                               placeholder="Enter your name..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -632,7 +749,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="email"
                               placeholder="Enter your email..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -640,7 +758,8 @@ const Hero = () => {
                           <div>
                             <input
                               type="text"
-                              className="text text-grey p-1 text-[2.45vmin]"
+                              className="text text-grey p-1 text-[2.45vmin]  w-[100%]"
+                              id="phone"
                               placeholder="Enter your phone..."
                             />
                             <div className="underline border-headerUnderline border-[0.15px] mt-1"></div>
@@ -648,18 +767,20 @@ const Hero = () => {
 
                           <div className="w-[100%]">
                             <select
-                              name="cars"
-                              id="cars"
-                              className="w-[100%] text-[2.45vmin]"
+                              name="message"
+                              id="message"
+                              className="w-[100%] text-[2.65vmin]"
                             >
-                              <option value="volvo">
+                              <option value="default">
                                 Which service are you looking for?
                               </option>
-                              <option value="saab">Web Development</option>
-                              <option value="mercedes">
+                              <option value="Web Development">
+                                Web Development
+                              </option>
+                              <option value="Android Development">
                                 Android Development
                               </option>
-                              <option value="audi">
+                              <option value="Custom Software Development">
                                 Custom Software Development
                               </option>
                             </select>
@@ -668,7 +789,10 @@ const Hero = () => {
                         </div>
                         <div className="buttonHolderContainer flex justify-center items-center mt-3">
                           <div className="buttonHolder w-[35%] bg-deepViolet text-white flex justify-center items-center">
-                            <button className="p-2 text-[2.45vmin]">
+                            <button
+                              className="p-2 text-[2.45vmin]"
+                              onClick={handleSubmit}
+                            >
                               Submit
                             </button>
                           </div>
