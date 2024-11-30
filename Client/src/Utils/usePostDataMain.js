@@ -11,7 +11,7 @@ const usePostDataMain = (tigger, link, data, type) => {
   useEffect(() => {
     if (tigger == true) {
       axios
-        .post(API_TEST_URL1 + "api/v1/" + link, data)
+        .post(API_TEST_URL + "api/v1/" + link, data)
         .then((response) => {
           if (response.status === 200) {
             toast("Message sent successfully... ", {
