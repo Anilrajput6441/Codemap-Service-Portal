@@ -46,8 +46,9 @@ app.use("/api/v1/customsoftware", customsoftwareRouter);
 app.use("/api/v1/android", androidRouter);
 app.use("/api/v1/webdevelopment", webDevelopmentRouter);
 
-
 //App Listen
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+export { app };
