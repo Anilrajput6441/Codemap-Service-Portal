@@ -86,22 +86,21 @@ const TechStack = () => {
               <div className="mt-12 imageContainer flex flex-wrap justify-center items-center p-10  gap-x-20 gap-y-24">
                 {data.map((val) => (
                   <div className="imageHolder h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin] 2xl:h-[9vmin] 2xl:w-[9vmin]">
-                    {val.name === "PHP" ||
-                      (val.name === "Neo4j" && (
-                        <>
-                          <div className="mt-[1.75vmin] h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin] 2xl:h-[9vmin] 2xl:w-[9vmin]">
-                            <img
-                              src={API_TEST_URL + val.image}
-                              className="max-w-full max-h-full object-contain "
-                            ></img>
-                          </div>
-                        </>
-                      )) || (
-                        <img
-                          src={API_TEST_URL + val.image}
-                          className="max-w-full max-h-full object-contain "
-                        ></img>
-                      )}
+                    {((val.name === "PHP" || val.name === "Neo4j") && (
+                      <>
+                        <div className="mt-[1.75vmin] h-[20vmin]  w-[20vmin] md:h-[11vmin] md:w-[11vmin] 2xl:h-[9vmin] 2xl:w-[9vmin]">
+                          <img
+                            src={API_TEST_URL + val.image}
+                            className="max-w-full max-h-full object-contain "
+                          ></img>
+                        </div>
+                      </>
+                    )) || (
+                      <img
+                        src={API_TEST_URL + val.image}
+                        className="max-w-full max-h-full object-contain "
+                      ></img>
+                    )}
                   </div>
                 ))}
               </div>
