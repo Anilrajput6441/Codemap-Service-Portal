@@ -17,9 +17,9 @@ const PartnerPage = () => {
   let status = usePostDataMain(tigger, "partnership", data, "partnership");
   const handleSubmit = (e) => {
     e.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const name = document.getElementById("name3").value;
+    const email = document.getElementById("email3").value;
+    const phone = document.getElementById("phone3").value;
     const service = document.getElementById("service").value;
 
     //Verification of these data needed
@@ -29,6 +29,8 @@ const PartnerPage = () => {
     };
 
     const verifyInput = InputValidator(data);
+
+    console.log(name, email, phone, service);
 
     if (verifyInput === false) {
       toast.error("Invalid entry for email or phone... ", {
@@ -44,9 +46,9 @@ const PartnerPage = () => {
       };
       setData(dataObj);
       setTigger(true);
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("phone").value = "";
+      document.getElementById("name3").value = "";
+      document.getElementById("email3").value = "";
+      document.getElementById("phone3").value = "";
     }
   };
 
@@ -148,19 +150,19 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-8 p-3 mt-5">
                         <input
                           type="text"
-                          id="name"
+                          id="name3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
-                          id="email"
+                          id="email3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
-                          id="phone"
+                          id="phone3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
@@ -204,19 +206,19 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-10 p-3 mt-5 text-[2vmin]">
                         <input
                           type="text"
-                          id="name"
+                          id="name3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
-                          id="email"
+                          id="email3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
-                          id="phone"
+                          id="phone3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
@@ -261,19 +263,19 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-10 p-3 mt-5 text-[2vmin]">
                         <input
                           type="text"
-                          id="name"
+                          id="name3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
-                          id="email"
+                          id="email3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
-                          id="phone"
+                          id="phone3"
                           className="text border-gray border-b-[1px] p-2"
                           placeholder="Enter your phone..."
                         />
@@ -317,19 +319,19 @@ const PartnerPage = () => {
                       <form className="flex flex-col gap-y-12 p-3 mt-5 text-[2.45vmin]">
                         <input
                           type="text"
-                          id="name"
+                          id="name3"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your name..."
                         />
                         <input
                           type="text"
-                          id="email"
+                          id="email3"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your email..."
                         />
                         <input
                           type="text"
-                          id="phone"
+                          id="phone3"
                           className="text border-gray border-b-[1px] p-2 text-[2.45vmin]"
                           placeholder="Enter your phone..."
                         />

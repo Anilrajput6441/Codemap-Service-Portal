@@ -34,6 +34,11 @@ const CMSDashboard = () => {
       title: "View Messages",
       link: "/MessagesCMS",
     },
+    {
+      image: require("../../../assets/Partnership123.png"),
+      title: "Partnership",
+      link: "/PartnershipCMS",
+    },
     {},
   ];
   const navigate = useNavigate();

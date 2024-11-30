@@ -29,6 +29,7 @@ import TechnologiesCMS from "./CMS/TechnologiesCMS.js/TechnologiesCMS";
 import TeamCMS from "./CMS/TeamCMS/TeamCMS";
 import ProjectCMS from "./CMS/ProjectCMS/ProjectCMS";
 import BlogsCMS from "./CMS/BlogsCMS/BlogsCMS";
+import PartnershipCMS from "./CMS/PartnershipCMS/PartnershipCMS";
 
 dotenv.config();
 const Body = () => {
@@ -147,6 +148,14 @@ const Body = () => {
     {
       path: "/TeamCMS",
       element: <TeamCMS />,
+    },
+    {
+      path: "/PartnershipCMS",
+      element: <PartnershipCMS />,
+    },
+    {
+      path: "/PartnershipCMS",
+      element: <PartnershipCMS />,
     },
   ]);
 
