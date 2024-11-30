@@ -23,7 +23,7 @@ import PartnerPage from "./PartnerPage";
 import EmployeeCMS from "./CMS/EmployeeCMS/EmployeeCMS";
 import Admin from "./CMS/AdminPage/Admin";
 import CMSCard from "./CMS/CMSCard";
-import MessagesCMS from "../Components/CMS/MessagesCMS/MessagesCMS";
+import MessagesCMS from "./CMS/MessagesCMS/MessagesCMS";
 import CareerCMS from "./CMS/CareerCMS/CareerCMS";
 import TechnologiesCMS from "./CMS/TechnologiesCMS.js/TechnologiesCMS";
 import TeamCMS from "./CMS/TeamCMS/TeamCMS";
